@@ -1,10 +1,10 @@
 const CACHE = 'revisions-v2';
 const ASSETS = [
-  '/revisions/',
-  '/revisions/index.html',
-  '/revisions/style.css',
-  '/revisions/app.js',
-  '/revisions/manifest.json',
+  '/Revisions/',
+  '/Revisions/index.html',
+  '/Revisions/style.css',
+  '/Revisions/app.js',
+  '/Revisions/manifest.json',
 ];
 
 self.addEventListener('install', e => {
