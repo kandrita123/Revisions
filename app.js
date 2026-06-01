@@ -174,7 +174,8 @@ async function loadFiche(base) {
     if (!res.ok) throw new Error();
     const html = await res.text();
     state.chapitreData['fiche'] = true;
-    $('tab-fiche').innerHTML = `<div class="fiche-content">${html}</div><button class="print-btn" onclick="window.print()">🖨️ Imprimer la fiche</button>`;
+    $('tab-fiche').innerHTML = `<div class="fiche-content">${html}</div>
+      <a class="pdf-btn" href="${base}/fiche.pdf" target="_blank">📄 Voir la fiche en PDF</a>`;
   } catch {
     $('tab-fiche').innerHTML = '<div class="empty-state"><div class="empty-icon">📄</div>Fiche non disponible</div>';
   }
