@@ -1,0 +1,40 @@
+[
+  {
+    "type": "oral",
+    "question": "Explique la différence entre une énergie renouvelable et une énergie non renouvelable. Donne 2 exemples de chaque.",
+    "answer": "Une énergie renouvelable provient d'une ressource inépuisable qui se renouvelle naturellement (ex : solaire, éolienne, hydraulique, biomasse). Une énergie non renouvelable provient d'une ressource qui s'épuise et met des millions d'années à se former (ex : pétrole, charbon, gaz naturel, uranium)."
+  },
+  {
+    "type": "qcm",
+    "question": "Quand on pédale à vélo, quelle conversion d'énergie se produit ?",
+    "options": ["Électrique → Mécanique", "Chimique (muscles) → Mécanique", "Thermique → Mécanique", "Lumineuse → Mécanique"],
+    "answer": 1
+  },
+  {
+    "type": "oral",
+    "question": "Pourquoi les énergies fossiles sont-elles problématiques pour l'environnement ?",
+    "answer": "Les énergies fossiles (pétrole, charbon, gaz) produisent des gaz à effet de serre (comme le CO2) lorsqu'elles brûlent. Ces gaz s'accumulent dans l'atmosphère et provoquent le réchauffement climatique, ce qui entraîne des dérèglements météorologiques, la montée des eaux et la disparition d'espèces animales."
+  },
+  {
+    "type": "qcm",
+    "question": "Un haut-parleur transforme l'énergie électrique en :",
+    "options": ["Énergie lumineuse", "Énergie thermique", "Énergie sonore", "Énergie mécanique"],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "L'énergie nucléaire est une énergie renouvelable.",
+    "answer": false
+  },
+  {
+    "type": "oral",
+    "question": "Cite 3 gestes concrets pour économiser l'énergie au quotidien.",
+    "answer": "Par exemple : éteindre les lumières en sortant d'une pièce / utiliser des ampoules LED qui consomment moins / prendre des douches courtes plutôt que des bains / éteindre les appareils électroniques plutôt que de les laisser en veille / utiliser les transports en commun ou le vélo."
+  },
+  {
+    "type": "qcm",
+    "question": "Quelle source d'énergie utilise la chaleur de la Terre ?",
+    "options": ["Biomasse", "Hydraulique", "Géothermique", "Éolienne"],
+    "answer": 2
+  }
+]

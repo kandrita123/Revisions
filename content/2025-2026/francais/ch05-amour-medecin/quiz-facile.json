@@ -1,0 +1,47 @@
+[
+  {
+    "type": "qcm",
+    "question": "Quel est le vrai nom de Molière ?",
+    "options": ["Jean-Baptiste Racine", "Jean-Baptiste Poquelin", "Pierre Corneille", "Jean de La Fontaine"],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "En combien d'actes est divisée la pièce L'Amour médecin ?",
+    "options": ["1", "2", "3", "5"],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Lucinde fait semblant d'être malade pour pouvoir épouser Clitandre.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Qui est Lisette dans la pièce ?",
+    "options": ["La mère de Lucinde", "La servante rusée", "Une médecin", "La sœur de Clitandre"],
+    "answer": 1
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Sganarelle est un père généreux qui souhaite le bonheur de sa fille.",
+    "answer": false
+  },
+  {
+    "type": "qcm",
+    "question": "Que signifie 'satire' ?",
+    "options": ["Une histoire triste", "Une critique moqueuse d'un défaut", "Un poème amoureux", "Un conte fantastique"],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "Clitandre se déguise en quoi pour approcher Lucinde ?",
+    "options": ["Notaire", "Soldat", "Médecin", "Marchand"],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "L'Amour médecin a été écrit en 1665.",
+    "answer": true
+  }
+]

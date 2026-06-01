@@ -1,0 +1,47 @@
+[
+  {
+    "type": "qcm",
+    "question": "What is the capital city of Kenya?",
+    "options": ["Lagos", "Cairo", "Nairobi", "Dakar"],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "English is one of the official languages of Kenya.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "What does 'wildlife' mean in French?",
+    "options": ["Vie sauvage / faune sauvage", "Vie nocturne", "Jardins sauvages", "Animaux domestiques"],
+    "answer": 0
+  },
+  {
+    "type": "qcm",
+    "question": "How often does the Africa Cup of Nations (CAN) take place?",
+    "options": ["Every year", "Every two years", "Every four years", "Every five years"],
+    "answer": 1
+  },
+  {
+    "type": "vrai-faux",
+    "question": "A 'referee' is the same as an 'arbitre' in French.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "What is the correct sentence?",
+    "options": ["She play football.", "She plays football.", "She playing football.", "She is play football."],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "What animal is a 'giraffe' in French?",
+    "options": ["Le zèbre", "L'éléphant", "La girafe", "Le guépard"],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "The Great Migration involves millions of lions crossing the Masai Mara.",
+    "answer": false
+  }
+]

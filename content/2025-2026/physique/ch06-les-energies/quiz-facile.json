@@ -1,0 +1,47 @@
+[
+  {
+    "type": "qcm",
+    "question": "En quelle unité mesure-t-on l'énergie ?",
+    "options": ["Mètre", "Joule", "Kilogramme", "Watt"],
+    "answer": 1
+  },
+  {
+    "type": "vrai-faux",
+    "question": "L'énergie se crée à partir de rien.",
+    "answer": false
+  },
+  {
+    "type": "qcm",
+    "question": "Quelle énergie utilise le vent pour produire de l'électricité ?",
+    "options": ["Solaire", "Hydraulique", "Éolienne", "Géothermique"],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Le pétrole est une énergie renouvelable.",
+    "answer": false
+  },
+  {
+    "type": "qcm",
+    "question": "Quelle forme d'énergie sort d'une lampe ?",
+    "options": ["Mécanique et chimique", "Sonore et électrique", "Lumineuse et thermique", "Hydraulique et solaire"],
+    "answer": 2
+  },
+  {
+    "type": "qcm",
+    "question": "Laquelle de ces énergies est renouvelable ?",
+    "options": ["Charbon", "Pétrole", "Uranium", "Énergie solaire"],
+    "answer": 3
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Un panneau solaire transforme l'énergie lumineuse en énergie électrique.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Quelle énergie est stockée dans les aliments ?",
+    "options": ["Énergie mécanique", "Énergie chimique", "Énergie sonore", "Énergie lumineuse"],
+    "answer": 1
+  }
+]

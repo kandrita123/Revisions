@@ -1,0 +1,40 @@
+[
+  {
+    "type": "oral",
+    "question": "Describe Kenya in 3 sentences in English.",
+    "answer": "Kenya is a country in East Africa. Its capital city is Nairobi and its official languages are English and Swahili. Kenya is famous for its wildlife and national parks like the Masai Mara."
+  },
+  {
+    "type": "qcm",
+    "question": "Which sentence uses the present simple correctly?",
+    "options": ["Lions is living in the savannah.", "Lions lives in the savannah.", "Lions live in the savannah.", "Lions are live in the savannah."],
+    "answer": 2
+  },
+  {
+    "type": "oral",
+    "question": "What is the Great Migration? Answer in English.",
+    "answer": "The Great Migration is an annual event where millions of wildebeest (and other animals like zebras) cross the Masai Mara reserve in Kenya looking for water and grass. It is one of the greatest natural spectacles in the world."
+  },
+  {
+    "type": "qcm",
+    "question": "How do you say 'À mon avis, le football est passionnant' in English?",
+    "options": ["I think football is boring.", "In my opinion, football is exciting.", "Because football is a sport.", "For example, football is popular."],
+    "answer": 1
+  },
+  {
+    "type": "vrai-faux",
+    "question": "In present simple, we add 's' to the verb for I and You.",
+    "answer": false
+  },
+  {
+    "type": "oral",
+    "question": "Give 4 football vocabulary words in English and translate them.",
+    "answer": "For example: goal = but / team = équipe / referee = arbitre / stadium = stade / coach = entraîneur / player = joueur / champion = champion."
+  },
+  {
+    "type": "qcm",
+    "question": "What does 'endangered' mean?",
+    "options": ["Très dangereux", "En voie de disparition", "Protégé", "Sauvage"],
+    "answer": 1
+  }
+]
