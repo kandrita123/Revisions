@@ -1,8 +1,8 @@
 {
-  "name": "Révisions 6ème",
+  "name": "Révisions",
   "short_name": "Révisions",
-  "description": "Application de révisions pour la 6ème",
-  "start_url": "/revisions/",
+  "description": "Application de révisions",
+  "start_url": "/Revisions/",
   "display": "standalone",
   "background_color": "#0f0f1a",
   "theme_color": "#1a1a2e",
