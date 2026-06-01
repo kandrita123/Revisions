@@ -1,0 +1,47 @@
+[
+  {
+    "type": "qcm",
+    "question": "En quelle année Rome est-elle fondée selon la légende ?",
+    "options": ["476 av. J.-C.", "753 av. J.-C.", "509 av. J.-C.", "27 av. J.-C."],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "Qui est le fondateur légendaire de Rome ?",
+    "options": ["Jules César", "Auguste", "Romulus", "Rémus"],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "La République romaine est dirigée par un seul consul.",
+    "answer": false
+  },
+  {
+    "type": "qcm",
+    "question": "Quel bâtiment célèbre de Rome pouvait accueillir des combats de gladiateurs ?",
+    "options": ["Le Panthéon", "Le Colisée", "Le Forum", "Le Circus Maximus"],
+    "answer": 1
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Les Romains sont polythéistes : ils adorent plusieurs dieux.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Qui est le dieu principal de la religion romaine ?",
+    "options": ["Mars", "Vénus", "Jupiter", "Minerve"],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "L'Empire romain tombe en 476 av. J.-C.",
+    "answer": false
+  },
+  {
+    "type": "qcm",
+    "question": "Quel est le premier empereur romain ?",
+    "options": ["Jules César", "Auguste", "Trajan", "Hadrien"],
+    "answer": 1
+  }
+]
