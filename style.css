@@ -266,3 +266,27 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .annee-icon { font-size: 2rem; margin-bottom: 8px; }
 .annee-label { font-size: 1.3rem; font-weight: 800; color: #fff; }
 .annee-year { font-size: 0.8rem; color: rgba(255,255,255,0.7); margin-top: 4px; }
+
+/* ===== BOUTON IMPRESSION ===== */
+.print-btn {
+  display: block;
+  margin: 24px auto 8px;
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+.print-btn:active { opacity: 0.8; }
+
+@media print {
+  #main-header, .chapitre-tabs, .print-btn { display: none !important; }
+  body { background: white; color: black; }
+  .fiche-content { color: black; }
+  .fiche-content strong { color: black; }
+  .fiche-content h2 { border-bottom-color: black; }
+  .date-tag { background: black; }
+}
