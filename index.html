@@ -9,7 +9,6 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Révisions" />
-  <link rel="apple-touch-icon" href="icons/icon-192.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,48 +19,39 @@
         <h1 id="app-title">Révisions</h1>
       </div>
     </header>
-
-    <!-- Écran Années -->
     <div id="screen-annees" class="screen active">
       <div class="screen-inner">
         <h2 class="screen-title">Quelle classe ?</h2>
         <div id="annees-grid" class="annees-grid"></div>
       </div>
     </div>
-
-    <!-- Écran Matières -->
     <div id="screen-matieres" class="screen">
       <div class="screen-inner">
         <h2 class="screen-title" id="matieres-title">Matières</h2>
         <div id="matieres-grid" class="matieres-grid"></div>
       </div>
     </div>
-
-    <!-- Écran Chapitres -->
     <div id="screen-chapitres" class="screen">
       <div class="screen-inner">
         <h2 class="screen-title" id="chapitres-title">Chapitres</h2>
         <div id="chapitres-list" class="chapitres-list"></div>
       </div>
     </div>
-
-    <!-- Écran Chapitre -->
     <div id="screen-chapitre" class="screen">
       <div class="screen-inner">
         <div class="chapitre-tabs">
           <button class="tab-btn active" data-tab="fiche">📄 Fiche</button>
+          <button class="tab-btn" data-tab="audio">🎧 Audio</button>
           <button class="tab-btn" data-tab="quiz-facile">⭐ Quiz facile</button>
           <button class="tab-btn" data-tab="quiz-difficile">🔥 Quiz difficile</button>
-          <button class="tab-btn" data-tab="audio">🎧 Audio</button>
         </div>
         <div id="tab-fiche" class="tab-content active"></div>
+        <div id="tab-audio" class="tab-content"></div>
         <div id="tab-quiz-facile" class="tab-content"></div>
         <div id="tab-quiz-difficile" class="tab-content"></div>
-        <div id="tab-audio" class="tab-content"></div>
       </div>
     </div>
   </div>
-
   <script src="app.js"></script>
 </body>
 </html>
