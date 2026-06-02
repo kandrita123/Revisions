@@ -161,6 +161,7 @@ async function loadChapitre(matiere, chapName) {
       btn.classList.add('active');
       const tab = btn.dataset.tab;
       $('tab-' + tab).classList.add('active');
+      if (tab === 'flashcards' && !state.chapitreData['flashcards']) loadFlashcards(base);
       if (tab === 'quiz-facile' && !state.chapitreData['quiz-facile']) loadQuiz(base, 'facile');
       if (tab === 'quiz-difficile' && !state.chapitreData['quiz-difficile']) loadQuiz(base, 'difficile');
       if (tab === 'audio' && !state.chapitreData['audio']) loadAudio(base);
@@ -281,21 +282,7 @@ async function loadAudio(base) {
     const data = await res.json();
     state.chapitreData['audio'] = true;
     if (!data.length) { el.innerHTML = '<div class="audio-empty">🎧 Aucun audio disponible</div>'; return; }
-    el.innerHTML = '<div class="audio-list"></div>';
-    const list = el.querySelector('.audio-list');
-    data.forEach(item => {
-      const div = document.createElement('div');
-      div.className = 'audio-item';
-      div.innerHTML = `<button class="audio-play">▶</button>
-        <div class="audio-info"><div class="audio-title">${item.title}</div>
-        <div class="audio-duration">${item.duration || ''}</div></div>`;
-      div.querySelector('.audio-play').addEventListener('click', function() {
-        const audio = new Audio(`${base}/${item.file}`);
-        audio.play(); this.textContent = '⏸';
-        audio.onended = () => { this.textContent = '▶'; };
-      });
-      list.appendChild(div);
-    });
+    renderAudioPlayer(el, data);
   } catch {
     el.innerHTML = '<div class="audio-empty">🎧 Aucun audio disponible</div>';
   }
@@ -304,4 +291,210 @@ async function loadAudio(base) {
 // ===== SERVICE WORKER =====
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+}
+
+// ===== LECTEUR AUDIO TEXT-TO-SPEECH =====
+function renderAudioPlayer(el, sections) {
+  let currentIndex = 0;
+  let isPlaying = false;
+  let utterance = null;
+  let speed = 1;
+
+  el.innerHTML = `
+    <div class="tts-player">
+      <div class="tts-sections">
+        <h3 class="tts-label">📚 Choisir une section</h3>
+        <div class="tts-section-list" id="tts-section-list"></div>
+      </div>
+      <div class="tts-content-box">
+        <div class="tts-section-title" id="tts-section-title"></div>
+        <div class="tts-text" id="tts-text"></div>
+      </div>
+      <div class="tts-controls">
+        <div class="tts-speed">
+          <label>Vitesse</label>
+          <div class="tts-speed-btns">
+            <button class="speed-btn" data-speed="0.75">0.75×</button>
+            <button class="speed-btn active" data-speed="1">1×</button>
+            <button class="speed-btn" data-speed="1.25">1.25×</button>
+            <button class="speed-btn" data-speed="1.5">1.5×</button>
+          </div>
+        </div>
+        <div class="tts-main-controls">
+          <button class="tts-btn" id="tts-prev">⏮</button>
+          <button class="tts-btn tts-play" id="tts-play">▶</button>
+          <button class="tts-btn" id="tts-next">⏭</button>
+        </div>
+      </div>
+    </div>`;
+
+  function loadSection(index) {
+    stop();
+    currentIndex = index;
+    const s = sections[index];
+    document.querySelectorAll('.tts-section-item').forEach((btn, i) => {
+      btn.classList.toggle('active', i === index);
+    });
+    document.getElementById('tts-section-title').textContent = s.titre;
+    document.getElementById('tts-text').innerHTML = s.contenu.map(p => `<p>${p}</p>`).join('');
+  }
+
+  function play() {
+    const s = sections[currentIndex];
+    const text = s.contenu.join(' ');
+    utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'fr-FR';
+    utterance.rate = speed;
+    utterance.onend = () => {
+      isPlaying = false;
+      document.getElementById('tts-play').textContent = '▶';
+      if (currentIndex < sections.length - 1) {
+        setTimeout(() => { loadSection(currentIndex + 1); play(); }, 500);
+      }
+    };
+    speechSynthesis.speak(utterance);
+    isPlaying = true;
+    document.getElementById('tts-play').textContent = '⏸';
+  }
+
+  function stop() {
+    speechSynthesis.cancel();
+    isPlaying = false;
+    const btn = document.getElementById('tts-play');
+    if (btn) btn.textContent = '▶';
+  }
+
+  // Sections list
+  const list = document.getElementById('tts-section-list');
+  sections.forEach((s, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'tts-section-item';
+    btn.innerHTML = `<span class="tts-section-emoji">${s.emoji || '📖'}</span> ${s.titre}`;
+    btn.addEventListener('click', () => loadSection(i));
+    list.appendChild(btn);
+  });
+
+  // Controls
+  document.getElementById('tts-play').addEventListener('click', () => {
+    if (isPlaying) { stop(); } else { play(); }
+  });
+  document.getElementById('tts-prev').addEventListener('click', () => {
+    if (currentIndex > 0) loadSection(currentIndex - 1);
+  });
+  document.getElementById('tts-next').addEventListener('click', () => {
+    if (currentIndex < sections.length - 1) loadSection(currentIndex + 1);
+  });
+  document.querySelectorAll('.speed-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.speed-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      speed = parseFloat(this.dataset.speed);
+      if (isPlaying) { stop(); play(); }
+    });
+  });
+
+  loadSection(0);
+}
+
+// ===== FLASHCARDS =====
+async function loadFlashcards(base) {
+  const el = $('tab-flashcards');
+  el.innerHTML = '<div class="loading"><div class="spinner"></div>Chargement…</div>';
+  try {
+    const res = await fetch(`${base}/flashcards.json`);
+    if (!res.ok) throw new Error();
+    const data = await res.json();
+    state.chapitreData['flashcards'] = true;
+    if (!data.length) { el.innerHTML = '<div class="empty-state"><div class="empty-icon">🃏</div>Aucune flashcard disponible</div>'; return; }
+    renderFlashcards(el, data);
+  } catch {
+    el.innerHTML = '<div class="empty-state"><div class="empty-icon">🃏</div>Flashcards non disponibles</div>';
+  }
+}
+
+function renderFlashcards(el, cards) {
+  let current = 0;
+  let known = 0;
+  let unknown = 0;
+  let flipped = false;
+  const total = cards.length;
+  const remaining = [...cards];
+
+  function render() {
+    if (remaining.length === 0) {
+      el.innerHTML = `
+        <div class="fc-result">
+          <div class="fc-result-icon">🎉</div>
+          <div class="fc-result-title">Terminé !</div>
+          <div class="fc-result-score">
+            <span class="fc-known">✅ Sus : ${known}</span>
+            <span class="fc-unknown">❌ À revoir : ${unknown}</span>
+          </div>
+          <button class="fc-restart" onclick="renderFlashcards(document.getElementById('tab-flashcards'), ${JSON.stringify(cards).replace(/"/g, '&quot;')})">🔄 Recommencer</button>
+        </div>`;
+      return;
+    }
+
+    const card = remaining[0];
+    flipped = false;
+
+    el.innerHTML = `
+      <div class="fc-counter">${total - remaining.length + 1} / ${total}</div>
+      <div class="fc-progress">
+        <div class="fc-progress-bar" style="width:${((total - remaining.length) / total * 100)}%"></div>
+      </div>
+      <div class="fc-card-wrapper">
+        <div class="fc-card" id="fc-card">
+          <div class="fc-front">
+            <div class="fc-label">Question</div>
+            <div class="fc-text">${card.question}</div>
+            <div class="fc-hint">Appuie pour voir la réponse</div>
+          </div>
+          <div class="fc-back hidden">
+            <div class="fc-label">Réponse</div>
+            <div class="fc-text">${card.reponse}</div>
+          </div>
+        </div>
+      </div>
+      ${card.indice ? `<div class="fc-indice-wrapper">
+        <button class="fc-indice-btn" id="fc-indice-btn">💡 Indice</button>
+        <div class="fc-indice-text hidden" id="fc-indice-text">${card.indice}</div>
+      </div>` : ''}
+      <div class="fc-actions hidden" id="fc-actions">
+        <button class="fc-btn fc-no" id="fc-no">❌ À revoir</button>
+        <button class="fc-btn fc-yes" id="fc-yes">✅ Je savais !</button>
+      </div>`;
+
+    if (card.indice) {
+      document.getElementById('fc-indice-btn').addEventListener('click', (e) => {
+        e.stopPropagation();
+        document.getElementById('fc-indice-text').classList.toggle('hidden');
+        document.getElementById('fc-indice-btn').textContent = '💡 Indice ▲';
+      });
+    }
+
+    document.getElementById('fc-card').addEventListener('click', () => {
+      if (flipped) return;
+      flipped = true;
+      document.querySelector('.fc-front').classList.add('hidden');
+      document.querySelector('.fc-back').classList.remove('hidden');
+      document.getElementById('fc-actions').classList.remove('hidden');
+      document.querySelector('.fc-hint') && document.querySelector('.fc-hint').remove();
+    });
+
+    document.getElementById('fc-yes').addEventListener('click', () => {
+      known++;
+      remaining.shift();
+      render();
+    });
+
+    document.getElementById('fc-no').addEventListener('click', () => {
+      unknown++;
+      const card = remaining.shift();
+      remaining.push(card); // remet à la fin
+      render();
+    });
+  }
+
+  render();
 }
