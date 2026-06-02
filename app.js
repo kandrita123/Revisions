@@ -176,7 +176,7 @@ async function loadFiche(base) {
     const html = await res.text();
     state.chapitreData['fiche'] = true;
     $('tab-fiche').innerHTML = `<div class="fiche-content">${html}</div>
-      <a class="pdf-btn" href="${base}/fiche.pdf" target="_blank">📄 Voir la fiche en PDF</a>`;
+      <a class="pdf-btn" href="https://kandrita123.github.io/Revisions/content/${state.annee.id}/${state.matiere.id}/${state.chapitre}/fiche.pdf" target="_blank">📄 Voir la fiche en PDF</a>`;
   } catch {
     $('tab-fiche').innerHTML = '<div class="empty-state"><div class="empty-icon">📄</div>Fiche non disponible</div>';
   }
