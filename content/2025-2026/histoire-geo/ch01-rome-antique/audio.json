@@ -1,1 +1,80 @@
-[]
+[
+  {
+    "titre": "Introduction",
+    "emoji": "📌",
+    "contenu": [
+      "Introduction au chapitre sur Rome antique.",
+      "L'Antiquité est la période historique qui va de l'invention de l'écriture, en moins 3000 avant Jésus-Christ, à la chute de l'Empire romain, en 476 après Jésus-Christ.",
+      "La problématique du chapitre est : Comment fonctionne l'Empire romain et quelles sont les bases de son unité ?",
+      "Rome est à la tête d'un Empire qui s'étend sur tout le bassin méditerranéen."
+    ]
+  },
+  {
+    "titre": "Les origines de Rome",
+    "emoji": "🏛️",
+    "contenu": [
+      "Les origines de Rome.",
+      "Rome est fondée en 753 avant Jésus-Christ selon la légende par Romulus, sur les bords du Tibre, en Italie centrale.",
+      "La ville est d'abord une monarchie avec 7 rois successifs.",
+      "En 509 avant Jésus-Christ, les Romains chassent leur dernier roi et fondent la République.",
+      "La République romaine dure de 509 avant Jésus-Christ à 27 avant Jésus-Christ."
+    ]
+  },
+  {
+    "titre": "Les institutions de la République",
+    "emoji": "⚖️",
+    "contenu": [
+      "Les institutions de la République romaine.",
+      "Le Sénat est une assemblée de 300 sénateurs, anciens magistrats et patriciens. Il vote les lois et contrôle les finances.",
+      "Les consuls sont 2 chefs élus pour 1 an. Ils commandent l'armée et appliquent les lois.",
+      "Les assemblées regroupent les citoyens romains qui votent les lois et élisent les magistrats.",
+      "La société romaine est divisée entre les patriciens, nobles riches propriétaires terriens, les plébéiens, citoyens ordinaires, et les esclaves, qui n'ont aucun droit."
+    ]
+  },
+  {
+    "titre": "Les conquêtes romaines",
+    "emoji": "⚔️",
+    "contenu": [
+      "Les conquêtes romaines.",
+      "Rome conquiert progressivement un immense empire.",
+      "Entre 264 et 146 avant Jésus-Christ, les guerres Puniques contre Carthage permettent à Rome de contrôler la Méditerranée occidentale.",
+      "Entre 58 et 52 avant Jésus-Christ, Jules César conquiert la Gaule.",
+      "En 27 avant Jésus-Christ, Auguste devient le premier empereur, c'est le début de l'Empire romain."
+    ]
+  },
+  {
+    "titre": "L'Empire romain",
+    "emoji": "👑",
+    "contenu": [
+      "L'Empire romain.",
+      "L'Empire dure de 27 avant Jésus-Christ à 476 après Jésus-Christ.",
+      "L'empereur détient tous les pouvoirs : militaire, religieux et politique.",
+      "Il est vénéré comme un dieu après sa mort.",
+      "Les grands empereurs sont Auguste, Trajan, Hadrien et Marc-Aurèle.",
+      "Rome compte 1 million d'habitants au premier siècle après Jésus-Christ.",
+      "Ses monuments célèbres sont le Colisée, le Forum, le Panthéon et les thermes."
+    ]
+  },
+  {
+    "titre": "La religion romaine",
+    "emoji": "⚡",
+    "contenu": [
+      "La religion romaine.",
+      "Les Romains sont polythéistes : ils croient en de nombreux dieux.",
+      "Jupiter est le dieu des dieux. Mars est le dieu de la guerre. Vénus est la déesse de l'amour. Minerve est la déesse de la sagesse.",
+      "Au premier siècle après Jésus-Christ, le christianisme se développe.",
+      "En 313 après Jésus-Christ, l'édit de Milan autorise la pratique du christianisme.",
+      "En 380 après Jésus-Christ, le christianisme devient la religion officielle de l'Empire."
+    ]
+  },
+  {
+    "titre": "La chute de Rome",
+    "emoji": "📉",
+    "contenu": [
+      "La chute de l'Empire romain.",
+      "En 476 après Jésus-Christ, les Wisigoths, peuples germains, renversent le dernier empereur d'Occident, Romulus Augustule.",
+      "Cet événement marque la fin de l'Antiquité et le début du Moyen Âge.",
+      "C'est une date très importante à retenir : 476 après Jésus-Christ."
+    ]
+  }
+]
