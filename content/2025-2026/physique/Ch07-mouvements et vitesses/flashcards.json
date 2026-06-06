@@ -1,57 +1,14 @@
 [
-  {
-    "recto": "Qu'est-ce que la trajectoire d'un objet ?",
-    "verso": "C'est le chemin suivi par l'objet en mouvement : l'ensemble de toutes ses positions successives.",
-    "indice": "💡 Pense au chemin que laisse un stylo quand tu dessines."
-  },
-  {
-    "recto": "Quels sont les 3 types de trajectoires ?",
-    "verso": "Rectiligne (ligne droite), circulaire (cercle ou arc), curviligne (courbe quelconque).",
-    "indice": "💡 R-C-C : Rectiligne, Circulaire, Curviligne."
-  },
-  {
-    "recto": "Qu'est-ce qu'une trajectoire rectiligne ?",
-    "verso": "L'objet se déplace en ligne droite. Ex : voiture sur autoroute.",
-    "indice": "💡 'Rectiligne' contient 'ligne droite'."
-  },
-  {
-    "recto": "Qu'est-ce qu'une trajectoire circulaire ?",
-    "verso": "L'objet se déplace en suivant un cercle ou un arc de cercle. Ex : manège, aiguille d'une montre.",
-    "indice": "💡 Pense à un cercle ou une roue."
-  },
-  {
-    "recto": "Qu'est-ce que la vitesse d'un objet ?",
-    "verso": "La vitesse décrit la rapidité avec laquelle un objet se déplace.",
-    "indice": "💡 Vite ou lentement ? Ça change ou pas ?"
-  },
-  {
-    "recto": "Qu'est-ce qu'une vitesse uniforme ?",
-    "verso": "La vitesse ne change pas : l'objet se déplace toujours à la même rapidité.",
-    "indice": "💡 Uniforme = toujours pareil. Points équidistants sur la chrono."
-  },
-  {
-    "recto": "Qu'est-ce qu'une vitesse accélérée ?",
-    "verso": "La vitesse augmente : l'objet va de plus en plus vite.",
-    "indice": "💡 Accélérer = appuyer sur la pédale d'accélérateur. Points qui s'éloignent."
-  },
-  {
-    "recto": "Qu'est-ce qu'une vitesse ralentie ?",
-    "verso": "La vitesse diminue : l'objet va de moins en moins vite.",
-    "indice": "💡 Ralentir = freiner. Points qui se rapprochent."
-  },
-  {
-    "recto": "Qu'est-ce qu'une chronophotographie ?",
-    "verso": "Suite de positions d'un objet prises à intervalles de temps égaux. Chaque point = une position.",
-    "indice": "💡 'Chrono' = temps. On photographie à intervalles réguliers."
-  },
-  {
-    "recto": "Sur une chronophotographie, comment reconnaît-on un mouvement accéléré ?",
-    "verso": "Les points s'éloignent de plus en plus : l'écart entre les points augmente.",
-    "indice": "💡 Plus l'objet va vite, plus il parcourt de distance entre deux instants."
-  },
-  {
-    "recto": "Comment décrire complètement un mouvement ?",
-    "verso": "Il faut donner sa trajectoire (rectiligne, circulaire...) ET son type de vitesse (uniforme, accélérée, ralentie).",
-    "indice": "💡 Deux infos obligatoires : TRAJECTOIRE + VITESSE."
-  }
+  {"question": "Qu'est-ce que la trajectoire d'un objet ?", "reponse": "Le chemin suivi par l'objet en mouvement : l'ensemble de toutes ses positions successives.", "indice": "Pense au chemin que laisse un stylo quand tu dessines."},
+  {"question": "Quels sont les 3 types de trajectoires ?", "reponse": "Rectiligne (ligne droite), circulaire (cercle ou arc), curviligne (courbe quelconque).", "indice": "R-C-C : Rectiligne, Circulaire, Curviligne."},
+  {"question": "Qu'est-ce qu'une trajectoire rectiligne ?", "reponse": "L'objet se déplace en ligne droite. Ex : voiture sur autoroute.", "indice": "Le mot 'rectiligne' contient l'idée de ligne droite."},
+  {"question": "Qu'est-ce qu'une trajectoire circulaire ?", "reponse": "L'objet se déplace en suivant un cercle ou un arc de cercle. Ex : manège, aiguille d'une montre.", "indice": "Pense à un cercle ou une roue qui tourne."},
+  {"question": "Quelle différence entre trajectoire circulaire et curviligne ?", "reponse": "Circulaire = cercle parfait ou arc. Curviligne = courbe quelconque, ni droite ni cercle.", "indice": "La circulaire est un cas particulier de courbe : le cercle."},
+  {"question": "Qu'est-ce que la vitesse d'un objet ?", "reponse": "La rapidité avec laquelle un objet se déplace. Elle peut être constante, croissante ou décroissante.", "indice": "Vite ou lentement ? Ça change ou pas ?"},
+  {"question": "Qu'est-ce qu'une vitesse uniforme ?", "reponse": "La vitesse ne change pas : l'objet se déplace toujours à la même rapidité.", "indice": "Uniforme = toujours pareil. Points équidistants sur la chronophotographie."},
+  {"question": "Qu'est-ce qu'une vitesse accélérée ?", "reponse": "La vitesse augmente : l'objet va de plus en plus vite.", "indice": "Accélérer = appuyer sur la pédale. Les points s'éloignent."},
+  {"question": "Qu'est-ce qu'une vitesse ralentie ?", "reponse": "La vitesse diminue : l'objet va de moins en moins vite.", "indice": "Ralentir = freiner. Les points se rapprochent."},
+  {"question": "Qu'est-ce qu'une chronophotographie ?", "reponse": "Suite de positions d'un objet prises à intervalles de temps égaux. Chaque point = une position.", "indice": "Chrono = temps. On photographie à intervalles réguliers."},
+  {"question": "Comment reconnaît-on un mouvement accéléré sur une chronophotographie ?", "reponse": "Les points s'éloignent de plus en plus : l'écart entre les points augmente.", "indice": "Plus l'objet va vite, plus il parcourt de distance entre deux instants."},
+  {"question": "Comment décrire complètement un mouvement ?", "reponse": "Il faut donner sa trajectoire (rectiligne, circulaire...) ET son type de vitesse (uniforme, accélérée, ralentie).", "indice": "Deux infos obligatoires : TRAJECTOIRE + VITESSE."}
 ]
