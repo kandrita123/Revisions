@@ -1,0 +1,12 @@
+[
+  {"type": "qcm", "question": "Dans un tableau de proportionnalité, la 1ère ligne est 4 ; 8 ; 12. La 2ème ligne est 10 ; 20 ; ?", "options": ["24", "30", "28", "36"], "answer": 1},
+  {"type": "vrai-faux", "question": "Si 5 kg de cerises coûtent 22,5 €, alors 7 kg coûtent 31,5 €.", "answer": true},
+  {"type": "qcm", "question": "Sur un plan à l'échelle 1/50 000, une distance de 3 cm représente...", "options": ["150 m", "1 500 m", "15 000 m", "150 000 m"], "answer": 1},
+  {"type": "vrai-faux", "question": "Une échelle de 1/25 000 est plus grande qu'une échelle de 1/100 000.", "answer": true},
+  {"type": "qcm", "question": "92 % de 650 élèves travaillent régulièrement. Combien d'élèves est-ce ?", "options": ["578", "568", "598", "608"], "answer": 2},
+  {"type": "vrai-faux", "question": "100 % d'un nombre, c'est zéro.", "answer": false},
+  {"type": "qcm", "question": "Le taux de réussite au brevet est de 88 %. Il y a 125 élèves. Combien n'ont PAS obtenu le brevet ?", "options": ["10", "15", "12", "20"], "answer": 1},
+  {"type": "vrai-faux", "question": "250 cm = 2,5 m.", "answer": true},
+  {"type": "qcm", "question": "4,2 kg = ... g", "options": ["42 g", "420 g", "4 200 g", "42 000 g"], "answer": 2},
+  {"type": "vrai-faux", "question": "Pour passer de cm en mm, on multiplie par 10.", "answer": true}
+]
