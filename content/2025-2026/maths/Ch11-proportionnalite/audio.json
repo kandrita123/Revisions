@@ -1,0 +1,48 @@
+[
+  {
+    "titre": "La proportionnalité",
+    "emoji": "📊",
+    "contenu": [
+      "Chapitre 11 : Proportionnalité.",
+      "Deux grandeurs sont proportionnelles si on passe de l'une à l'autre en multipliant toujours par le même nombre.",
+      "Ce nombre s'appelle le coefficient de proportionnalité.",
+      "Pour le trouver, on divise une valeur de la deuxième ligne par la valeur correspondante de la première ligne.",
+      "Par exemple : 22,5 divisé par 5 égale 4,5. Le coefficient de proportionnalité est 4,5."
+    ]
+  },
+  {
+    "titre": "L'échelle",
+    "emoji": "🗺️",
+    "contenu": [
+      "L'échelle.",
+      "Un plan est à l'échelle quand les longueurs sur le plan sont proportionnelles aux longueurs réelles.",
+      "Attention : les deux longueurs doivent toujours être dans la même unité !",
+      "L'échelle s'écrit sous forme d'une fraction : 1 sur n.",
+      "Par exemple, 1 sur 25 000 signifie que 1 centimètre sur le plan représente 25 000 centimètres en réalité, soit 250 mètres."
+    ]
+  },
+  {
+    "titre": "Les pourcentages",
+    "emoji": "💯",
+    "contenu": [
+      "Les pourcentages.",
+      "Un pourcentage est une fraction de dénominateur 100.",
+      "26 pourcent signifie 26 sur 100, c'est-à-dire 0,26.",
+      "Pour calculer p pourcent d'un nombre, on multiplie ce nombre par p sur 100.",
+      "Par exemple : 23 pourcent de 158 euros, c'est 0,23 multiplié par 158, ce qui donne 36,34 euros.",
+      "À retenir : 10 pourcent = diviser par 10. 50 pourcent = diviser par 2. 25 pourcent = diviser par 4."
+    ]
+  },
+  {
+    "titre": "Les conversions",
+    "emoji": "📏",
+    "contenu": [
+      "Les tableaux de conversion.",
+      "Pour convertir vers une unité plus petite, on multiplie par 10 à chaque case vers la droite.",
+      "Pour convertir vers une unité plus grande, on divise par 10 à chaque case vers la gauche.",
+      "Par exemple : 3 kilomètres égalent 3 000 mètres.",
+      "25 milligrammes égalent 0,025 grammes.",
+      "47,8 centilitres égalent 0,478 litres."
+    ]
+  }
+]
