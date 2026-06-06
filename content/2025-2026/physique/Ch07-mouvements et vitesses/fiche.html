@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapitre 4 — Mouvement et Vitesse</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 16px; background: #f8faff; color: #1a237e; }
+  h1 { background: #1565C0; color: white; padding: 14px 16px; border-radius: 6px 6px 0 0; margin: 0; font-size: 1.2em; }
+  .subtitle { background: #0D47A1; color: #90CAF9; padding: 5px 16px; font-size: 0.85em; border-radius: 0; }
+  .problematique { background: #EFF6FF; border: 1px solid #1565C0; padding: 10px 16px; border-radius: 0 0 6px 6px; font-style: italic; color: #1565C0; margin-bottom: 16px; }
+  .section { margin-bottom: 14px; }
+  .section-title { background: #1565C0; color: white; padding: 6px 10px; font-weight: bold; font-size: 1em; border-left: 8px solid #0D47A1; }
+  .def-row { display: flex; margin-bottom: 3px; }
+  .def-label { background: #1565C0; color: white; font-weight: bold; padding: 6px 10px; min-width: 110px; font-size: 0.88em; }
+  .def-text { background: #EFF6FF; padding: 6px 10px; flex: 1; font-size: 0.88em; border: 0.5px solid #BFDBFE; }
+  .two-col { display: flex; gap: 4px; margin: 8px 0; }
+  .col-box { flex: 1; padding: 10px; border-radius: 4px; font-size: 0.88em; }
+  .col-blue { background: #EFF6FF; border: 1px solid #1565C0; }
+  .col-teal { background: #E0F2F1; border: 1px solid #00695C; }
+  .col-orange { background: #FFF3E0; border: 1px solid #E65100; }
+  .col-purple { background: #F3E5F5; border: 1px solid #4A148C; }
+  .col-title { font-weight: bold; margin-bottom: 6px; }
+  .retenir { background: #FFFDE7; border: 1px solid #F57F17; padding: 8px 12px; border-radius: 4px; margin: 8px 0; font-size: 0.88em; }
+  .subhead { font-weight: bold; color: #1565C0; margin: 10px 0 5px; font-size: 0.92em; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; font-size: 0.85em; }
+  th { background: #1565C0; color: white; padding: 7px; text-align: center; }
+  th.teal { background: #00695C; }
+  th.orange { background: #E65100; }
+  td { padding: 7px; text-align: center; border: 0.5px solid #ccc; }
+  .td-blue { background: #DBEAFE; }
+  .td-teal { background: #E0F2F1; }
+  .td-orange { background: #FFF3E0; }
+  .vocab-label { color: #1565C0; font-weight: bold; }
+  .pieges { display: flex; gap: 4px; margin: 8px 0; }
+  .piege-box { flex: 1; padding: 10px; font-size: 0.85em; border-radius: 4px; }
+  .rouge { background: #FFEBEE; border: 1.5px solid #B71C1C; color: #B71C1C; }
+  .vert { background: #E8F5E9; border: 1.5px solid #1B5E20; color: #1B5E20; }
+  li { margin: 3px 0; }
+</style>
+</head>
+<body>
+
+<h1>CHAPITRE 4 — MOUVEMENT ET VITESSE</h1>
+<div class="subtitle">Physique-Chimie • 6ème • 2025-2026</div>
+<div class="problematique">💡 Comment décrire et caractériser le mouvement d'un objet ?</div>
+
+<div class="section">
+  <div class="section-title">🗺 I. LA TRAJECTOIRE</div>
+  <br>
+  <div class="def-row"><div class="def-label">Définition</div><div class="def-text">La trajectoire est le chemin suivi par un objet en mouvement. C'est l'ensemble de toutes ses positions successives.</div></div>
+  <div class="subhead">■ Les types de trajectoires :</div>
+  <div class="two-col">
+    <div class="col-box col-blue">
+      <div class="col-title" style="color:#1565C0">➡ Trajectoire RECTILIGNE</div>
+      L'objet se déplace en <b>ligne droite</b>.<br><i style="color:#546E7A">Ex : voiture sur autoroute</i><br><br>
+      <div class="col-title" style="color:#00695C">■ Trajectoire CIRCULAIRE</div>
+      L'objet suit un <b>cercle ou arc de cercle</b>.<br><i style="color:#546E7A">Ex : manège, aiguille d'une montre</i>
+    </div>
+    <div class="col-box col-purple">
+      <div class="col-title" style="color:#4A148C">〰 Trajectoire CURVILIGNE</div>
+      L'objet suit une <b>courbe quelconque</b> (ni droite, ni cercle).<br><i style="color:#546E7A">Ex : balle lancée en l'air, rivière</i>
+    </div>
+  </div>
+  <div class="retenir">💡 <b>À retenir :</b> La trajectoire décrit le CHEMIN suivi. On la représente par des points successifs.</div>
+</div>
+
+<div class="section">
+  <div class="section-title">⚡ II. LA VITESSE</div>
+  <br>
+  <div class="def-row"><div class="def-label">Définition</div><div class="def-text">La vitesse décrit la rapidité avec laquelle un objet se déplace. Elle peut être constante, croissante ou décroissante.</div></div>
+  <div class="subhead">■ Les 3 types de vitesse :</div>
+  <table>
+    <tr><th>Uniforme</th><th class="teal">Accélérée</th><th class="orange">Ralentie</th></tr>
+    <tr>
+      <td class="td-blue">➡ <b>Vitesse constante</b><br><i>La rapidité ne change pas</i></td>
+      <td class="td-teal">■ <b>Vitesse augmente</b><br><i>L'objet va de + en + vite</i></td>
+      <td class="td-orange">■ <b>Vitesse diminue</b><br><i>L'objet va de − en − vite</i></td>
+    </tr>
+    <tr>
+      <td class="td-blue"><b>● ● ● ● ● ●</b></td>
+      <td class="td-teal"><b>● ●  ●   ●    ●</b></td>
+      <td class="td-orange"><b>●    ●   ●  ● ●</b></td>
+    </tr>
+    <tr>
+      <td class="td-blue">——————→<br><i>sens du mouvement</i></td>
+      <td class="td-teal">——————→<br><i>sens du mouvement</i></td>
+      <td class="td-orange">——————→<br><i>sens du mouvement</i></td>
+    </tr>
+  </table>
+  <div class="retenir">💡 <b>À retenir :</b> Pour décrire un mouvement : toujours TRAJECTOIRE + TYPE DE VITESSE.</div>
+</div>
+
+<div class="section">
+  <div class="section-title">📷 III. LIRE UNE CHRONOPHOTOGRAPHIE</div>
+  <br>
+  <div class="def-row"><div class="def-label">Chronophotographie</div><div class="def-text">Suite de positions d'un objet prises à intervalles de temps égaux. Chaque point = une position.</div></div>
+  <div class="def-row" style="margin-top:3px"><div class="def-label" style="background:#00695C">Sens du mouvement</div><div class="def-text" style="background:#E0F2F1">Une flèche indique la direction et le sens de déplacement de l'objet.</div></div>
+  <div class="two-col" style="margin-top:8px">
+    <div class="col-box col-blue">
+      <div class="col-title" style="color:#1565C0">■ Lire la trajectoire :</div>
+      • Points sur une droite → <b>rectiligne</b><br>
+      • Points sur un cercle → <b>circulaire</b><br>
+      • Points sur une courbe → <b>curviligne</b>
+    </div>
+    <div class="col-box col-orange">
+      <div class="col-title" style="color:#E65100">■ Lire la vitesse :</div>
+      • Espacement <b>égal</b> → uniforme<br>
+      • Espacement qui <b>augmente</b> → accéléré<br>
+      • Espacement qui <b>diminue</b> → ralenti
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">📚 IV. MOTS CLÉS À RETENIR</div>
+  <br>
+  <table>
+    <tr><td style="background:#1565C0;color:white;font-weight:bold;width:35%">Trajectoire</td><td style="background:#EFF6FF">Chemin suivi par un objet en mouvement (ensemble de ses positions successives).</td></tr>
+    <tr><td style="background:#00695C;color:white;font-weight:bold">Vitesse uniforme</td><td style="background:#E0F2F1">La vitesse ne change pas (reste constante).</td></tr>
+    <tr><td style="background:#00695C;color:white;font-weight:bold">Vitesse accélérée</td><td style="background:#E0F2F1">La vitesse augmente (objet de plus en plus rapide).</td></tr>
+    <tr><td style="background:#E65100;color:white;font-weight:bold">Vitesse ralentie</td><td style="background:#FFF3E0">La vitesse diminue (objet de moins en moins rapide).</td></tr>
+    <tr><td style="background:#1565C0;color:white;font-weight:bold">Rectiligne</td><td style="background:#EFF6FF">Se déplace en ligne droite.</td></tr>
+    <tr><td style="background:#00695C;color:white;font-weight:bold">Circulaire</td><td style="background:#E0F2F1">Se déplace en suivant un cercle ou un arc de cercle.</td></tr>
+    <tr><td style="background:#1B5E20;color:white;font-weight:bold">Chronophotographie</td><td style="background:#E8F5E9">Suite de positions d'un objet prises à intervalles de temps égaux.</td></tr>
+  </table>
+</div>
+
+<div class="section">
+  <div class="section-title">⚠ V. PIÈGES À ÉVITER & ASTUCES</div>
+  <br>
+  <div class="pieges">
+    <div class="piege-box rouge">
+      <b>❌ NE PAS CONFONDRE :</b><br>
+      <ul>
+        <li>Trajectoire ≠ déplacement (chemin ≠ distance)</li>
+        <li>Circulaire ≠ curviligne (cercle ≠ courbe quelconque)</li>
+        <li>Un mouvement lent peut être accéléré ou ralenti</li>
+        <li>Points espacés ≠ forcément accéléré</li>
+      </ul>
+    </div>
+    <div class="piege-box vert">
+      <b>✅ TOUJOURS RETENIR :</b><br>
+      <ul>
+        <li>Mouvement = trajectoire + type de vitesse</li>
+        <li>L'espacement des points → type de vitesse</li>
+        <li>Ordre des points → sens du mouvement</li>
+        <li>Points équidistants → vitesse UNIFORME</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
