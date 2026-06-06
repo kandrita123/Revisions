@@ -1,0 +1,12 @@
+[
+  {"type": "qcm", "question": "Deux grandeurs sont proportionnelles si on passe de l'une à l'autre en...", "options": ["les additionnant", "multipliant toujours par le même nombre", "les divisant par des nombres différents", "les soustrayant"], "answer": 1},
+  {"type": "vrai-faux", "question": "Le coefficient de proportionnalité est le même pour toutes les colonnes du tableau.", "answer": true},
+  {"type": "qcm", "question": "Dans un tableau, on passe de 5 à 22,5. Quel est le coefficient de proportionnalité ?", "options": ["5", "17,5", "4,5", "2,5"], "answer": 2},
+  {"type": "vrai-faux", "question": "Dans un plan à l'échelle, les longueurs peuvent être dans des unités différentes.", "answer": false},
+  {"type": "qcm", "question": "L'échelle 1/10 000 signifie que 1 cm sur le plan représente...", "options": ["10 m en réalité", "100 m en réalité", "1 000 m en réalité", "1 m en réalité"], "answer": 1},
+  {"type": "qcm", "question": "Pour calculer 30 % de 200, on effectue...", "options": ["200 + 30", "200 ÷ 30", "0,30 × 200", "200 × 30"], "answer": 2},
+  {"type": "vrai-faux", "question": "50 % d'un nombre, c'est diviser ce nombre par 2.", "answer": true},
+  {"type": "qcm", "question": "10 % de 350, c'est...", "options": ["3 500", "3,5", "35", "350"], "answer": 2},
+  {"type": "vrai-faux", "question": "Pour convertir des km en m, on multiplie par 1 000.", "answer": true},
+  {"type": "qcm", "question": "3,5 km = ... m", "options": ["35 m", "350 m", "3 500 m", "35 000 m"], "answer": 2}
+]
