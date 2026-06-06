@@ -1,75 +1,57 @@
-{
-  "titre": "Quiz Facile — Mouvement et Vitesse",
-  "niveau": "facile",
-  "questions": [
-    {
-      "type": "vrai-faux",
-      "q": "La trajectoire est le chemin suivi par un objet en mouvement.",
-      "bonne": "vrai"
-    },
-    {
-      "type": "qcm",
-      "q": "Quelle est la trajectoire d'une voiture sur une route droite ?",
-      "options": [
-        "Circulaire",
-        "Rectiligne",
-        "Curviligne",
-        "Aucune"
-      ],
-      "bonne": "Rectiligne"
-    },
-    {
-      "type": "qcm",
-      "q": "Quelle est la trajectoire d'une aiguille de montre ?",
-      "options": [
-        "Rectiligne",
-        "Curviligne",
-        "Circulaire",
-        "Uniforme"
-      ],
-      "bonne": "Circulaire"
-    },
-    {
-      "type": "vrai-faux",
-      "q": "Une vitesse uniforme signifie que l'objet va de plus en plus vite.",
-      "bonne": "faux"
-    },
-    {
-      "type": "qcm",
-      "q": "Sur une chronophotographie, les points s'éloignent. Quel type de vitesse est-ce ?",
-      "options": [
-        "Uniforme",
-        "Ralentie",
-        "Accélérée",
-        "Circulaire"
-      ],
-      "bonne": "Accélérée"
-    },
-    {
-      "type": "vrai-faux",
-      "q": "Pour décrire un mouvement, il faut donner sa trajectoire et son type de vitesse.",
-      "bonne": "vrai"
-    },
-    {
-      "type": "qcm",
-      "q": "Qu'est-ce qu'une chronophotographie ?",
-      "options": [
-        "Un type de trajectoire",
-        "Une suite de positions prises à intervalles réguliers",
-        "Une mesure de vitesse",
-        "Un schéma de circuit"
-      ],
-      "bonne": "Une suite de positions prises à intervalles réguliers"
-    },
-    {
-      "type": "oral",
-      "q": "Cite les 3 types de trajectoires.",
-      "r": "Rectiligne, circulaire et curviligne."
-    },
-    {
-      "type": "oral",
-      "q": "Cite les 3 types de vitesse.",
-      "r": "Uniforme (constante), accélérée (augmente) et ralentie (diminue)."
-    }
-  ]
-}
+[
+  {
+    "type": "qcm",
+    "question": "Quelle est la trajectoire d'une voiture sur une route droite ?",
+    "options": ["Circulaire", "Rectiligne", "Curviligne", "Uniforme"],
+    "answer": 1
+  },
+  {
+    "type": "vrai-faux",
+    "question": "La trajectoire est le chemin suivi par un objet en mouvement.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Quelle est la trajectoire d'une aiguille de montre ?",
+    "options": ["Rectiligne", "Curviligne", "Circulaire", "Uniforme"],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Une vitesse uniforme signifie que l'objet va de plus en plus vite.",
+    "answer": false
+  },
+  {
+    "type": "qcm",
+    "question": "Sur une chronophotographie, les points s'éloignent. Quel type de vitesse est-ce ?",
+    "options": ["Uniforme", "Ralentie", "Accélérée", "Circulaire"],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Pour décrire un mouvement, il faut donner sa trajectoire ET son type de vitesse.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Sur une chronophotographie, les points se rapprochent. Quel type de mouvement est-ce ?",
+    "options": ["Accéléré", "Uniforme", "Ralenti", "Circulaire"],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Une trajectoire circulaire et une trajectoire curviligne sont la même chose.",
+    "answer": false
+  },
+  {
+    "type": "qcm",
+    "question": "Comment appelle-t-on une suite de positions prises à intervalles de temps égaux ?",
+    "options": ["Une trajectoire", "Une chronophotographie", "Une vitesse", "Un déplacement"],
+    "answer": 1
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Des points équidistants sur une chronophotographie indiquent une vitesse uniforme.",
+    "answer": true
+  }
+]
