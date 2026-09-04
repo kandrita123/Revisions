@@ -14,13 +14,24 @@ const ANNEES = [
 ];
 
 // ===== MATIÈRES CONFIG =====
-const MATIERES = [
+const MATIERES_6 = [
   { id: 'histoire-geo', label: 'Histoire-Géo',   icon: '🏛️', class: 'histoire' },
   { id: 'maths',        label: 'Maths',           icon: '📐', class: 'maths'   },
   { id: 'francais',     label: 'Français',        icon: '✍️', class: 'francais'},
   { id: 'svt',          label: 'SVT',             icon: '🌿', class: 'svt'     },
   { id: 'physique',     label: 'Physique-Chimie', icon: '⚗️', class: 'physique'},
   { id: 'anglais',      label: 'Anglais',         icon: '🇬🇧', class: 'anglais' },
+];
+
+const MATIERES_5_ET_PLUS = [
+  { id: 'histoire-geo', label: 'Histoire-Géo',   icon: '🏛️', class: 'histoire' },
+  { id: 'maths',        label: 'Maths',           icon: '📐', class: 'maths'   },
+  { id: 'francais',     label: 'Français',        icon: '✍️', class: 'francais'},
+  { id: 'svt',          label: 'SVT',             icon: '🌿', class: 'svt'     },
+  { id: 'physique',     label: 'Physique-Chimie', icon: '⚗️', class: 'physique'},
+  { id: 'anglais',      label: 'Anglais',         icon: '🇬🇧', class: 'anglais' },
+  { id: 'espagnol',     label: 'Espagnol',        icon: '🇪🇸', class: 'espagnol'},
+  { id: 'technologie',  label: 'Technologie',     icon: '⚙️', class: 'techno'  },
 ];
 
 // ===== STATE =====
@@ -85,7 +96,8 @@ function renderAnnees() {
 function renderMatieres() {
   const grid = $('matieres-grid');
   grid.innerHTML = '';
-  MATIERES.forEach(m => {
+  const matieres = state.annee.id === '2025-2026' ? MATIERES_6 : MATIERES_5_ET_PLUS;
+  matieres.forEach(m => {
     const card = document.createElement('div');
     card.className = `matiere-card ${m.class}`;
     card.innerHTML = `<div class="matiere-icon">${m.icon}</div><div>${m.label}</div>`;
