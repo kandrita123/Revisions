@@ -375,3 +375,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: #FFC107; font-size: 0.9rem; margin-top: 8px;
   text-align: left; line-height: 1.5;
 }
+
+/* Espagnol et Technologie */
+.matiere-card.espagnol { background: linear-gradient(135deg, #AD1457, #880E4F); }
+.matiere-card.techno   { background: linear-gradient(135deg, #00838F, #006064); }
