@@ -1,1 +1,76 @@
-[]
+[
+  {
+    "titre": "L'auteure et l'œuvre",
+    "emoji": "✍️",
+    "contenu": [
+      "Les Quatre Filles du docteur March est un roman écrit par Louisa May Alcott, auteure américaine née en 1832 et morte en 1888.",
+      "Le titre original en anglais est Little Women, ce qui signifie Petites femmes.",
+      "Le roman a été publié en 1868, pendant la guerre de Sécession aux États-Unis.",
+      "C'est un roman autobiographique et d'apprentissage : Alcott s'est inspirée de sa propre famille pour l'écrire.",
+      "Jo March, le personnage principal, est l'alter ego de l'auteure.",
+      "Le roman a été adapté au cinéma par Greta Gerwig en 2019.",
+      "L'édition étudiée en classe est celle des Étonnants Classiques, chez Flammarion, version abrégée pour le collège.",
+      "La problématique du roman est : comment quatre sœurs grandissent-elles et trouvent-elles leur place dans la société du dix-neuvième siècle ?"
+    ]
+  },
+  {
+    "titre": "Les personnages",
+    "emoji": "👥",
+    "contenu": [
+      "La famille March est composée de six membres : le père, la mère appelée Marmee, et les quatre sœurs.",
+      "Meg est l'aînée, elle a seize ans. Son vrai prénom est Margaret. Elle est douce, sage et coquette. Son défaut est la vanité.",
+      "Jo a quinze ans. Son vrai prénom est Joséphine. Elle est garçon manqué, impulsive et indépendante. Elle est passionnée d'écriture et c'est l'alter ego de l'auteure. Son défaut est la colère.",
+      "Beth a treize ans. Son vrai prénom est Elizabeth. Elle est timide, généreuse et musicienne. Elle joue du piano. Son défaut est la timidité.",
+      "Amy est la cadette, elle a douze ans. Elle est artiste et coquette. Son défaut est la jalousie.",
+      "Marmee est la mère. Elle est le guide moral et le pilier de la famille en l'absence du père.",
+      "Le père March est aumônier à la guerre de Sécession. Il est absent mais idéalisé. Sa lettre est un texte central du roman.",
+      "Laurie, dont le vrai nom est Théodore Laurence, est le voisin de seize ans. Il est l'ami intime de Jo. Il lui demandera en mariage, mais elle refusera.",
+      "Monsieur Laurence est le grand-père de Laurie. Il offre un piano à Beth, ce qui est un geste clé du roman.",
+      "John Brooke est le précepteur de Laurie. Il se fiancera à Meg."
+    ]
+  },
+  {
+    "titre": "Résumé des grandes parties",
+    "emoji": "📖",
+    "contenu": [
+      "Le roman se divise en trois grandes parties.",
+      "Dans la première partie, intitulée Un Noël sans père, les quatre sœurs renoncent à leurs cadeaux pour aider une famille pauvre. C'est le premier acte de générosité du roman.",
+      "Elles font connaissance avec Laurie, leur voisin riche et solitaire.",
+      "Chaque sœur prend conscience de son défaut principal : la vanité pour Meg, la colère pour Jo, la timidité pour Beth, la jalousie pour Amy.",
+      "Le père envoie une lettre qui les encourage à combattre courageusement leur ennemi intérieur.",
+      "Dans la deuxième partie, Amy brûle le manuscrit de Jo par vengeance. Cela provoque une crise, puis une difficile réconciliation.",
+      "Jo vend ses cheveux pour payer le voyage de Marmee vers son mari malade. C'est un geste de sacrifice et d'amour.",
+      "Beth tombe gravement malade de la scarlatine après avoir aidé une famille pauvre.",
+      "Le père revient de la guerre, affaibli mais vivant.",
+      "Dans la troisième partie, Meg se fiance à John Brooke. Elle choisit l'amour simple plutôt que la richesse.",
+      "Jo refuse la demande en mariage de Laurie. Elle veut rester libre et écrire.",
+      "Amy part en Europe pour développer son art.",
+      "Chaque sœur trouve sa voie : mariage, écriture, musique ou peinture."
+    ]
+  },
+  {
+    "titre": "Les thèmes principaux",
+    "emoji": "💡",
+    "contenu": [
+      "Le premier thème est la sororité et la solidarité. La sororité désigne le lien fort et indéfectible entre sœurs. C'est le mot clé du roman.",
+      "Les sœurs s'entraident malgré leurs disputes, comme la réconciliation de Jo et Amy après la destruction du manuscrit.",
+      "Le deuxième thème est l'éducation morale. Chaque sœur doit surmonter un défaut. Marmee enseigne par l'exemple, pas par la punition.",
+      "Le troisième thème est la place des femmes au dix-neuvième siècle. À cette époque, les femmes devaient se marier et rester au foyer.",
+      "Jo résiste à ces conventions : elle veut écrire et refuse le mariage. C'est pourquoi ce roman est considéré comme féministe avant l'heure.",
+      "Le quatrième thème est la foi et les valeurs morales. Marmee cite souvent la Bible et guide ses filles avec foi. La générosité, l'humilité et le courage sont des vertus valorisées tout au long du roman."
+    ]
+  },
+  {
+    "titre": "Citations et anecdotes",
+    "emoji": "🪞",
+    "contenu": [
+      "Le roman est autobiographique car Alcott s'est inspirée de sa propre vie.",
+      "Dans la réalité, Alcott avait quatre sœurs : Louisa, Anna, Elizabeth et Abigail. Dans le roman, ce sont Meg, Jo, Beth et Amy.",
+      "Comme Jo dans le roman, Alcott elle-même a refusé de se marier pour garder son indépendance.",
+      "Alcott a écrit ce roman sur commande en seulement deux mois. Elle ne pensait pas que les filles aimeraient ce genre d'histoire. C'est devenu un classique mondial.",
+      "Première citation, de Marmee : Il ne faut pas souffrir de ne pas être riche, mais faire de son mieux avec ce que l'on a.",
+      "Deuxième citation, du père dans sa lettre : Combattez courageusement votre ennemi intérieur.",
+      "Troisième citation, de Jo : Je veux faire quelque chose de splendide. Quelque chose de courageux et de noble."
+    ]
+  }
+]
