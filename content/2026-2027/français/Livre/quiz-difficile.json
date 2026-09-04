@@ -1,0 +1,152 @@
+[
+  {
+    "type": "qcm",
+    "question": "Qu'est-ce qu'un roman d'apprentissage (Bildungsroman) ?",
+    "options": [
+      "Un roman d'aventures se déroulant dans une école",
+      "Un roman qui montre un personnage grandissant, surmontant ses défauts et trouvant sa place dans la société",
+      "Un roman écrit par un auteur jeune",
+      "Un roman dont le héros est un enfant"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "Pourquoi dit-on que ce roman est autobiographique ?",
+    "options": [
+      "Parce qu'Alcott a inventé tous les personnages",
+      "Parce qu'Alcott s'est inspirée de sa propre famille et de sa vie pour écrire le roman",
+      "Parce que le roman raconte l'histoire des États-Unis",
+      "Parce qu'Alcott est née dans la même ville que ses personnages"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "Quel est le message central de la lettre du père March à ses filles ?",
+    "options": [
+      "Qu'elles doivent se marier rapidement",
+      "Qu'elles doivent aider les pauvres",
+      "Qu'elles doivent combattre courageusement leur ennemi intérieur (leurs défauts)",
+      "Qu'elles doivent attendre son retour sans s'inquiéter"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "qcm",
+    "question": "En quoi Jo est-elle un personnage féministe pour l'époque ?",
+    "options": [
+      "Elle porte des pantalons",
+      "Elle refuse de se marier et veut écrire et rester indépendante",
+      "Elle dirige une école",
+      "Elle part à la guerre"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "Quelle est la différence entre la version Étonnants Classiques et le roman original ?",
+    "options": [
+      "Les personnages sont différents",
+      "La version Étonnants Classiques est abrégée et annotée pour le collège",
+      "La version Étonnants Classiques est en anglais",
+      "L'histoire se passe à une autre époque"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "Qu'est-ce que la sororité ? Illustre avec le roman.",
+    "options": [
+      "La rivalité entre sœurs — par exemple Amy qui brûle le manuscrit de Jo",
+      "Le lien fort et solidaire entre sœurs — par exemple la réconciliation de Jo et Amy après la crise",
+      "L'amour romantique entre sœurs",
+      "La compétition artistique entre sœurs"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "Pourquoi la scène où Jo vend ses cheveux est-elle importante ?",
+    "options": [
+      "Elle montre que Jo est coquette",
+      "Elle montre que Jo est pauvre",
+      "Elle montre le sacrifice et l'amour de Jo pour sa famille",
+      "Elle montre que Jo veut changer de look"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "qcm",
+    "question": "Quelle guerre forme le contexte historique du roman ?",
+    "options": [
+      "La guerre de Cent Ans",
+      "La Première Guerre mondiale",
+      "La guerre de Sécession (1861-1865)",
+      "La guerre d'Indépendance américaine"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "qcm",
+    "question": "Quel personnage représente la femme traditionnelle du XIXe siècle ?",
+    "options": ["Jo", "Amy", "Beth", "Meg"],
+    "answer": 3
+  },
+  {
+    "type": "qcm",
+    "question": "Qu'est-ce qu'un aumônier ?",
+    "options": [
+      "Un général de l'armée",
+      "Un médecin militaire",
+      "Un prêtre ou pasteur qui soutient spirituellement les soldats",
+      "Un officier chargé des provisions"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Le roman a été publié avant la fin de la guerre de Sécession.",
+    "answer": false
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Alcott était abolitionniste, c'est-à-dire qu'elle luttait pour la suppression de l'esclavage.",
+    "answer": true
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Dans la version Étonnants Classiques, Beth meurt à la fin.",
+    "answer": false
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Meg choisit d'épouser John Brooke parce qu'il est riche.",
+    "answer": false
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Le roman peut être qualifié de féministe car il montre des femmes choisissant librement leur destin.",
+    "answer": true
+  },
+  {
+    "type": "oral",
+    "question": "Explique en quelques phrases pourquoi Jo est le personnage central du roman."
+  },
+  {
+    "type": "oral",
+    "question": "Qu'est-ce que la sororité ? Donne un exemple tiré du roman."
+  },
+  {
+    "type": "oral",
+    "question": "Pourquoi dit-on que ce roman est à la fois autobiographique et initiatique ?"
+  },
+  {
+    "type": "oral",
+    "question": "Explique le contexte historique du roman : où et quand se passe l'histoire, et pourquoi le père est-il absent ?"
+  },
+  {
+    "type": "oral",
+    "question": "Choisis une scène clé du roman et explique pourquoi elle est importante pour comprendre les thèmes de l'œuvre."
+  }
+]
