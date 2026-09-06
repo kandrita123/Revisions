@@ -1,0 +1,69 @@
+[
+  {
+    "titre": "La règle fondamentale",
+    "emoji": "📌",
+    "contenu": [
+      "En anglais, on ne répond jamais juste Yes ou No tout seul. Ce serait trop brusque et incorrect.",
+      "Il faut toujours répéter l'auxiliaire de la question dans la réponse.",
+      "L'auxiliaire, c'est le mot outil qui commence la question : DO, ARE, IS...",
+      "Par exemple, si la question commence par DO, on répond avec DO ou DON'T.",
+      "Si la question commence par ARE ou IS, on répond avec AM, ARE, IS ou leur forme négative."
+    ]
+  },
+  {
+    "titre": "Questions avec DO",
+    "emoji": "🔵",
+    "contenu": [
+      "Quand la question commence par DO, elle porte sur ce qu'on possède ou ce qu'on fait.",
+      "Pour répondre oui, on dit : Yes, I do.",
+      "Pour répondre non, on dit : No, I don't. Don't est la contraction de do et not.",
+      "Exemple : Do you have a dog ? Yes, I do. No, I don't.",
+      "Exemple : Do you have a sister ? Yes, I do. No, I don't.",
+      "Exemple : Do you have a skateboard ? Yes, I do. No, I don't.",
+      "Attention : on ne dit jamais Yes, I have. On répète DO."
+    ]
+  },
+  {
+    "titre": "Questions avec ARE et IS",
+    "emoji": "🟠",
+    "contenu": [
+      "Quand la question commence par ARE ou IS, elle porte sur ce qu'on est, une caractéristique ou un état.",
+      "Pour répondre oui à Are you... ?, on dit : Yes, I am.",
+      "Pour répondre non, on dit : No, I'm not. C'est la contraction de I am not.",
+      "Exemple : Are you sporty ? Yes, I am. No, I'm not.",
+      "Exemple : Are you funny ? Yes, I am. No, I'm not.",
+      "Exemple : Are you creative ? Yes, I am. No, I'm not.",
+      "Pour une question avec IS : Is she funny ? On répond : Yes, she is. No, she isn't.",
+      "Attention : on ne dit jamais Yes, I do pour répondre à une question avec ARE."
+    ]
+  },
+  {
+    "titre": "Les 9 questions de la fiche d'activité",
+    "emoji": "✏️",
+    "contenu": [
+      "Voici les neuf questions de ta fiche d'activité avec les réponses correctes.",
+      "Has a dog : Do you have a dog ? Yes, I do. No, I don't.",
+      "Is twelve years old : Are you twelve years old ? Yes, I am. No, I'm not.",
+      "Is sporty : Are you sporty ? Yes, I am. No, I'm not.",
+      "Is funny : Are you funny ? Yes, I am. No, I'm not.",
+      "Has a sister : Do you have a sister ? Yes, I do. No, I don't.",
+      "Has a video game console : Do you have a video game console ? Yes, I do. No, I don't.",
+      "Has a skateboard : Do you have a skateboard ? Yes, I do. No, I don't.",
+      "Has a musical instrument : Do you have a musical instrument ? Yes, I do. No, I don't.",
+      "Is creative : Are you creative ? Yes, I am. No, I'm not."
+    ]
+  },
+  {
+    "titre": "Pièges à éviter",
+    "emoji": "⚠️",
+    "contenu": [
+      "Voici les erreurs les plus fréquentes à éviter.",
+      "Piège numéro un : répondre juste Yes ou No. C'est incorrect, il faut toujours ajouter l'auxiliaire.",
+      "Piège numéro deux : confondre DO et AM. À Are you sporty ?, on répond Yes, I am. Jamais Yes, I do.",
+      "Piège numéro trois : à Do you have a cat ?, on répond Yes, I do. Jamais Yes, I am.",
+      "La règle d'or : l'auxiliaire de la réponse doit toujours être le même que celui de la question.",
+      "DO dans la question : DO ou DON'T dans la réponse.",
+      "ARE dans la question : AM ou I'M NOT dans la réponse."
+    ]
+  }
+]
