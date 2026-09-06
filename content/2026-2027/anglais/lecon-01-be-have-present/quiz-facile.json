@@ -1,0 +1,20 @@
+[
+  {"type":"qcm","question":"Comment dit-on 'je' en anglais ?","options":["me","I","my","i"],"answer":1},
+  {"type":"qcm","question":"Quelle est la traduction de 'you' ?","options":["il","je","tu / vous","nous"],"answer":2},
+  {"type":"qcm","question":"Complète : He ___ a dog.","options":["have","am","has","are"],"answer":2},
+  {"type":"qcm","question":"Complète : I ___ 12 years old.","options":["have","has","are","am"],"answer":3},
+  {"type":"qcm","question":"Complète : They ___ very nice.","options":["is","am","has","are"],"answer":3},
+  {"type":"qcm","question":"Complète : She ___ black hair.","options":["are","have","has","is"],"answer":2},
+  {"type":"qcm","question":"Quelle est la contraction de 'I am' ?","options":["I'm","I'd","I've","I'll"],"answer":0},
+  {"type":"qcm","question":"Quelle est la contraction de 'he is' ?","options":["he'd","he's","he'll","he've"],"answer":1},
+  {"type":"qcm","question":"Complète : We ___ ready for school.","options":["is","has","am","are"],"answer":3},
+  {"type":"qcm","question":"Pour dire l'âge en anglais, on utilise :","options":["HAVE","DO","BE","GET"],"answer":2},
+  {"type":"vrai-faux","question":"'I' (je) s'écrit toujours en majuscule en anglais.","answer":true},
+  {"type":"vrai-faux","question":"'He have a cat' est correct.","answer":false},
+  {"type":"vrai-faux","question":"'You' peut signifier 'tu' et 'vous' en anglais.","answer":true},
+  {"type":"vrai-faux","question":"'I have 12 years old' est correct.","answer":false},
+  {"type":"vrai-faux","question":"La contraction de 'we are' est 'we're'.","answer":true},
+  {"type":"vrai-faux","question":"'She has' est correct pour parler de she.","answer":true},
+  {"type":"vrai-faux","question":"'It' s'utilise pour les personnes.","answer":false},
+  {"type":"vrai-faux","question":"'They is nice' est correct.","answer":false}
+]
