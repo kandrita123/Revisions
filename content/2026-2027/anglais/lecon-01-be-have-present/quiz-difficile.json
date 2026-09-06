@@ -1,0 +1,22 @@
+[
+  {"type":"qcm","question":"Laquelle de ces phrases est correcte ?","options":["I have 12 years old.","I am 12 years.","I am 12 years old.","I is 12 years old."],"answer":2},
+  {"type":"qcm","question":"Laquelle de ces phrases est INCORRECTE ?","options":["She has blue eyes.","He has a dog.","They have a cat.","We has a car."],"answer":3},
+  {"type":"qcm","question":"Comment dire 'Elle a les cheveux noirs' ?","options":["She is black hair.","She have black hair.","She has black hair.","Her has black hair."],"answer":2},
+  {"type":"qcm","question":"Paddington is a bear from Peru. Ici, BE s'utilise pour :","options":["Dire ce qu'il possède","Se présenter / dire d'où il vient","Décrire physiquement","Dire son âge"],"answer":1},
+  {"type":"qcm","question":"Quelle est la forme contractée de 'they are' ?","options":["they'd","they've","they're","they'll"],"answer":2},
+  {"type":"qcm","question":"He has a passion for marmalade sandwiches. Ici, HAVE s'utilise pour :","options":["Dire son âge","Se présenter","Dire ce qu'il possède / aime","Dire sa nationalité"],"answer":2},
+  {"type":"qcm","question":"Complète : My classmates ___ very nice.","options":["is","am","has","are"],"answer":3},
+  {"type":"qcm","question":"Complète : It ___ a new blue backpack.","options":["have","am","has","are"],"answer":2},
+  {"type":"qcm","question":"Pourquoi dit-on 'I am' et pas 'I have' pour l'âge ?","options":["Parce que c'est une règle irrégulière","Parce qu'en anglais l'âge est un état (BE), pas une possession (HAVE)","Parce que have ne s'utilise pas avec I","Parce que am est plus court"],"answer":1},
+  {"type":"qcm","question":"Laquelle de ces phrases utilise correctement BE et HAVE ?","options":["I am a dog and she has French.","I have French and she is a dog.","I am French and she has a dog.","I has French and she am a dog."],"answer":2},
+  {"type":"vrai-faux","question":"'He have' et 'she have' sont des formes correctes.","answer":false},
+  {"type":"vrai-faux","question":"On peut utiliser HAVE pour décrire l'apparence physique (ex: She has blue eyes).","answer":true},
+  {"type":"vrai-faux","question":"'I'm' est la contraction de 'I am'.","answer":true},
+  {"type":"vrai-faux","question":"BE s'utilise pour dire ce qu'on possède.","answer":false},
+  {"type":"vrai-faux","question":"'It's' est la contraction de 'it is'.","answer":true},
+  {"type":"oral","question":"Dis la conjugaison complète de BE au présent (6 formes)."},
+  {"type":"oral","question":"Dis la conjugaison complète de HAVE au présent. Attention à he/she/it !"},
+  {"type":"oral","question":"Explique en français la différence entre BE et HAVE. Donne un exemple pour chacun."},
+  {"type":"oral","question":"Présente-toi en 4 phrases en utilisant BE et HAVE au moins une fois chacun."},
+  {"type":"oral","question":"Décris Paddington en 3 phrases en utilisant correctement BE et HAVE."}
+]
