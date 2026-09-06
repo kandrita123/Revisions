@@ -1,0 +1,16 @@
+[
+  {"question":"Quelle est la règle des réponses courtes en anglais ?","reponse":"On ne répond jamais juste 'Yes' ou 'No'. On répète l'auxiliaire de la question : Do → do/don't, Are/Is → am/are/is + not.","indice":"💡 Regarde le premier mot de la question..."},
+  {"question":"Comment répond-on 'Oui' à une question avec DO ?","reponse":"Yes, I do. (on répète DO)","indice":"💡 La question commence par DO → on répond avec..."},
+  {"question":"Comment répond-on 'Non' à une question avec DO ?","reponse":"No, I don't. (don't = do + not contracté)","indice":"💡 Do + not = ?"},
+  {"question":"Comment répond-on 'Oui' à une question avec ARE ?","reponse":"Yes, I am. (on répète AM — forme de BE pour I)","indice":"💡 La question commence par ARE → on répond avec le verbe BE..."},
+  {"question":"Comment répond-on 'Non' à une question avec ARE ?","reponse":"No, I'm not. (I am not → I'm not)","indice":"💡 I am not → contraction ?"},
+  {"question":"Quelle question faut-il poser pour '…has a dog' ?","reponse":"Do you have a dog? (has → have dans la question avec DO)","indice":"💡 Has = HAVE → quel auxiliaire utilise-t-on ?"},
+  {"question":"Quelle question faut-il poser pour '…is sporty' ?","reponse":"Are you sporty? (is → are dans la question)","indice":"💡 Is = BE → quel auxiliaire utilise-t-on ?"},
+  {"question":"Quelle question faut-il poser pour '…is creative' ?","reponse":"Are you creative?","indice":"💡 Creative = adjectif → verbe BE..."},
+  {"question":"Quelle question faut-il poser pour '…has a musical instrument' ?","reponse":"Do you have a musical instrument?","indice":"💡 Has = HAVE → auxiliaire DO..."},
+  {"question":"Quelle question faut-il poser pour '…is 12 years old' ?","reponse":"Are you 12 years old? (âge = BE)","indice":"💡 L'âge utilise BE en anglais..."},
+  {"question":"Comment dit-on 'Non' à 'Is she funny?' ?","reponse":"No, she isn't. (isn't = is + not)","indice":"💡 She is → she isn't..."},
+  {"question":"Comment dit-on 'Oui' à 'Are they sporty?' ?","reponse":"Yes, they are.","indice":"💡 La question commence par ARE → they are..."},
+  {"question":"Qu'est-ce que don't ?","reponse":"Don't = do + not (contracté). Ex: No, I don't.","indice":"💡 Contraction de deux mots..."},
+  {"question":"Quel est le piège classique à éviter ?","reponse":"Confondre DO et AM : à 'Are you...?' → Yes, I AM (pas 'Yes, I do') / à 'Do you...?' → Yes, I DO (pas 'Yes, I am')","indice":"💡 L'auxiliaire de la réponse doit être le MÊME que celui de la question..."}
+]
