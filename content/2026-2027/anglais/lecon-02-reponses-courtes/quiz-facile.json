@@ -1,0 +1,18 @@
+[
+  {"type":"qcm","question":"Comment répond-on 'Oui' à 'Do you have a dog?' ?","options":["Yes, I am.","Yes, I do.","Yes, I have.","Yes."],"answer":1},
+  {"type":"qcm","question":"Comment répond-on 'Non' à 'Do you have a dog?' ?","options":["No, I don't.","No, I am not.","No, I haven't.","No."],"answer":0},
+  {"type":"qcm","question":"Comment répond-on 'Oui' à 'Are you sporty?' ?","options":["Yes, I do.","Yes, I have.","Yes, I am.","Yes."],"answer":2},
+  {"type":"qcm","question":"Comment répond-on 'Non' à 'Are you funny?' ?","options":["No, I don't.","No, I'm not.","No, I haven't.","No, I isn't."],"answer":1},
+  {"type":"qcm","question":"La question 'Do you have a sister?' commence par quel auxiliaire ?","options":["ARE","IS","DO","HAVE"],"answer":2},
+  {"type":"qcm","question":"La question 'Are you creative?' commence par quel auxiliaire ?","options":["DO","HAVE","IS","ARE"],"answer":3},
+  {"type":"qcm","question":"Quelle question correspond à '…has a skateboard' ?","options":["Are you a skateboard?","Do you have a skateboard?","Is you sporty?","Have you a skateboard?"],"answer":1},
+  {"type":"qcm","question":"Quelle question correspond à '…is 12 years old' ?","options":["Do you have 12 years old?","Have you 12 years?","Are you 12 years old?","Is you 12?"],"answer":2},
+  {"type":"qcm","question":"Comment dit-on 'Non' à 'Is she creative?' ?","options":["No, she don't.","No, she isn't.","No, she aren't.","No, she hasn't."],"answer":1},
+  {"type":"qcm","question":"Comment dit-on 'Oui' à 'Are they sporty?' ?","options":["Yes, they do.","Yes, they have.","Yes, they is.","Yes, they are."],"answer":3},
+  {"type":"vrai-faux","question":"On peut répondre juste 'Yes' ou 'No' en anglais.","answer":false},
+  {"type":"vrai-faux","question":"À 'Do you have a dog?', on répond 'Yes, I do.'","answer":true},
+  {"type":"vrai-faux","question":"À 'Are you sporty?', on répond 'Yes, I do.'","answer":false},
+  {"type":"vrai-faux","question":"Don't = do + not (contracté).","answer":true},
+  {"type":"vrai-faux","question":"À 'Are you funny?', on répond 'Yes, I am.'","answer":true},
+  {"type":"vrai-faux","question":"À 'Do you have a cat?', on répond 'Yes, I am.'","answer":false}
+]
