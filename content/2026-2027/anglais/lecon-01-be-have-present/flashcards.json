@@ -1,0 +1,16 @@
+[
+  {"question":"Comment dit-on 'je' en anglais ?","reponse":"I — toujours avec une majuscule !","indice":"💡 Une seule lettre, toujours grande..."},
+  {"question":"À quoi sert le verbe BE ?","reponse":"BE (être) sert à se présenter, dire son âge, sa nationalité, sa personnalité, d'où on vient.","indice":"💡 État, identité, caractéristique..."},
+  {"question":"À quoi sert le verbe HAVE ?","reponse":"HAVE (avoir) sert à dire ce qu'on possède, ou décrire physiquement (have blue eyes, have a dog...).","indice":"💡 Possession, description physique..."},
+  {"question":"Conjugue BE au présent (6 formes complètes).","reponse":"I am / you are / he·she·it is / we are / you are / they are","indice":"💡 Une forme pour I, une pour he/she/it, are pour les autres..."},
+  {"question":"Conjugue HAVE au présent (6 formes).","reponse":"I have / you have / he·she·it HAS / we have / you have / they have","indice":"💡 Attention à la 3ème personne du singulier !"},
+  {"question":"Quelles sont les contractions de BE ?","reponse":"I'm / you're / he's / she's / it's / we're / you're / they're","indice":"💡 On remplace le 'a' de 'am/are' ou le 'i' de 'is' par une apostrophe..."},
+  {"question":"Quel verbe utilise-t-on pour dire l'âge en anglais ?","reponse":"BE — on dit 'I am 12 years old', jamais 'I have 12 years old' !","indice":"💡 En français on dit 'avoir' mais en anglais c'est différent..."},
+  {"question":"Complète : He ___ a dog. (BE ou HAVE ?)","reponse":"He HAS a dog. (HAVE → HAS avec he/she/it)","indice":"💡 Il possède quelque chose → quel verbe ?"},
+  {"question":"Complète : She ___ French. (BE ou HAVE ?)","reponse":"She IS French. (nationalité → BE)","indice":"💡 La nationalité, c'est un état ou une possession ?"},
+  {"question":"Quel pronom utilise-t-on pour un animal ou un objet ?","reponse":"IT — ex: The cat is black → It is black / It's black.","indice":"💡 Ni he (garçon) ni she (fille)..."},
+  {"question":"Complète : My classmates ___ very nice.","reponse":"My classmates ARE very nice. (they → are)","indice":"💡 Classmates = plusieurs personnes → quel pronom ?"},
+  {"question":"Que signifie 'you' en anglais ?","reponse":"'You' signifie à la fois 'tu' ET 'vous' — il n'y a pas de distinction en anglais.","indice":"💡 Un seul mot pour deux mots français..."},
+  {"question":"Quelle est la règle pour he/she/it avec HAVE ?","reponse":"Avec he, she, it → on dit HAS (pas have). Ex: She has a cat.","indice":"💡 La 3ème personne du singulier change..."},
+  {"question":"Décris Wednesday Addams avec BE et HAVE.","reponse":"She is a student. She has black hair. She has a black dress. She is serious. She has 1 brother.","indice":"💡 Utilise is pour l'état/personnalité et has pour ce qu'elle possède..."}
+]
