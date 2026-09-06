@@ -1,0 +1,22 @@
+[
+  {"type":"qcm","question":"Pourquoi ne peut-on pas répondre juste 'Yes' ou 'No' en anglais ?","options":["C'est trop court","Il faut toujours répéter l'auxiliaire de la question","C'est impoli","On doit toujours utiliser un verbe complet"],"answer":1},
+  {"type":"qcm","question":"Quelle réponse est correcte à 'Do you have a musical instrument?' ?","options":["Yes, I am.","Yes, I have.","Yes, I do.","Yes, I got."],"answer":2},
+  {"type":"qcm","question":"Comment forme-t-on 'don't' ?","options":["do + no","do + not (contracté)","don + t","does + not"],"answer":1},
+  {"type":"qcm","question":"Quelle réponse est correcte à 'Is he 12 years old?' ?","options":["Yes, he do.","Yes, he am.","Yes, he has.","Yes, he is."],"answer":3},
+  {"type":"qcm","question":"Parmi ces réponses, laquelle est FAUSSE ?","options":["Yes, I do.","No, I'm not.","Yes, I am.","Yes, I does."],"answer":3},
+  {"type":"qcm","question":"À quelle question répond-on 'Yes, they are.' ?","options":["Do they have a dog?","Are they sporty?","Is they creative?","Have they a cat?"],"answer":1},
+  {"type":"qcm","question":"Comment dit-on 'Non' à 'Are they funny?' ?","options":["No, they don't.","No, they isn't.","No, they aren't.","No, they hasn't."],"answer":2},
+  {"type":"qcm","question":"Quelle question faut-il poser pour la case '…has a video game console' ?","options":["Are you have a video game console?","Do you have a video game console?","Is you have a video game console?","Have you a video game console?"],"answer":1},
+  {"type":"qcm","question":"Comment sait-on si on doit répondre avec DO ou avec BE ?","options":["On regarde le sujet","On regarde le complément","On regarde l'auxiliaire qui commence la question","On regarde la fin de la question"],"answer":2},
+  {"type":"qcm","question":"Laquelle de ces paires question/réponse est CORRECTE ?","options":["Are you creative? → Yes, I do.","Do you have a cat? → Yes, I am.","Are you sporty? → Yes, I am.","Do you have a dog? → Yes, I have."],"answer":2},
+  {"type":"vrai-faux","question":"À 'Do you have a skateboard?', on répond 'Yes, I do.' ou 'No, I don't.'","answer":true},
+  {"type":"vrai-faux","question":"'No, I isn't' est une réponse correcte.","answer":false},
+  {"type":"vrai-faux","question":"À 'Is she funny?', on répond 'Yes, she is.' ou 'No, she isn't.'","answer":true},
+  {"type":"vrai-faux","question":"On peut utiliser DO pour répondre à une question avec ARE.","answer":false},
+  {"type":"vrai-faux","question":"'I'm not' est la forme contractée de 'I am not'.","answer":true},
+  {"type":"oral","question":"Pose les 9 questions de la fiche d'activité et donne les deux réponses possibles pour chacune."},
+  {"type":"oral","question":"Explique la règle des réponses courtes en anglais. Pourquoi ne dit-on pas juste 'Yes' ou 'No' ?"},
+  {"type":"oral","question":"Quelle est la différence entre répondre à une question avec DO et une question avec ARE ? Donne un exemple de chaque."},
+  {"type":"oral","question":"Ton camarade te pose ces questions. Réponds en vrai : Are you creative? Do you have a dog? Are you 12 years old? Do you have a sister?"},
+  {"type":"oral","question":"Invente 3 questions avec DO et 3 questions avec ARE, puis donne les réponses courtes."}
+]
