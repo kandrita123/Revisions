@@ -1,0 +1,69 @@
+[
+  {
+    "titre": "Les pronoms personnels sujets",
+    "emoji": "👤",
+    "contenu": [
+      "En anglais, les pronoms personnels sujets sont les mots qui remplacent le nom devant le verbe.",
+      "I signifie je. Attention : I s'écrit toujours avec une majuscule en anglais.",
+      "You signifie à la fois tu et vous. L'anglais ne fait pas cette distinction.",
+      "He signifie il, pour un garçon ou un homme.",
+      "She signifie elle, pour une fille ou une femme.",
+      "It signifie il ou elle, pour un animal ou un objet.",
+      "We signifie nous.",
+      "You au pluriel signifie vous, c'est le même mot qu'au singulier.",
+      "They signifie ils ou elles, aussi bien au masculin qu'au féminin."
+    ]
+  },
+  {
+    "titre": "Le verbe BE au présent",
+    "emoji": "🔵",
+    "contenu": [
+      "Le verbe BE signifie être en anglais.",
+      "On utilise BE pour se présenter, dire son âge, sa nationalité ou sa personnalité.",
+      "La conjugaison complète est : I am, you are, he is, she is, it is, we are, you are, they are.",
+      "À l'oral, on utilise souvent les formes contractées.",
+      "I am devient I'm. You are devient you're. He is devient he's. She is devient she's. It is devient it's. We are devient we're. They are devient they're.",
+      "Exemples : I am twelve years old signifie j'ai douze ans.",
+      "She is French signifie elle est française.",
+      "It's true signifie c'est vrai — c'est la contraction de it is."
+    ]
+  },
+  {
+    "titre": "Le verbe HAVE au présent",
+    "emoji": "🟢",
+    "contenu": [
+      "Le verbe HAVE signifie avoir en anglais.",
+      "On utilise HAVE pour dire ce que l'on possède ou pour décrire physiquement quelqu'un.",
+      "La conjugaison est : I have, you have, he has, she has, it has, we have, you have, they have.",
+      "Attention ! Avec he, she et it, on dit HAS et non have. C'est la seule forme différente.",
+      "Exemples : I have a dog signifie j'ai un chien.",
+      "He has a new backpack signifie il a un nouveau sac à dos.",
+      "She has black hair signifie elle a les cheveux noirs."
+    ]
+  },
+  {
+    "titre": "BE ou HAVE — comment choisir ?",
+    "emoji": "🎯",
+    "contenu": [
+      "Comment choisir entre BE et HAVE ? Voici la règle.",
+      "On utilise BE pour dire ce qu'on est : son identité, sa nationalité, sa personnalité, son état.",
+      "Par exemple : I am French. She is funny. He is sporty.",
+      "On utilise HAVE pour dire ce qu'on possède ou pour décrire physiquement.",
+      "Par exemple : I have a dog. She has blue eyes. They have a console.",
+      "Attention au piège de l'âge ! En français on dit j'ai douze ans avec le verbe avoir.",
+      "Mais en anglais on dit I am twelve years old avec le verbe BE. Jamais I have twelve years old !"
+    ]
+  },
+  {
+    "titre": "Pièges à éviter",
+    "emoji": "⚠️",
+    "contenu": [
+      "Voici les erreurs les plus fréquentes à éviter.",
+      "Erreur numéro un : I have twelve years old. C'est faux. Il faut dire I am twelve years old.",
+      "Erreur numéro deux : He have a dog. C'est faux. Avec he, she ou it, on dit always HAS. Il faut dire He has a dog.",
+      "Erreur numéro trois : i am happy avec un i minuscule. C'est faux. I s'écrit toujours avec une majuscule.",
+      "Erreur numéro quatre : They is nice. C'est faux. Avec they, on dit are. Il faut dire They are nice.",
+      "Pour résumer : I s'écrit toujours en majuscule. He, she, it prennent HAS avec HAVE. L'âge se construit avec BE."
+    ]
+  }
+]
