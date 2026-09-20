@@ -1,0 +1,20 @@
+[
+  {"type":"qcm","question":"Que signifie CAN en français ?","options":["je dois","je veux","je sais / je peux","j'ai"],"answer":2},
+  {"type":"qcm","question":"Complète : I ___ sing.","options":["cans","can","canes","to can"],"answer":1},
+  {"type":"qcm","question":"Complète : She ___ play the piano. (négatif)","options":["can't","cans't","cannot's","don't can"],"answer":0},
+  {"type":"qcm","question":"Comment poser une question avec CAN ?","options":["I can you swim?","Do you can swim?","Can you swim?","You can swim?"],"answer":2},
+  {"type":"qcm","question":"Laquelle est correcte ?","options":["I can to sing.","I can singing.","I can sings.","I can sing."],"answer":3},
+  {"type":"qcm","question":"Complète : He ___ dance. (il ne sait pas danser)","options":["can","cans","can't","don't"],"answer":2},
+  {"type":"qcm","question":"CAN'T est la contraction de :","options":["can not","could not","can never","can no"],"answer":0},
+  {"type":"qcm","question":"Laquelle est correcte avec LIKE ?","options":["I like swim.","I like to swimming.","I like swimming.","I like swimmed."],"answer":2},
+  {"type":"qcm","question":"Avec he/she/it, LIKE prend :","options":["likes","like","likeing","liked"],"answer":0},
+  {"type":"qcm","question":"Réponse courte à 'Can you swim?' — OUI :","options":["Yes, I do.","Yes, I am.","Yes, I can.","Yes, I swim."],"answer":2},
+  {"type":"qcm","question":"Complète : Spiderman ___ crawl on walls.","options":["can't","don't","can","is"],"answer":2},
+  {"type":"qcm","question":"LIKE + V-ing, c'est :","options":["pour dire où on va","pour dire ce qu'on aime","pour poser une question","pour dire ce qu'on a"],"answer":1},
+  {"type":"vrai-faux","question":"'I can sings' est correct.","answer":false},
+  {"type":"vrai-faux","question":"'She can't play the piano' est correct.","answer":true},
+  {"type":"vrai-faux","question":"'Can you play an instrument?' est une question correcte.","answer":true},
+  {"type":"vrai-faux","question":"CAN change selon le sujet (he cans, she cans...).","answer":false},
+  {"type":"vrai-faux","question":"'I like swimming' est correct.","answer":true},
+  {"type":"vrai-faux","question":"'I can to sing' est correct.","answer":false}
+]
