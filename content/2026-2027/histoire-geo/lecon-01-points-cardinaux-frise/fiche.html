@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Points cardinaux & Frise chronologique</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 10px; background: #fff; }
+  h2 { color: #E65100; text-align: center; margin: 8px 0; }
+  h3 { color: #E65100; border-left: 5px solid #E65100; padding-left: 10px; background: #FFF3E0; margin: 14px 0 6px; padding: 8px 10px; border-radius: 4px; }
+  h4 { color: #1565C0; margin: 10px 0 4px; }
+  table { border-collapse: collapse; width: 100%; margin: 8px 0; }
+  th { background: #E65100; color: white; padding: 7px; font-size: 14px; }
+  td { border: 1px solid #ddd; padding: 6px 8px; font-size: 14px; }
+  tr:nth-child(even) td { background: #FFF3E0; }
+  .note { background: #FFF9C4; border-left: 4px solid #F57F17; padding: 8px 12px; border-radius: 4px; margin: 8px 0; font-size: 14px; }
+  .periode { display: inline-block; padding: 4px 10px; border-radius: 4px; color: white; font-weight: bold; margin: 2px; font-size: 13px; }
+  .prehistoire { background: #4527A0; }
+  .antiquite { background: #00695C; }
+  .moyenage { background: #1565C0; }
+  .moderne { background: #E65100; }
+  .contemporaine { background: #B71C1C; }
+
+  /* CARTE INTERACTIVE */
+  .carte-section { margin: 14px 0; }
+  .carte-container { position: relative; width: 100%; max-width: 700px; margin: 0 auto; }
+  .carte-container img { width: 100%; display: block; border-radius: 6px; }
+
+  /* Zones numérotées sur la carte */
+  .zone { position: absolute; background: rgba(255,255,255,0.85); border: 2px solid #333; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px; cursor: default; }
+  .zone.continent { border-color: #2E7D32; color: #2E7D32; }
+  .zone.ocean { border-color: #1565C0; color: #1565C0; }
+  .zone.ligne { border-color: #B71C1C; color: #B71C1C; }
+
+  /* DRAG AND DROP */
+  .drag-section { margin: 16px 0; }
+  .drag-section h4 { color: #E65100; }
+  .labels-pool { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px; background: #f5f5f5; border-radius: 8px; min-height: 50px; margin-bottom: 10px; }
+  .label-item { padding: 6px 12px; border-radius: 20px; cursor: grab; font-size: 13px; font-weight: bold; color: white; user-select: none; touch-action: none; }
+  .label-item.continent-label { background: #2E7D32; }
+  .label-item.ocean-label { background: #1565C0; }
+  .label-item.ligne-label { background: #B71C1C; }
+  .label-item.dragging { opacity: 0.4; }
+
+  .drop-zones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 8px 0; }
+  .drop-zone { border: 2px dashed #999; border-radius: 8px; padding: 8px; min-height: 45px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #666; text-align: center; background: #fafafa; transition: background 0.2s; }
+  .drop-zone.over { background: #E8F5E9; border-color: #2E7D32; }
+  .drop-zone.correct { background: #E8F5E9; border-color: #2E7D32; border-style: solid; }
+  .drop-zone.wrong { background: #FFEBEE; border-color: #B71C1C; border-style: solid; }
+  .drop-zone .zone-num { font-size: 10px; color: #999; display: block; margin-bottom: 3px; }
+  .drop-zone .placed-label { padding: 4px 8px; border-radius: 12px; color: white; font-size: 12px; font-weight: bold; }
+
+  .btn { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: bold; margin: 4px; }
+  .btn-check { background: #E65100; color: white; }
+  .btn-reset { background: #666; color: white; }
+  .score { text-align: center; font-size: 16px; font-weight: bold; margin: 10px 0; padding: 10px; border-radius: 8px; }
+  .score.good { background: #E8F5E9; color: #2E7D32; }
+  .score.bad { background: #FFEBEE; color: #B71C1C; }
+</style>
+</head>
+<body>
+
+<h2>Points cardinaux & Frise chronologique</h2>
+<p style="text-align:center;color:#666;font-size:13px;margin:4px 0 12px"><em>Comment s'orienter dans l'espace et dans le temps ?</em></p>
+
+<h3>I. Les points cardinaux</h3>
+<table>
+  <tr><th>Point cardinal</th><th>Synonyme(s)</th></tr>
+  <tr><td><strong>Nord 🔼</strong></td><td>Boréal, Septentrional</td></tr>
+  <tr><td><strong>Sud 🔽</strong></td><td>Austral, Méridional</td></tr>
+  <tr><td><strong>Est ▶</strong></td><td>Oriental</td></tr>
+  <tr><td><strong>Ouest ◀</strong></td><td>Occidental</td></tr>
+</table>
+<div class="note">💡 <strong>ORANGE</strong> : le <strong>O</strong> est avant le <strong>E</strong> → <strong>O</strong>uest à gauche, <strong>E</strong>st à droite</div>
+
+<h3>II. Les continents et les océans</h3>
+
+<!-- CARTE NUMÉROTÉE -->
+<div class="carte-section">
+  <h4>🗺️ Carte numérotée — repère chaque zone :</h4>
+  <div class="carte-container" id="carte">
+    <img src="https://kandrita123.github.io/Revisions/content/2026-2027/histoire-geo/lecon-01-points-cardinaux-frise/carte_vierge.jpg" alt="Planisphère" id="carteImg">
+    <!-- Les zones sont positionnées en % pour s'adapter à toutes les tailles -->
+    <div class="zone continent" style="left:13%;top:22%;width:12%;height:7%">1</div>
+    <div class="zone continent" style="left:17%;top:53%;width:12%;height:7%">2</div>
+    <div class="zone continent" style="left:43%;top:23%;width:10%;height:7%">3</div>
+    <div class="zone continent" style="left:43%;top:38%;width:10%;height:7%">4</div>
+    <div class="zone continent" style="left:58%;top:18%;width:10%;height:7%">5</div>
+    <div class="zone continent" style="left:72%;top:52%;width:10%;height:7%">6</div>
+    <div class="zone continent" style="left:43%;top:78%;width:12%;height:7%">7</div>
+    <div class="zone ocean" style="left:25%;top:35%;width:13%;height:7%">8</div>
+    <div class="zone ocean" style="left:72%;top:35%;width:13%;height:7%">9</div>
+    <div class="zone ocean" style="left:4%;top:42%;width:9%;height:7%">10</div>
+    <div class="zone ocean" style="left:53%;top:53%;width:11%;height:7%">11</div>
+    <div class="zone ocean" style="left:27%;top:78%;width:13%;height:6%">12</div>
+    <div class="zone ligne" style="left:4%;top:29%;width:9%;height:5%">13</div>
+    <div class="zone ligne" style="left:4%;top:44%;width:9%;height:5%" style="display:none">14</div>
+    <div class="zone ligne" style="left:4%;top:57%;width:9%;height:5%">15</div>
+  </div>
+</div>
+
+<table style="margin-top:10px">
+  <tr><th>N°</th><th>Réponse</th><th>Type</th></tr>
+  <tr><td><strong style="color:#2E7D32">1</strong></td><td>Amérique du Nord</td><td><span class="periode prehistoire">Continent</span></td></tr>
+  <tr><td><strong style="color:#2E7D32">2</strong></td><td>Amérique du Sud</td><td><span class="periode prehistoire">Continent</span></td></tr>
+  <tr><td><strong style="color:#2E7D32">3</strong></td><td>Europe</td><td><span class="periode prehistoire">Continent</span></td></tr>
+  <tr><td><strong style="color:#2E7D32">4</strong></td><td>Afrique</td><td><span class="periode prehistoire">Continent</span></td></tr>
+  <tr><td><strong style="color:#2E7D32">5</strong></td><td>Asie</td><td><span class="periode prehistoire">Continent</span></td></tr>
+  <tr><td><strong style="color:#2E7D32">6</strong></td><td>Océanie</td><td><span class="periode prehistoire">Continent</span></td></tr>
+  <tr><td><strong style="color:#2E7D32">7</strong></td><td>Antarctique</td><td><span class="periode prehistoire">Continent</span></td></tr>
+  <tr><td><strong style="color:#1565C0">8</strong></td><td>Océan Atlantique</td><td><span class="periode antiquite">Océan</span></td></tr>
+  <tr><td><strong style="color:#1565C0">9</strong></td><td>Océan Pacifique</td><td><span class="periode antiquite">Océan</span></td></tr>
+  <tr><td><strong style="color:#1565C0">10</strong></td><td>Océan Pacifique (×2 car Terre ronde)</td><td><span class="periode antiquite">Océan</span></td></tr>
+  <tr><td><strong style="color:#1565C0">11</strong></td><td>Océan Indien</td><td><span class="periode antiquite">Océan</span></td></tr>
+  <tr><td><strong style="color:#1565C0">12</strong></td><td>Océan Glacial Antarctique</td><td><span class="periode antiquite">Océan</span></td></tr>
+  <tr><td><strong style="color:#B71C1C">13</strong></td><td>Tropique du Cancer (Nord)</td><td><span class="periode contemporaine">Ligne</span></td></tr>
+  <tr><td><strong style="color:#B71C1C">14</strong></td><td>Équateur</td><td><span class="periode contemporaine">Ligne</span></td></tr>
+  <tr><td><strong style="color:#B71C1C">15</strong></td><td>Tropique du Capricorne (Sud)</td><td><span class="periode contemporaine">Ligne</span></td></tr>
+</table>
+
+<!-- DRAG AND DROP -->
+<div class="drag-section">
+  <h4>🎮 Exercice : place les étiquettes sur la bonne case</h4>
+  <p style="font-size:13px;color:#666">Glisse chaque étiquette vers la case qui lui correspond (numéro indiqué).</p>
+
+  <div class="labels-pool" id="pool">
+    <div class="label-item continent-label" draggable="true" data-answer="1">Amérique du Nord</div>
+    <div class="label-item continent-label" draggable="true" data-answer="2">Amérique du Sud</div>
+    <div class="label-item continent-label" draggable="true" data-answer="3">Europe</div>
+    <div class="label-item continent-label" draggable="true" data-answer="4">Afrique</div>
+    <div class="label-item continent-label" draggable="true" data-answer="5">Asie</div>
+    <div class="label-item continent-label" draggable="true" data-answer="6">Océanie</div>
+    <div class="label-item continent-label" draggable="true" data-answer="7">Antarctique</div>
+    <div class="label-item ocean-label" draggable="true" data-answer="8">Océan Atlantique</div>
+    <div class="label-item ocean-label" draggable="true" data-answer="9">Océan Pacifique (Est)</div>
+    <div class="label-item ocean-label" draggable="true" data-answer="10">Océan Pacifique (Ouest)</div>
+    <div class="label-item ocean-label" draggable="true" data-answer="11">Océan Indien</div>
+    <div class="label-item ocean-label" draggable="true" data-answer="12">Océan Gl. Antarctique</div>
+    <div class="label-item ligne-label" draggable="true" data-answer="13">Tropique du Cancer</div>
+    <div class="label-item ligne-label" draggable="true" data-answer="14">Équateur</div>
+    <div class="label-item ligne-label" draggable="true" data-answer="15">Tropique du Capricorne</div>
+  </div>
+
+  <div class="drop-zones" id="dropZones">
+    <!-- générées par JS -->
+  </div>
+
+  <div style="text-align:center;margin-top:10px">
+    <button class="btn btn-check" onclick="checkAnswers()">✅ Vérifier</button>
+    <button class="btn btn-reset" onclick="resetDrag()">🔄 Recommencer</button>
+  </div>
+  <div id="scoreDiv"></div>
+</div>
+
+<h3>III. La frise chronologique</h3>
+<div style="overflow-x:auto">
+<table>
+  <tr>
+    <th style="background:#4527A0">Préhistoire</th>
+    <th style="background:#00695C">Antiquité</th>
+    <th style="background:#1565C0">Moyen Âge</th>
+    <th style="background:#E65100">Époque moderne</th>
+    <th style="background:#B71C1C">Époque contemporaine</th>
+  </tr>
+  <tr>
+    <td>- 4 millions → - 3000<br><em>1er Homme → Écriture</em></td>
+    <td>- 3000 → 476<br><em>Écriture → Chute Empire Romain</em></td>
+    <td>476 → 1492<br><em>Chute Rome → Christophe Colomb</em></td>
+    <td>1492 → 1789<br><em>C. Colomb → Révolution française</em></td>
+    <td>1789 → aujourd'hui<br><em>Révolution française → nos jours</em></td>
+  </tr>
+</table>
+</div>
+
+<div class="note">⭐ En 5ème : <strong>Moyen Âge</strong> (476–1492) et <strong>Époque moderne</strong> (1492–1789)</div>
+
+<h3>IV. Moyens mnémotechniques</h3>
+<div class="note">🌍 <strong>Continents</strong> : <em>"Les 2 Américains Eric et Antoine sont Allés en Orbite"</em><br>
+2 <strong>A</strong>méricains = Am. Nord + Am. Sud | <strong>E</strong>ric = <strong>E</strong>urope | <strong>A</strong>ntoine = <strong>A</strong>frique | <strong>A</strong>llés = <strong>A</strong>sie | <strong>O</strong>rbite = <strong>O</strong>céanie | + Antarctique (tout seul en bas !)</div>
+<div class="note">🌊 <strong>Océans</strong> : Pacifique écrit ×2 (Terre ronde) | Atlantique coincé entre 2 continents | Antarctique + de lettres = plus lourd = en bas</div>
+<div class="note">☀️ <strong>Tropiques</strong> : Cancer = 6 lettres → léger → en HAUT (Nord) | Capricorne = 10 lettres → lourd → en BAS (Sud)</div>
+
+<script>
+// Initialiser les zones de dépôt
+const zones = [
+  {n:1,label:"Case 1"},{n:2,label:"Case 2"},{n:3,label:"Case 3"},
+  {n:4,label:"Case 4"},{n:5,label:"Case 5"},{n:6,label:"Case 6"},
+  {n:7,label:"Case 7"},{n:8,label:"Case 8"},{n:9,label:"Case 9"},
+  {n:10,label:"Case 10"},{n:11,label:"Case 11"},{n:12,label:"Case 12"},
+  {n:13,label:"Case 13"},{n:14,label:"Case 14"},{n:15,label:"Case 15"},
+];
+
+const container = document.getElementById('dropZones');
+zones.forEach(z => {
+  const div = document.createElement('div');
+  div.className = 'drop-zone';
+  div.dataset.zone = z.n;
+  div.innerHTML = `<span class="zone-num">Case ${z.n}</span>`;
+  div.addEventListener('dragover', e => { e.preventDefault(); div.classList.add('over'); });
+  div.addEventListener('dragleave', () => div.classList.remove('over'));
+  div.addEventListener('drop', e => {
+    e.preventDefault();
+    div.classList.remove('over');
+    const data = e.dataTransfer.getData('text/plain');
+    const [answer, text, cls] = data.split('|');
+    // Retirer de l'ancienne zone si déjà placé
+    document.querySelectorAll('.drop-zone').forEach(dz => {
+      if (dz !== div && dz.dataset.placed === answer) {
+        dz.innerHTML = `<span class="zone-num">Case ${dz.dataset.zone}</span>`;
+        delete dz.dataset.placed;
+        dz.classList.remove('correct','wrong');
+      }
+    });
+    div.innerHTML = `<span class="zone-num">Case ${z.n}</span><span class="placed-label" style="background:${cls}">${text}</span>`;
+    div.dataset.placed = answer;
+    div.classList.remove('correct','wrong');
+  });
+  container.appendChild(div);
+});
+
+// Drag events sur les étiquettes
+document.querySelectorAll('.label-item').forEach(item => {
+  item.addEventListener('dragstart', e => {
+    const bg = item.classList.contains('continent-label') ? '#2E7D32' :
+               item.classList.contains('ocean-label') ? '#1565C0' : '#B71C1C';
+    e.dataTransfer.setData('text/plain', `${item.dataset.answer}|${item.textContent}|${bg}`);
+    item.classList.add('dragging');
+  });
+  item.addEventListener('dragend', () => item.classList.remove('dragging'));
+});
+
+function checkAnswers() {
+  let correct = 0, total = 0;
+  document.querySelectorAll('.drop-zone').forEach(dz => {
+    if (dz.dataset.placed !== undefined) {
+      total++;
+      if (dz.dataset.placed === dz.dataset.zone) {
+        dz.classList.add('correct'); dz.classList.remove('wrong'); correct++;
+      } else {
+        dz.classList.add('wrong'); dz.classList.remove('correct');
+      }
+    }
+  });
+  const div = document.getElementById('scoreDiv');
+  div.className = 'score ' + (correct === total && total > 0 ? 'good' : 'bad');
+  div.textContent = total === 0 ? 'Place au moins une étiquette !' :
+    `${correct} / ${total} correct${correct > 1 ? 's' : ''} ${correct === total ? '🎉 Bravo !' : '— Continue !'}`;
+}
+
+function resetDrag() {
+  document.querySelectorAll('.drop-zone').forEach(dz => {
+    dz.innerHTML = `<span class="zone-num">Case ${dz.dataset.zone}</span>`;
+    delete dz.dataset.placed;
+    dz.classList.remove('correct','wrong');
+  });
+  document.getElementById('scoreDiv').textContent = '';
+  document.getElementById('scoreDiv').className = 'score';
+}
+</script>
+</body>
+</html>
