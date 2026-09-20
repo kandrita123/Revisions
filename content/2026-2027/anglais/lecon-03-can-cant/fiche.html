@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAN / CAN'T — Les savoir-faire</title>
+<style>
+  :root {
+    --bg: #ffffff; --bg2: #f5f5f5; --text: #212121; --text2: #555555;
+    --border: #dddddd; --or: #2E7D32; --or-clair: #E8F5E9;
+    --note-bg: #FFF9C4; --note-border: #F57F17;
+    --vert: #2E7D32; --vert-clair: #E8F5E9;
+    --rouge: #B71C1C; --rouge-clair: #FFEBEE;
+    --bleu: #1565C0; --bleu-clair: #E3F2FD;
+    --violet: #4527A0; --violet-clair: #EDE7F6;
+    --teal: #00695C; --teal-clair: #E0F2F1;
+    --or2: #E65100; --or2-clair: #FFF3E0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a2e; --bg2: #16213e; --text: #e0e0e0; --text2: #aaaaaa;
+      --border: #444444; --or-clair: #0a2010; --note-bg: #2a2000;
+      --vert-clair: #0a2010; --rouge-clair: #2a0808; --bleu-clair: #0a1a30;
+      --violet-clair: #1a1030; --teal-clair: #0a1a18; --or2-clair: #2a1000;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; margin: 0; padding: 12px; background: var(--bg); color: var(--text); font-size: 14px; }
+  .titre-bloc { background: #2E7D32; border-radius: 8px; padding: 14px 16px; text-align: center; margin-bottom: 14px; }
+  .titre-bloc .surtitre { color: #A5D6A7; font-size: 12px; font-weight: bold; margin-bottom: 4px; }
+  .titre-bloc h1 { color: #fff; font-size: 22px; margin: 0 0 4px; }
+  .titre-bloc .sous-titre { color: #C8E6C9; font-size: 13px; font-weight: bold; margin-bottom: 2px; }
+  .titre-bloc .problematique { color: #C8E6C9; font-size: 12px; font-style: italic; }
+  .sec-head { display: flex; margin: 12px 0 6px; }
+  .sec-bar  { width: 6px; background: #2E7D32; border-radius: 3px 0 0 3px; flex-shrink: 0; }
+  .sec-title { background: var(--vert-clair); border: 1px solid #2E7D32; border-left: none; border-radius: 0 6px 6px 0; padding: 7px 12px; font-size: 14px; font-weight: bold; color: #2E7D32; flex: 1; }
+  .sec-title.rouge { background: var(--rouge-clair); border-color: var(--rouge); color: var(--rouge); }
+  .sec-title.bleu  { background: var(--bleu-clair);  border-color: var(--bleu);  color: var(--bleu); }
+  .sec-title.violet { background: var(--violet-clair); border-color: var(--violet); color: var(--violet); }
+  .sec-title.or2   { background: var(--or2-clair);  border-color: var(--or2);  color: var(--or2); }
+  .sec-bar.rouge { background: var(--rouge); }
+  .sec-bar.bleu  { background: var(--bleu); }
+  .sec-bar.violet { background: var(--violet); }
+  .sec-bar.or2   { background: var(--or2); }
+  table { border-collapse: collapse; width: 100%; margin: 6px 0; }
+  th { background: #2E7D32; color: #fff; padding: 7px 8px; font-size: 13px; text-align: left; }
+  td { border: 1px solid var(--border); padding: 6px 8px; font-size: 13px; vertical-align: top; color: var(--text); }
+  tr:nth-child(even) td { background: var(--vert-clair); }
+  .note { background: var(--note-bg); border-left: 4px solid var(--note-border); padding: 8px 12px; border-radius: 0 6px 6px 0; margin: 8px 0; font-size: 13px; color: var(--text); line-height: 1.5; }
+  .note b { color: #2E7D32; }
+  .box { border-radius: 6px; padding: 8px 12px; margin: 6px 0; font-size: 13px; color: var(--text); line-height: 1.6; }
+  .box-vert   { background: var(--vert-clair);   border: 1px solid var(--vert); }
+  .box-rouge  { background: var(--rouge-clair);  border: 1px solid var(--rouge); }
+  .box-bleu   { background: var(--bleu-clair);   border: 1px solid var(--bleu); }
+  .box-violet { background: var(--violet-clair); border: 1px solid var(--violet); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 6px 0; }
+  .col-vert  { background: var(--vert-clair);  border: 1px solid var(--vert);  border-radius: 6px; padding: 8px; font-size: 13px; }
+  .col-rouge { background: var(--rouge-clair); border: 1px solid var(--rouge); border-radius: 6px; padding: 8px; font-size: 13px; }
+  .col-teal  { background: var(--teal-clair);  border: 1px solid var(--teal);  border-radius: 6px; padding: 8px; font-size: 13px; }
+  .col-or2   { background: var(--or2-clair);   border: 1px solid var(--or2);   border-radius: 6px; padding: 8px; font-size: 13px; }
+  .col-violet { background: var(--violet-clair); border: 1px solid var(--violet); border-radius: 6px; padding: 8px; font-size: 13px; }
+  .col-head { color: #fff; border-radius: 4px; padding: 5px 8px; font-weight: bold; font-size: 13px; margin-bottom: 6px; }
+  .bg-vert   { background: var(--vert); }
+  .bg-rouge  { background: var(--rouge); }
+  .bg-bleu   { background: var(--bleu); }
+  .bg-teal   { background: var(--teal); }
+  .bg-or2    { background: var(--or2); }
+  .bg-violet { background: var(--violet); }
+  ul { margin: 4px 0; padding-left: 16px; }
+  li { margin-bottom: 3px; }
+  p.intro { font-size: 13px; color: var(--text2); margin: 3px 0 5px; }
+  .ex { font-style: italic; color: var(--bleu); }
+</style>
+</head>
+<body>
+
+<div class="titre-bloc">
+  <div class="surtitre">ANGLAIS 5ème  •  Leçon 3</div>
+  <h1>CAN / CAN'T — Les savoir-faire</h1>
+  <div class="sous-titre">+ LIKE + V-ing</div>
+  <div class="problematique">Comment dire ce qu'on sait faire, ne sait pas faire, et ce qu'on aime ?</div>
+</div>
+
+<!-- I. CAN -->
+<div class="sec-head"><div class="sec-bar"></div><div class="sec-title">✅ I. CAN + BV — DIRE CE QU'ON SAIT FAIRE</div></div>
+<p class="intro">➡️ <b style="color:#2E7D32">CAN</b> exprime une capacité, un savoir-faire. Toujours suivi d'une <b>Base Verbale (BV)</b> — jamais de TO ni de -ING.</p>
+<div class="box box-vert">
+  <b>Structure :</b> Sujet + <b style="color:#2E7D32">CAN</b> + Base Verbale<br><br>
+  ✅ <b>Cordelia <span style="color:#2E7D32">can</span> do a handstand.</b> → Cordelia sait faire un appui renversé.<br>
+  ✅ <b>I <span style="color:#2E7D32">can</span> sing.</b> → Je sais chanter.<br>
+  ✅ <b>She <span style="color:#2E7D32">can</span> play the guitar.</b> → Elle sait jouer de la guitare.
+</div>
+<div class="note">💡 <b>CAN ne change JAMAIS</b> selon le sujet : I can, you can, he can, she can, we can, they can — toujours pareil !</div>
+
+<!-- II. CAN'T -->
+<div class="sec-head"><div class="sec-bar rouge"></div><div class="sec-title rouge">❌ II. CAN'T + BV — DIRE CE QU'ON NE SAIT PAS FAIRE</div></div>
+<p class="intro">➡️ <b style="color:#B71C1C">CAN'T</b> est la forme négative. CAN'T = <i>cannot</i> contracté.</p>
+<div class="box box-rouge">
+  <b>Structure :</b> Sujet + <b style="color:#B71C1C">CAN'T</b> + Base Verbale<br><br>
+  ❌ <b>Dexter <span style="color:#B71C1C">can't</span> play the piano.</b> → Dexter ne sait pas jouer du piano.<br>
+  ❌ <b>I <span style="color:#B71C1C">can't</span> dance.</b> → Je ne sais pas danser.<br>
+  ❌ <b>He <span style="color:#B71C1C">can't</span> swim.</b> → Il ne sait pas nager.
+</div>
+
+<!-- III. INTERROGATIF -->
+<div class="sec-head"><div class="sec-bar bleu"></div><div class="sec-title bleu">❓ III. CAN + SUJET + BV ? — POSER UNE QUESTION</div></div>
+<p class="intro">➡️ Pour poser une question, on met <b style="color:#1565C0">CAN</b> devant le sujet.</p>
+<div class="box box-bleu">
+  <b>Structure :</b> <b style="color:#1565C0">CAN</b> + Sujet + Base Verbale + ?<br><br>
+  ❓ <b><span style="color:#1565C0">Can</span> you play an instrument?</b> → Est-ce que tu sais jouer d'un instrument ?<br>
+  ❓ <b><span style="color:#1565C0">Can</span> she swim?</b> → Est-ce qu'elle sait nager ?<br>
+  <b>Réponse courte :</b> <span class="ex">Yes, I can. / No, I can't.</span>
+</div>
+
+<!-- IV. TABLEAU RÉCAP -->
+<div class="sec-head"><div class="sec-bar"></div><div class="sec-title">📋 IV. TABLEAU RÉCAPITULATIF</div></div>
+<table>
+  <tr><th>Usage</th><th>Structure</th><th>Exemple</th></tr>
+  <tr><td>✅ Affirmatif</td><td>Sujet + <b>CAN</b> + BV</td><td><span class="ex">I can sing.</span></td></tr>
+  <tr><td>❌ Négatif</td><td>Sujet + <b>CAN'T</b> + BV</td><td><span class="ex">I can't dance.</span></td></tr>
+  <tr><td>❓ Interrogatif</td><td><b>CAN</b> + sujet + BV ?</td><td><span class="ex">Can you swim?</span></td></tr>
+</table>
+
+<!-- V. LIKE -->
+<div class="sec-head"><div class="sec-bar or2"></div><div class="sec-title or2">❤️ V. LIKE + V-ING / LIKE + NOM — DIRE CE QU'ON AIME</div></div>
+<p class="intro">➡️ <b style="color:#E65100">LIKE</b> s'utilise pour dire ce qu'on aime faire ou ce qu'on aime.</p>
+<div class="grid2">
+  <div class="col-or2">
+    <div class="col-head bg-or2">LIKE + V-ing</div>
+    <b>Sujet + like + V-ing</b><br>
+    • I like swim<b>ming</b>. → J'aime nager.<br>
+    • She like<b>s</b> danc<b>ing</b>. → Elle aime danser.<br>
+    • He likes playing football.<br>
+    <span style="color:#B71C1C;font-size:12px">⚠️ he/she/it → like<b>S</b> (avec S !)</span>
+  </div>
+  <div class="col-teal">
+    <div class="col-head bg-teal">LIKE + NOM</div>
+    <b>Sujet + like + nom</b><br>
+    • I like music. → J'aime la musique.<br>
+    • She likes dogs. → Elle aime les chiens.<br>
+    • He likes sport.<br>
+    <span style="color:#555;font-size:12px">→ Un nom directement après LIKE, sans -ing.</span>
+  </div>
+</div>
+
+<!-- VI. EXERCICE -->
+<div class="sec-head"><div class="sec-bar violet"></div><div class="sec-title violet">✏️ VI. EXERCICE — CAN OU CAN'T ?</div></div>
+<p class="intro">Complète avec <b style="color:#2E7D32">can</b> ou <b style="color:#B71C1C">can't</b> selon les capacités de ces personnages :</p>
+<div class="grid2">
+  <div class="col-violet">
+    <b style="color:#4527A0">Questions :</b><br>
+    • a. Mulgarath ___ change form. He is very strong so people ___ defeat him!<br>
+    • b. Spiderman ___ crawl on walls and ceilings.<br>
+    • c. Superman ___ fly but he ___ live without solar energy.<br>
+    • d. Thing in the Addams family ___ move but it ___ speak.
+  </div>
+  <div class="col-vert">
+    <b style="color:#2E7D32">✅ Réponses :</b><br>
+    • a. Mulgarath <b>CAN</b> change form. People <b>CAN'T</b> defeat him!<br>
+    • b. Spiderman <b>CAN</b> crawl on walls and ceilings.<br>
+    • c. Superman <b>CAN</b> fly but he <b>CAN'T</b> live without solar energy.<br>
+    • d. Thing <b>CAN</b> move but it <b>CAN'T</b> speak.
+  </div>
+</div>
+
+<!-- PIÈGES -->
+<div class="sec-head"><div class="sec-bar rouge"></div><div class="sec-title rouge">⚠️ PIÈGES À ÉVITER &amp; POINTS CLÉS</div></div>
+<div class="grid2">
+  <div class="col-rouge">
+    <b style="color:#B71C1C">❌ NE PAS DIRE :</b>
+    <ul>
+      <li>I can <b>to</b> sing. ❌ (pas de TO après CAN)</li>
+      <li>I can sing<b>ing</b>. ❌ (pas de -ING après CAN)</li>
+      <li>She can sing<b>s</b>. ❌ (pas de S avec CAN)</li>
+      <li>I like swim. ❌ (like + V-ing, pas BV)</li>
+    </ul>
+  </div>
+  <div class="col-vert">
+    <b style="color:#2E7D32">✅ TOUJOURS RETENIR :</b>
+    <ul>
+      <li><b>CAN + BV</b> (jamais TO, jamais -ING, jamais S)</li>
+      <li>CAN'T = cannot contracté</li>
+      <li>Question : CAN devant le sujet</li>
+      <li><b>LIKE + V-ing</b> ou <b>LIKE + nom</b></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
