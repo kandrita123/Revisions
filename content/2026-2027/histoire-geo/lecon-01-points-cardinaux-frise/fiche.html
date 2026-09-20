@@ -5,86 +5,128 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Points cardinaux & Frise chronologique</title>
 <style>
-  * { box-sizing: border-box; }
-  body { font-family: Arial, sans-serif; margin: 0; padding: 12px; background: #fff; color: #212121; font-size: 14px; }
+  :root {
+    --bg: #ffffff;
+    --bg2: #f5f5f5;
+    --text: #212121;
+    --text2: #555555;
+    --border: #dddddd;
+    --or: #E65100;
+    --or-clair: #FFF3E0;
+    --note-bg: #FFF9C4;
+    --note-border: #F57F17;
+    --vert: #2E7D32;
+    --vert-clair: #E8F5E9;
+    --rouge: #B71C1C;
+    --rouge-clair: #FFEBEE;
+    --bleu: #1565C0;
+    --bleu-clair: #E3F2FD;
+    --violet: #4527A0;
+    --teal: #00695C;
+    --act-bg: #E3F2FD;
+    --act-border: #1565C0;
+    --mnemo-bg: #E8F5E9;
+    --mnemo-border: #2E7D32;
+    --piege-rouge-bg: #FFEBEE;
+    --piege-vert-bg: #E8F5E9;
+  }
 
-  /* TITRE */
-  .titre-bloc { background: #E65100; border-radius: 8px; padding: 14px 16px; text-align: center; margin-bottom: 14px; }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1a2e;
+      --bg2: #16213e;
+      --text: #e0e0e0;
+      --text2: #aaaaaa;
+      --border: #444444;
+      --or-clair: #3a2000;
+      --note-bg: #2a2000;
+      --note-border: #F57F17;
+      --vert-clair: #0a2010;
+      --rouge-clair: #2a0808;
+      --bleu-clair: #0a1a30;
+      --act-bg: #0a1a30;
+      --act-border: #1565C0;
+      --mnemo-bg: #0a2010;
+      --mnemo-border: #2E7D32;
+      --piege-rouge-bg: #2a0808;
+      --piege-vert-bg: #0a2010;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; margin: 0; padding: 12px;
+         background: var(--bg); color: var(--text); font-size: 14px; }
+
+  .titre-bloc { background: var(--or); border-radius: 8px; padding: 14px 16px;
+                text-align: center; margin-bottom: 14px; }
   .titre-bloc .surtitre { color: #FFCC80; font-size: 12px; font-weight: bold; margin-bottom: 4px; }
   .titre-bloc h1 { color: #fff; font-size: 22px; margin: 0 0 4px; }
   .titre-bloc .sous-titre { color: #FFE0B2; font-size: 13px; font-weight: bold; margin-bottom: 2px; }
   .titre-bloc .problematique { color: #FFE0B2; font-size: 12px; font-style: italic; }
 
-  /* SECTIONS */
-  .sec-head { display: flex; margin: 14px 0 8px; }
-  .sec-bar  { width: 6px; background: #E65100; border-radius: 3px 0 0 3px; flex-shrink: 0; }
-  .sec-title { background: #FFF3E0; border: 1px solid #E65100; border-left: none;
+  .sec-head  { display: flex; margin: 14px 0 8px; }
+  .sec-bar   { width: 6px; background: var(--or); border-radius: 3px 0 0 3px; flex-shrink: 0; }
+  .sec-title { background: var(--or-clair); border: 1px solid var(--or); border-left: none;
                border-radius: 0 6px 6px 0; padding: 7px 12px; font-size: 14px;
-               font-weight: bold; color: #E65100; flex: 1; }
+               font-weight: bold; color: var(--or); flex: 1; }
 
-  /* TABLEAUX */
   table { border-collapse: collapse; width: 100%; margin: 8px 0; }
-  th { background: #E65100; color: #fff; padding: 7px 8px; font-size: 13px; }
-  td { border: 1px solid #ddd; padding: 6px 8px; font-size: 13px; vertical-align: top; }
-  tr:nth-child(even) td { background: #FFF3E0; }
+  th { background: var(--or); color: #fff; padding: 7px 8px; font-size: 13px; text-align: left; }
+  td { border: 1px solid var(--border); padding: 6px 8px; font-size: 13px; vertical-align: top;
+       color: var(--text); }
+  tr:nth-child(even) td { background: var(--or-clair); }
 
-  /* ENCARTS */
-  .note    { background: #FFF9C4; border-left: 4px solid #F57F17; padding: 8px 12px; border-radius: 0 6px 6px 0; margin: 8px 0; line-height: 1.6; font-size: 13px; }
-  .note b  { color: #E65100; }
-  .retenir { background: #FFF3E0; border: 2px solid #E65100; border-radius: 6px; padding: 8px 12px; margin: 8px 0; font-size: 13px; line-height: 1.6; }
-  .piege   { background: #FFEBEE; border-left: 4px solid #B71C1C; padding: 8px 12px; border-radius: 0 6px 6px 0; margin: 8px 0; font-size: 13px; }
-  .correct { background: #E8F5E9; border-left: 4px solid #2E7D32; padding: 8px 12px; border-radius: 0 6px 6px 0; margin: 8px 0; font-size: 13px; }
+  .note  { background: var(--note-bg); border-left: 4px solid var(--note-border);
+            padding: 8px 12px; border-radius: 0 6px 6px 0; margin: 8px 0;
+            line-height: 1.6; font-size: 13px; color: var(--text); }
+  .note b { color: var(--or); }
 
-  /* ACTIVITÉ 2 colonnes */
   .act-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0; }
-  .act-col  { background: #E3F2FD; border: 1px solid #1565C0; border-radius: 6px; padding: 8px; font-size: 13px; }
-  .act-col .rep { color: #E65100; font-weight: bold; }
+  .act-col  { background: var(--act-bg); border: 1px solid var(--act-border);
+               border-radius: 6px; padding: 8px; font-size: 13px; color: var(--text); }
+  .act-col .rep { color: var(--or); font-weight: bold; }
 
-  /* FRISE */
-  .frise { display: flex; margin: 8px 0; overflow-x: auto; border-radius: 6px; overflow: hidden; }
-  .frise-cell { flex: 1; min-width: 80px; padding: 8px 4px; text-align: center; color: #fff; font-size: 11px; font-weight: bold; border-right: 2px solid #fff; }
+  .frise { display: flex; margin: 8px 0; border-radius: 6px; overflow: hidden; }
+  .frise-cell { flex: 1; min-width: 70px; padding: 8px 4px; text-align: center;
+                color: #fff; font-size: 11px; font-weight: bold; border-right: 2px solid rgba(255,255,255,0.3); }
   .frise-cell:last-child { border-right: none; }
   .f1 { background: #4527A0; }
   .f2 { background: #00695C; }
   .f3 { background: #1565C0; }
   .f4 { background: #E65100; }
   .f5 { background: #B71C1C; }
-  .frise-date { flex: 1; min-width: 80px; font-size: 10px; color: #666; text-align: center; padding: 2px; }
-  .frise-dates { display: flex; margin-bottom: 8px; }
 
-  /* TABLEAU PÉRIODES */
   .num-1 { background: #4527A0; color: #fff; font-weight: bold; text-align: center; }
   .num-2 { background: #00695C; color: #fff; font-weight: bold; text-align: center; }
   .num-3 { background: #1565C0; color: #fff; font-weight: bold; text-align: center; }
   .num-4 { background: #E65100; color: #fff; font-weight: bold; text-align: center; }
   .num-5 { background: #B71C1C; color: #fff; font-weight: bold; text-align: center; }
 
-  /* À RETENIR 5ème */
   .retenir-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0; }
-  .retenir-ma  { background: #1565C0; color: #fff; border-radius: 6px; padding: 10px; font-size: 13px; }
-  .retenir-mo  { background: #E65100; color: #fff; border-radius: 6px; padding: 10px; font-size: 13px; }
-  .retenir-ma .dates, .retenir-mo .dates { font-weight: bold; font-size: 14px; margin-bottom: 4px; }
-  .retenir-ma .desc, .retenir-mo .desc   { font-size: 12px; opacity: 0.9; }
+  .r-ma  { background: #1565C0; color: #fff; border-radius: 6px; padding: 10px; font-size: 13px; }
+  .r-mo  { background: #E65100; color: #fff; border-radius: 6px; padding: 10px; font-size: 13px; }
+  .r-ma b, .r-mo b { font-size: 15px; display: block; margin-bottom: 4px; }
 
-  /* PIÈGES */
   .pieges-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 8px 0; }
-  .piege-col { border-radius: 6px; padding: 10px; font-size: 13px; }
-  .piege-col ul { margin: 6px 0 0; padding-left: 16px; }
-  .piege-col li { margin-bottom: 4px; }
-  .col-rouge { background: #FFEBEE; border: 1px solid #B71C1C; }
-  .col-vert  { background: #E8F5E9; border: 1px solid #2E7D32; }
+  .p-rouge { background: var(--piege-rouge-bg); border: 1px solid var(--rouge);
+             border-radius: 6px; padding: 10px; font-size: 13px; color: var(--text); }
+  .p-vert  { background: var(--piege-vert-bg); border: 1px solid var(--vert);
+             border-radius: 6px; padding: 10px; font-size: 13px; color: var(--text); }
+  .p-rouge ul, .p-vert ul { margin: 6px 0 0; padding-left: 16px; }
+  .p-rouge li, .p-vert li { margin-bottom: 4px; }
 
-  /* CARTE */
-  .carte img { width: 100%; border-radius: 6px; border: 2px solid #E65100; margin: 6px 0; }
+  .carte img { width: 100%; border-radius: 6px; border: 2px solid var(--or); margin: 6px 0; }
 
-  /* MNEMO */
-  .mnemo { background: #E8F5E9; border: 1px solid #2E7D32; border-radius: 6px; padding: 10px 12px; margin: 6px 0; font-size: 13px; line-height: 1.7; }
-  .mnemo b { color: #E65100; }
+  .mnemo { background: var(--mnemo-bg); border: 1px solid var(--mnemo-border);
+           border-radius: 6px; padding: 10px 12px; margin: 6px 0;
+           font-size: 13px; line-height: 1.7; color: var(--text); }
+  .mnemo b { color: var(--or); }
+
+  p.intro { font-size: 13px; color: var(--text2); margin: 4px 0 6px; }
 </style>
 </head>
 <body>
 
-<!-- TITRE -->
 <div class="titre-bloc">
   <div class="surtitre">HISTOIRE-GÉOGRAPHIE 5ème  •  Leçon 1</div>
   <h1>Points cardinaux &amp; Frise chronologique</h1>
@@ -92,10 +134,9 @@
   <div class="problematique">Comment s'orienter dans l'espace et dans le temps ?</div>
 </div>
 
-<!-- I. POINTS CARDINAUX -->
+<!-- I -->
 <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">🧭 I. LES POINTS CARDINAUX ET LEURS SYNONYMES</div></div>
-
-<p style="font-size:13px;color:#555;margin:4px 0 6px">Chaque point cardinal a au moins un synonyme :</p>
+<p class="intro">Chaque point cardinal a au moins un synonyme :</p>
 <table>
   <tr><th>Point cardinal</th><th>Synonyme(s)</th></tr>
   <tr><td><b>Nord 🔼</b></td><td>Boréal, Septentrional</td></tr>
@@ -103,37 +144,28 @@
   <tr><td><b>Est ▶</b></td><td>Oriental</td></tr>
   <tr><td><b>Ouest ◀</b></td><td>Occidental</td></tr>
 </table>
+<div class="note">💡 <b>Moyen mnémotechnique</b> : écris le mot <b>ORANGE</b> — le <b>O</b> est avant le <b>E</b> dans l'alphabet → <b>O</b>uest à gauche, <b>E</b>st à droite.</div>
 
-<div class="note">💡 <b>Moyen mnémotechnique</b> : écris le mot <b>ORANGE</b> — le <b>O</b> est avant le <b>E</b> dans l'alphabet.<br>→ <b>O</b>uest à gauche, <b>E</b>st à droite sur une carte.</div>
-
-<!-- II. ACTIVITÉ -->
+<!-- II -->
 <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">✏️ II. ACTIVITÉ — COMPLÉTER LE TEXTE À TROUS</div></div>
-
 <div class="act-grid">
   <div class="act-col">
     <b>Phrases 1 à 3 :</b><br><br>
-    • L'Afrique est au _____ de l'Europe.<br>
-    <span class="rep">→ Sud</span><br><br>
-    • L'Asie est au _____ de l'Océanie.<br>
-    <span class="rep">→ Nord</span><br><br>
-    • L'Antarctique est au _____ de tous les continents.<br>
-    <span class="rep">→ Sud</span>
+    • L'Afrique est au _____ de l'Europe.<br><span class="rep">→ Sud</span><br><br>
+    • L'Asie est au _____ de l'Océanie.<br><span class="rep">→ Nord</span><br><br>
+    • L'Antarctique est au _____ de tous les continents.<br><span class="rep">→ Sud</span>
   </div>
   <div class="act-col">
     <b>Phrases 4 et 5 :</b><br><br>
-    • L'Europe est à l'_____ de l'Amérique.<br>
-    <span class="rep">→ Est</span><br><br>
-    • L'Amérique du Nord est au _____ de l'Amérique du Sud.<br>
-    <span class="rep">→ Nord</span><br><br>
-    <span style="font-size:12px;color:#1565C0;font-style:italic">💡 Rappel : O → Ouest (gauche) | E → Est (droite)</span>
+    • L'Europe est à l'_____ de l'Amérique.<br><span class="rep">→ Est</span><br><br>
+    • L'Amérique du Nord est au _____ de l'Amérique du Sud.<br><span class="rep">→ Nord</span><br><br>
+    <span style="font-size:12px;color:var(--bleu);font-style:italic">💡 O → Ouest (gauche) | E → Est (droite)</span>
   </div>
 </div>
 
-<!-- III. FRISE -->
+<!-- III -->
 <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">📅 III. LA FRISE CHRONOLOGIQUE</div></div>
-
-<p style="font-size:13px;color:#555;margin:4px 0 6px">Une frise chronologique montre les différentes périodes de l'Histoire (qui n'ont pas toutes la même durée).</p>
-
+<p class="intro">Une frise chronologique montre les différentes périodes de l'Histoire (qui n'ont pas toutes la même durée).</p>
 <div class="frise">
   <div class="frise-cell f1">Préhistoire<br><span style="font-weight:normal;font-size:10px">-4M → -3000</span></div>
   <div class="frise-cell f2">Antiquité<br><span style="font-weight:normal;font-size:10px">-3000 → 476</span></div>
@@ -141,106 +173,58 @@
   <div class="frise-cell f4">Époque moderne<br><span style="font-weight:normal;font-size:10px">1492 → 1789</span></div>
   <div class="frise-cell f5">Époque contemporaine<br><span style="font-weight:normal;font-size:10px">1789 → auj.</span></div>
 </div>
-
 <table>
   <tr><th>N°</th><th>Période</th><th>Dates</th><th>Événements clés</th></tr>
-  <tr>
-    <td class="num-1">1</td>
-    <td><b style="color:#4527A0">Préhistoire</b></td>
-    <td>De - 4 millions à - 3000</td>
-    <td><i>Du 1er Homme à l'apparition de l'écriture</i></td>
-  </tr>
-  <tr>
-    <td class="num-2">2</td>
-    <td><b style="color:#00695C">Antiquité</b></td>
-    <td>De - 3000 à 476</td>
-    <td><i>De l'écriture à la chute de l'Empire romain</i></td>
-  </tr>
-  <tr>
-    <td class="num-3">3</td>
-    <td><b style="color:#1565C0">Moyen Âge</b></td>
-    <td>De 476 à 1492</td>
-    <td><i>De la chute de Rome à la conquête des Amériques</i></td>
-  </tr>
-  <tr>
-    <td class="num-4">4</td>
-    <td><b style="color:#E65100">Époque moderne</b></td>
-    <td>De 1492 à 1789</td>
-    <td><i>De Christophe Colomb à la Révolution française</i></td>
-  </tr>
-  <tr>
-    <td class="num-5">5</td>
-    <td><b style="color:#B71C1C">Époque contemporaine</b></td>
-    <td>De 1789 à aujourd'hui</td>
-    <td><i>De la Révolution française à nos jours</i></td>
-  </tr>
+  <tr><td class="num-1">1</td><td><b style="color:#4527A0">Préhistoire</b></td><td>-4 millions → -3000</td><td><i>1er Homme → Écriture</i></td></tr>
+  <tr><td class="num-2">2</td><td><b style="color:#00695C">Antiquité</b></td><td>-3000 → 476</td><td><i>Écriture → Chute Empire Romain</i></td></tr>
+  <tr><td class="num-3">3</td><td><b style="color:#1565C0">Moyen Âge</b></td><td>476 → 1492</td><td><i>Chute Rome → Christophe Colomb</i></td></tr>
+  <tr><td class="num-4">4</td><td><b style="color:#E65100">Époque moderne</b></td><td>1492 → 1789</td><td><i>C. Colomb → Révolution française</i></td></tr>
+  <tr><td class="num-5">5</td><td><b style="color:#B71C1C">Époque contemporaine</b></td><td>1789 → aujourd'hui</td><td><i>Révolution française → nos jours</i></td></tr>
 </table>
 
-<!-- IV. À RETENIR 5ème -->
+<!-- IV -->
 <div class="sec-head"><div class="sec-bar"></div><div class="sec-title">⭐ IV. À RETENIR POUR LA CLASSE DE 5ème</div></div>
-
-<p style="font-size:13px;color:#555;margin:4px 0 6px">En 5ème, nous allons étudier deux périodes historiques :</p>
+<p class="intro">En 5ème, nous allons étudier deux périodes historiques :</p>
 <div class="retenir-grid">
-  <div class="retenir-ma">
-    <div style="font-size:15px;font-weight:bold;margin-bottom:6px">⚔️ Le Moyen Âge</div>
-    <div class="dates">📅 De 476 à 1492</div>
-    <div class="desc">De la chute de l'Empire romain à la découverte des Amériques et la chute du royaume de Grenade.</div>
+  <div class="r-ma">
+    <b>⚔️ Le Moyen Âge</b>
+    <div style="font-weight:bold;margin-bottom:4px">📅 De 476 à 1492</div>
+    <div style="font-size:12px;opacity:0.9">De la chute de l'Empire romain à la découverte des Amériques et la chute du royaume de Grenade.</div>
   </div>
-  <div class="retenir-mo">
-    <div style="font-size:15px;font-weight:bold;margin-bottom:6px">🌍 L'Époque moderne</div>
-    <div class="dates">📅 De 1492 à 1789</div>
-    <div class="desc">De Christophe Colomb jusqu'au début de la Révolution française.</div>
+  <div class="r-mo">
+    <b>🌍 L'Époque moderne</b>
+    <div style="font-weight:bold;margin-bottom:4px">📅 De 1492 à 1789</div>
+    <div style="font-size:12px;opacity:0.9">De Christophe Colomb jusqu'au début de la Révolution française.</div>
   </div>
 </div>
 
-<!-- V. PIÈGES -->
-<div class="sec-head"><div class="sec-bar"></div><div class="sec-title">⚠️ PIÈGES À ÉVITER &amp; POINTS CLÉS</div></div>
-
+<!-- V -->
+<div class="sec-head"><div class="sec-bar"></div><div class="sec-title">⚠️ V. PIÈGES À ÉVITER &amp; POINTS CLÉS</div></div>
 <div class="pieges-grid">
-  <div class="piege-col col-rouge">
-    <b style="color:#B71C1C">❌ NE PAS CONFONDRE :</b>
+  <div class="p-rouge">
+    <b style="color:var(--rouge)">❌ NE PAS CONFONDRE :</b>
     <ul>
       <li><b>Est ≠ Ouest</b> — moyen : ORANGE (O avant E)</li>
       <li><b>Méridional ≠ Septentrional</b> — méridional = Sud, septentrional = Nord</li>
-      <li>Les dates en négatif (avant J.C.) = plus on va vers -∞, plus c'est ancien</li>
+      <li>Dates négatives : plus on va vers -∞, plus c'est ancien</li>
     </ul>
   </div>
-  <div class="piege-col col-vert">
-    <b style="color:#2E7D32">✅ TOUJOURS RETENIR :</b>
+  <div class="p-vert">
+    <b style="color:var(--vert)">✅ TOUJOURS RETENIR :</b>
     <ul>
-      <li>5 périodes : Préhistoire, Antiquité, Moyen Âge, Époque moderne, Époque contemporaine</li>
+      <li>5 périodes dans l'ordre : Préhistoire → Antiquité → Moyen Âge → Époque moderne → Époque contemporaine</li>
       <li><b>En 5ème : Moyen Âge (476–1492) + Époque moderne (1492–1789)</b></li>
-      <li>Moyen mnémotechnique : ORANGE pour Ouest/Est</li>
+      <li>ORANGE pour Ouest/Est</li>
     </ul>
   </div>
 </div>
 
-<!-- VI. CARTE -->
-<div class="sec-head"><div class="sec-bar"></div><div class="sec-title">🗺️ V. LES CONTINENTS ET LES OCÉANS</div></div>
-<div class="carte"><img src="carte_vierge.jpg" alt="Planisphère — continents et océans"></div>
+<!-- VI -->
+<div class="sec-head"><div class="sec-bar"></div><div class="sec-title">🗺️ VI. LES CONTINENTS ET LES OCÉANS</div></div>
+<div class="carte"><img src="carte_continents.jpeg" alt="Planisphère — continents et océans"></div>
 
-<table>
-  <tr><th>N°</th><th>Élément</th><th>Type</th></tr>
-  <tr><td><b style="color:#2E7D32">1</b></td><td>Amérique du Nord</td><td>🌍 Continent</td></tr>
-  <tr><td><b style="color:#2E7D32">2</b></td><td>Amérique du Sud</td><td>🌍 Continent</td></tr>
-  <tr><td><b style="color:#2E7D32">3</b></td><td>Europe</td><td>🌍 Continent</td></tr>
-  <tr><td><b style="color:#2E7D32">4</b></td><td>Afrique</td><td>🌍 Continent</td></tr>
-  <tr><td><b style="color:#2E7D32">5</b></td><td>Asie</td><td>🌍 Continent</td></tr>
-  <tr><td><b style="color:#2E7D32">6</b></td><td>Océanie</td><td>🌍 Continent</td></tr>
-  <tr><td><b style="color:#2E7D32">7</b></td><td>Antarctique</td><td>🌍 Continent</td></tr>
-  <tr><td><b style="color:#1565C0">8</b></td><td>Océan Atlantique</td><td>🌊 Océan</td></tr>
-  <tr><td><b style="color:#1565C0">9</b></td><td>Océan Pacifique (côté Est)</td><td>🌊 Océan</td></tr>
-  <tr><td><b style="color:#1565C0">10</b></td><td>Océan Pacifique (côté Ouest)</td><td>🌊 Océan</td></tr>
-  <tr><td><b style="color:#1565C0">11</b></td><td>Océan Indien</td><td>🌊 Océan</td></tr>
-  <tr><td><b style="color:#1565C0">12</b></td><td>Océan Glacial Antarctique</td><td>🌊 Océan</td></tr>
-  <tr><td><b style="color:#B71C1C">13</b></td><td>Tropique du Cancer</td><td>☀️ Ligne</td></tr>
-  <tr><td><b style="color:#B71C1C">14</b></td><td>Équateur</td><td>☀️ Ligne</td></tr>
-  <tr><td><b style="color:#B71C1C">15</b></td><td>Tropique du Capricorne</td><td>☀️ Ligne</td></tr>
-</table>
-
-<!-- VII. MNÉMOTECHNIQUES -->
-<div class="sec-head"><div class="sec-bar"></div><div class="sec-title">💡 VI. MOYENS MNÉMOTECHNIQUES</div></div>
-
+<!-- VII -->
+<div class="sec-head"><div class="sec-bar"></div><div class="sec-title">💡 VII. MOYENS MNÉMOTECHNIQUES</div></div>
 <div class="mnemo">
   🌍 <b>Continents</b> : <i>"Les 2 Américains Eric et Antoine sont Allés en Orbite"</i><br>
   2 <b>A</b>méricains = Am. Nord + Am. Sud &nbsp;|&nbsp; <b>E</b>ric = <b>E</b>urope &nbsp;|&nbsp; <b>A</b>ntoine = <b>A</b>frique<br>
@@ -248,14 +232,14 @@
 </div>
 <div class="mnemo">
   🌊 <b>Océans</b> :<br>
-  • Le Pacifique est écrit <b>×2</b> sur la carte → la Terre est ronde !<br>
-  • L'Atlantique est <b>coincé</b> entre les Amériques et l'Europe-Afrique<br>
-  • <b>Ant</b>arctique a plus de lettres qu'<b>Arc</b>tique → plus lourd → en bas (Sud)
+  • Pacifique écrit <b>×2</b> → la Terre est ronde !<br>
+  • Atlantique <b>coincé</b> entre les Amériques et l'Europe-Afrique<br>
+  • <b>Ant</b>arctique a plus de lettres → plus lourd → en bas (Sud)
 </div>
 <div class="mnemo">
   ☀️ <b>Tropiques</b> :<br>
   • <b>Cancer</b> = 6 lettres → léger → en <b>HAUT</b> (Nord)<br>
-  • <b>Capricorne</b> = 10 lettres → lourd → tombe en <b>BAS</b> (Sud)
+  • <b>Capricorne</b> = 10 lettres → lourd → en <b>BAS</b> (Sud)
 </div>
 
 </body>
