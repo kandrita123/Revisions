@@ -9,24 +9,16 @@
   body { font-family: Arial, sans-serif; margin: 0; padding: 12px; background: #fff; color: #212121; }
   h2 { color: #E65100; text-align: center; font-size: 20px; margin: 6px 0 4px; }
   .subtitle { text-align:center; color:#666; font-style:italic; font-size:13px; margin-bottom:14px; }
-
-  h3 { font-size:15px; font-weight:bold; color:#fff; background:#E65100;
-       padding:7px 12px; border-radius:6px; margin:14px 0 8px; }
+  h3 { font-size:15px; font-weight:bold; color:#fff; background:#E65100; padding:7px 12px; border-radius:6px; margin:14px 0 8px; }
   h4 { font-size:14px; color:#1565C0; margin:10px 0 5px; }
-
   table { border-collapse:collapse; width:100%; margin:8px 0; font-size:14px; }
   th { background:#E65100; color:#fff; padding:7px 8px; text-align:left; }
   td { border:1px solid #ddd; padding:6px 8px; }
   tr:nth-child(even) td { background:#FFF3E0; }
-
-  .note { background:#FFF9C4; border-left:4px solid #F57F17; padding:8px 12px;
-          border-radius:4px; margin:8px 0; font-size:14px; line-height:1.5; }
+  .note { background:#FFF9C4; border-left:4px solid #F57F17; padding:8px 12px; border-radius:4px; margin:8px 0; font-size:14px; line-height:1.5; }
   .note b { color:#E65100; }
-
-  /* FRISE */
   .frise { display:flex; gap:0; margin:8px 0; overflow-x:auto; }
-  .periode { flex:1; min-width:90px; padding:6px 4px; text-align:center;
-             color:#fff; font-size:12px; font-weight:bold; border-right:2px solid #fff; }
+  .periode { flex:1; min-width:90px; padding:6px 4px; text-align:center; color:#fff; font-size:12px; font-weight:bold; border-right:2px solid #fff; }
   .prehistoire { background:#4527A0; }
   .antiquite   { background:#00695C; }
   .moyenage    { background:#1565C0; }
@@ -34,55 +26,40 @@
   .contemporaine { background:#B71C1C; border-right:none; }
   .frise-dates { display:flex; gap:0; margin-top:2px; }
   .frise-date  { flex:1; min-width:90px; font-size:10px; color:#555; text-align:center; padding:2px; }
-
-  /* CARTE SECTION */
-  .carte-wrap { position:relative; width:100%; max-width:680px; margin:0 auto; }
+  .carte-wrap { width:100%; margin:0 auto; }
   .carte-wrap img { width:100%; display:block; border-radius:6px; border:2px solid #E65100; }
-
-  /* LÉGENDE */
   .legende { display:flex; gap:8px; flex-wrap:wrap; margin:8px 0; font-size:12px; }
   .leg-item { display:flex; align-items:center; gap:4px; }
-  .leg-color { width:14px; height:14px; border-radius:3px; border:2px solid; }
-
-  /* TABLEAU NUMÉROS */
-  .num-table td:first-child { font-weight:bold; font-size:15px; width:36px; text-align:center; }
+  .leg-color { width:14px; height:14px; border-radius:3px; }
 
   /* DRAG & DROP */
-  .drag-title { font-size:14px; font-weight:bold; color:#E65100; margin:14px 0 6px; }
-  .drag-instructions { font-size:13px; color:#555; margin-bottom:8px; line-height:1.4; }
-
-  .pool { display:flex; flex-wrap:wrap; gap:6px; padding:10px;
-          background:#f0f0f0; border-radius:8px; min-height:48px; margin-bottom:12px; }
-
-  .chip { display:inline-block; padding:6px 11px; border-radius:20px; color:#fff;
-          font-size:13px; font-weight:bold; cursor:grab; user-select:none;
-          touch-action:none; transition:opacity .2s; }
+  .drag-title { font-size:15px; font-weight:bold; color:#E65100; margin:14px 0 4px; }
+  .pool { display:flex; flex-wrap:wrap; gap:6px; padding:10px; background:#f0f0f0; border-radius:8px; min-height:48px; margin-bottom:12px; }
+  .chip { display:inline-block; padding:7px 12px; border-radius:20px; color:#fff; font-size:13px; font-weight:bold; cursor:pointer; user-select:none; touch-action:none; }
   .chip.continent { background:#2E7D32; }
   .chip.ocean     { background:#1565C0; }
   .chip.ligne     { background:#B71C1C; }
-  .chip.dragging  { opacity:.4; }
+  .chip.selected  { outline:3px solid #F57F17; opacity:0.8; }
+  .chip.hidden    { display:none; }
 
-  .zones-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; }
-  .dzone { border:2px dashed #aaa; border-radius:8px; padding:6px;
-           min-height:52px; display:flex; flex-direction:column;
-           align-items:center; justify-content:center; text-align:center;
-           background:#fafafa; transition:background .15s; }
-  .dzone.over    { background:#E8F5E9; border-color:#2E7D32; border-style:solid; }
+  .zones-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; margin:8px 0; }
+  .dzone { border:2px dashed #aaa; border-radius:8px; padding:6px; min-height:54px;
+           display:flex; flex-direction:column; align-items:center; justify-content:center;
+           text-align:center; background:#fafafa; cursor:pointer; }
+  .dzone.selected-target { border-color:#F57F17; background:#FFF8E1; border-style:solid; }
   .dzone.correct { background:#E8F5E9; border-color:#2E7D32; border-style:solid; }
   .dzone.wrong   { background:#FFEBEE; border-color:#B71C1C; border-style:solid; }
   .dzone-num  { font-size:11px; color:#888; margin-bottom:3px; }
-  .dzone-chip { padding:4px 8px; border-radius:12px; color:#fff;
-                font-size:12px; font-weight:bold; }
+  .dzone-chip { padding:3px 7px; border-radius:10px; color:#fff; font-size:11px; font-weight:bold; margin-top:3px; }
 
   .btn-row { display:flex; gap:8px; justify-content:center; margin:10px 0; }
-  .btn { padding:10px 22px; border:none; border-radius:8px;
-         font-size:14px; font-weight:bold; cursor:pointer; }
+  .btn { padding:10px 22px; border:none; border-radius:8px; font-size:14px; font-weight:bold; cursor:pointer; }
   .btn-ok    { background:#E65100; color:#fff; }
   .btn-reset { background:#666; color:#fff; }
-  .score { text-align:center; font-size:16px; font-weight:bold;
-           padding:10px; border-radius:8px; margin-top:8px; display:none; }
-  .score.good { background:#E8F5E9; color:#2E7D32; display:block; }
-  .score.bad  { background:#FFEBEE; color:#B71C1C; display:block; }
+  .score { text-align:center; font-size:15px; font-weight:bold; padding:10px; border-radius:8px; margin-top:8px; }
+  .score.good { background:#E8F5E9; color:#2E7D32; }
+  .score.bad  { background:#FFEBEE; color:#B71C1C; }
+  .instructions { font-size:13px; color:#555; background:#E3F2FD; border-radius:6px; padding:8px 12px; margin-bottom:10px; line-height:1.5; }
 </style>
 </head>
 <body>
@@ -90,7 +67,6 @@
 <h2>Points cardinaux &amp; Frise chronologique</h2>
 <p class="subtitle">Comment s'orienter dans l'espace et dans le temps ?</p>
 
-<!-- I. POINTS CARDINAUX -->
 <h3>I. Les points cardinaux</h3>
 <table>
   <tr><th>Point cardinal</th><th>Synonyme(s)</th><th>Position</th></tr>
@@ -99,76 +75,87 @@
   <tr><td><b>Est ▶</b></td><td>Oriental</td><td>À droite</td></tr>
   <tr><td><b>Ouest ◀</b></td><td>Occidental</td><td>À gauche</td></tr>
 </table>
-<div class="note">💡 Moyen mnémotechnique : <b>ORANGE</b> — le <b>O</b> est avant le <b>E</b> dans l'alphabet → <b>O</b>uest à gauche, <b>E</b>st à droite.</div>
+<div class="note">💡 <b>ORANGE</b> : le <b>O</b> est avant le <b>E</b> → <b>O</b>uest à gauche, <b>E</b>st à droite</div>
 
-<!-- II. CARTE NUMÉROTÉE -->
 <h3>II. Les continents et les océans</h3>
-<h4>🗺️ Carte numérotée — repère chaque zone</h4>
-
+<h4>🗺️ Carte numérotée</h4>
 <div class="legende">
-  <div class="leg-item"><div class="leg-color" style="background:#2E7D32;border-color:#2E7D32"></div> Continent</div>
-  <div class="leg-item"><div class="leg-color" style="background:#1565C0;border-color:#1565C0"></div> Océan</div>
-  <div class="leg-item"><div class="leg-color" style="background:#B71C1C;border-color:#B71C1C"></div> Ligne</div>
+  <div class="leg-item"><div class="leg-color" style="background:#2E7D32"></div> Continent</div>
+  <div class="leg-item"><div class="leg-color" style="background:#1565C0"></div> Océan</div>
+  <div class="leg-item"><div class="leg-color" style="background:#B71C1C"></div> Ligne</div>
 </div>
-
 <div class="carte-wrap">
-  <img src="carte_vierge.jpg" alt="Planisphère vierge" id="carteImg">
+  <img src="carte_vierge.jpg" alt="Planisphère vierge">
 </div>
-
-<p style="font-size:13px;color:#555;margin:6px 0">
-  Les numéros ci-dessous correspondent aux cases de la carte (vert = continent, bleu = océan, rouge = ligne).
-</p>
-
-<table class="num-table">
+<table style="margin-top:8px">
   <tr><th>N°</th><th>Élément</th><th>Type</th></tr>
-  <tr><td style="color:#2E7D32">1</td><td>Amérique du Nord</td><td>🌍 Continent</td></tr>
-  <tr><td style="color:#2E7D32">2</td><td>Amérique du Sud</td><td>🌍 Continent</td></tr>
-  <tr><td style="color:#2E7D32">3</td><td>Europe</td><td>🌍 Continent</td></tr>
-  <tr><td style="color:#2E7D32">4</td><td>Afrique</td><td>🌍 Continent</td></tr>
-  <tr><td style="color:#2E7D32">5</td><td>Asie</td><td>🌍 Continent</td></tr>
-  <tr><td style="color:#2E7D32">6</td><td>Océanie</td><td>🌍 Continent</td></tr>
-  <tr><td style="color:#2E7D32">7</td><td>Antarctique</td><td>🌍 Continent</td></tr>
-  <tr><td style="color:#1565C0">8</td><td>Océan Atlantique</td><td>🌊 Océan</td></tr>
-  <tr><td style="color:#1565C0">9</td><td>Océan Pacifique (côté Est)</td><td>🌊 Océan</td></tr>
-  <tr><td style="color:#1565C0">10</td><td>Océan Pacifique (côté Ouest)</td><td>🌊 Océan</td></tr>
-  <tr><td style="color:#1565C0">11</td><td>Océan Indien</td><td>🌊 Océan</td></tr>
-  <tr><td style="color:#1565C0">12</td><td>Océan Glacial Antarctique</td><td>🌊 Océan</td></tr>
-  <tr><td style="color:#B71C1C">13</td><td>Tropique du Cancer</td><td>☀️ Ligne</td></tr>
-  <tr><td style="color:#B71C1C">14</td><td>Équateur</td><td>☀️ Ligne</td></tr>
-  <tr><td style="color:#B71C1C">15</td><td>Tropique du Capricorne</td><td>☀️ Ligne</td></tr>
+  <tr><td><b style="color:#2E7D32">1</b></td><td>Amérique du Nord</td><td>🌍 Continent</td></tr>
+  <tr><td><b style="color:#2E7D32">2</b></td><td>Amérique du Sud</td><td>🌍 Continent</td></tr>
+  <tr><td><b style="color:#2E7D32">3</b></td><td>Europe</td><td>🌍 Continent</td></tr>
+  <tr><td><b style="color:#2E7D32">4</b></td><td>Afrique</td><td>🌍 Continent</td></tr>
+  <tr><td><b style="color:#2E7D32">5</b></td><td>Asie</td><td>🌍 Continent</td></tr>
+  <tr><td><b style="color:#2E7D32">6</b></td><td>Océanie</td><td>🌍 Continent</td></tr>
+  <tr><td><b style="color:#2E7D32">7</b></td><td>Antarctique</td><td>🌍 Continent</td></tr>
+  <tr><td><b style="color:#1565C0">8</b></td><td>Océan Atlantique</td><td>🌊 Océan</td></tr>
+  <tr><td><b style="color:#1565C0">9</b></td><td>Océan Pacifique (côté Est)</td><td>🌊 Océan</td></tr>
+  <tr><td><b style="color:#1565C0">10</b></td><td>Océan Pacifique (côté Ouest)</td><td>🌊 Océan</td></tr>
+  <tr><td><b style="color:#1565C0">11</b></td><td>Océan Indien</td><td>🌊 Océan</td></tr>
+  <tr><td><b style="color:#1565C0">12</b></td><td>Océan Glacial Antarctique</td><td>🌊 Océan</td></tr>
+  <tr><td><b style="color:#B71C1C">13</b></td><td>Tropique du Cancer</td><td>☀️ Ligne</td></tr>
+  <tr><td><b style="color:#B71C1C">14</b></td><td>Équateur</td><td>☀️ Ligne</td></tr>
+  <tr><td><b style="color:#B71C1C">15</b></td><td>Tropique du Capricorne</td><td>☀️ Ligne</td></tr>
 </table>
 
-<!-- DRAG & DROP -->
-<div class="drag-title">🎮 Exercice : associe chaque numéro à son nom</div>
-<p class="drag-instructions">Fais glisser (ou appuie longuement sur mobile) chaque étiquette vers la case numérotée qui lui correspond.</p>
-
-<div class="pool" id="pool">
-  <div class="chip continent" data-ans="1">Amérique du Nord</div>
-  <div class="chip continent" data-ans="2">Amérique du Sud</div>
-  <div class="chip continent" data-ans="3">Europe</div>
-  <div class="chip continent" data-ans="4">Afrique</div>
-  <div class="chip continent" data-ans="5">Asie</div>
-  <div class="chip continent" data-ans="6">Océanie</div>
-  <div class="chip continent" data-ans="7">Antarctique</div>
-  <div class="chip ocean" data-ans="8">Océan Atlantique</div>
-  <div class="chip ocean" data-ans="9">Pacifique (Est)</div>
-  <div class="chip ocean" data-ans="10">Pacifique (Ouest)</div>
-  <div class="chip ocean" data-ans="11">Océan Indien</div>
-  <div class="chip ocean" data-ans="12">Gl. Antarctique</div>
-  <div class="chip ligne" data-ans="13">Tropique du Cancer</div>
-  <div class="chip ligne" data-ans="14">Équateur</div>
-  <div class="chip ligne" data-ans="15">Tropique du Capricorne</div>
+<!-- EXERCICE TAP-TO-PLACE -->
+<div class="drag-title">🎮 Exercice : place chaque étiquette</div>
+<div class="instructions">
+  1️⃣ Appuie sur une étiquette colorée pour la sélectionner<br>
+  2️⃣ Appuie ensuite sur la case numérotée où tu veux la placer<br>
+  3️⃣ Clique sur ✅ Vérifier quand tu as fini
 </div>
 
-<div class="zones-grid" id="zonesGrid"></div>
+<div class="pool" id="pool">
+  <span class="chip continent" data-ans="1" onclick="selectChip(this)">Amérique du Nord</span>
+  <span class="chip continent" data-ans="2" onclick="selectChip(this)">Amérique du Sud</span>
+  <span class="chip continent" data-ans="3" onclick="selectChip(this)">Europe</span>
+  <span class="chip continent" data-ans="4" onclick="selectChip(this)">Afrique</span>
+  <span class="chip continent" data-ans="5" onclick="selectChip(this)">Asie</span>
+  <span class="chip continent" data-ans="6" onclick="selectChip(this)">Océanie</span>
+  <span class="chip continent" data-ans="7" onclick="selectChip(this)">Antarctique</span>
+  <span class="chip ocean" data-ans="8" onclick="selectChip(this)">Océan Atlantique</span>
+  <span class="chip ocean" data-ans="9" onclick="selectChip(this)">Pacifique (Est)</span>
+  <span class="chip ocean" data-ans="10" onclick="selectChip(this)">Pacifique (Ouest)</span>
+  <span class="chip ocean" data-ans="11" onclick="selectChip(this)">Océan Indien</span>
+  <span class="chip ocean" data-ans="12" onclick="selectChip(this)">Gl. Antarctique</span>
+  <span class="chip ligne" data-ans="13" onclick="selectChip(this)">Tropique du Cancer</span>
+  <span class="chip ligne" data-ans="14" onclick="selectChip(this)">Équateur</span>
+  <span class="chip ligne" data-ans="15" onclick="selectChip(this)">Tropique du Capricorne</span>
+</div>
+
+<div class="zones-grid">
+  <div class="dzone" data-zone="1" onclick="placeChip(this)"><span class="dzone-num">Case 1</span></div>
+  <div class="dzone" data-zone="2" onclick="placeChip(this)"><span class="dzone-num">Case 2</span></div>
+  <div class="dzone" data-zone="3" onclick="placeChip(this)"><span class="dzone-num">Case 3</span></div>
+  <div class="dzone" data-zone="4" onclick="placeChip(this)"><span class="dzone-num">Case 4</span></div>
+  <div class="dzone" data-zone="5" onclick="placeChip(this)"><span class="dzone-num">Case 5</span></div>
+  <div class="dzone" data-zone="6" onclick="placeChip(this)"><span class="dzone-num">Case 6</span></div>
+  <div class="dzone" data-zone="7" onclick="placeChip(this)"><span class="dzone-num">Case 7</span></div>
+  <div class="dzone" data-zone="8" onclick="placeChip(this)"><span class="dzone-num">Case 8</span></div>
+  <div class="dzone" data-zone="9" onclick="placeChip(this)"><span class="dzone-num">Case 9</span></div>
+  <div class="dzone" data-zone="10" onclick="placeChip(this)"><span class="dzone-num">Case 10</span></div>
+  <div class="dzone" data-zone="11" onclick="placeChip(this)"><span class="dzone-num">Case 11</span></div>
+  <div class="dzone" data-zone="12" onclick="placeChip(this)"><span class="dzone-num">Case 12</span></div>
+  <div class="dzone" data-zone="13" onclick="placeChip(this)"><span class="dzone-num">Case 13</span></div>
+  <div class="dzone" data-zone="14" onclick="placeChip(this)"><span class="dzone-num">Case 14</span></div>
+  <div class="dzone" data-zone="15" onclick="placeChip(this)"><span class="dzone-num">Case 15</span></div>
+</div>
 
 <div class="btn-row">
   <button class="btn btn-ok" onclick="check()">✅ Vérifier</button>
   <button class="btn btn-reset" onclick="reset()">🔄 Recommencer</button>
 </div>
-<div class="score" id="score"></div>
+<div id="score" style="display:none"></div>
 
-<!-- III. FRISE -->
 <h3>III. La frise chronologique</h3>
 <div class="frise">
   <div class="periode prehistoire">Préhistoire</div>
@@ -186,7 +173,6 @@
 </div>
 <div class="note" style="margin-top:8px">⭐ En <b>5ème</b> : <b>Moyen Âge</b> (476–1492) et <b>Époque moderne</b> (1492–1789)</div>
 
-<!-- IV. MNÉMOTECHNIQUES -->
 <h3>IV. Moyens mnémotechniques</h3>
 <div class="note">🌍 <b>Continents</b> : <i>"Les 2 Américains Eric et Antoine sont Allés en Orbite"</i><br>
 2 <b>A</b>méricains = Am. Nord + Am. Sud &nbsp;|&nbsp; <b>E</b>ric = <b>E</b>urope &nbsp;|&nbsp; <b>A</b>ntoine = <b>A</b>frique<br>
@@ -195,163 +181,99 @@
 <div class="note">🌊 <b>Océans</b> :<br>
 • Pacifique écrit ×2 → la Terre est ronde !<br>
 • Atlantique coincé entre les Amériques et l'Europe-Afrique<br>
-• <b>Ant</b>arctique a plus de lettres qu'<b>Arc</b>tique → plus lourd → il est en bas (Sud)
+• <b>Ant</b>arctique a plus de lettres → plus lourd → en bas (Sud)
 </div>
 <div class="note">☀️ <b>Tropiques</b> :<br>
 • <b>Cancer</b> = 6 lettres → léger → en <b>HAUT</b> (Nord)<br>
-• <b>Capricorne</b> = 10 lettres → lourd → tombe en <b>BAS</b> (Sud)
+• <b>Capricorne</b> = 10 lettres → lourd → en <b>BAS</b> (Sud)
 </div>
 
 <script>
-// ── Données ──
-const DATA = [
-  {n:1, label:"Amérique du Nord", cls:"continent"},
-  {n:2, label:"Amérique du Sud",  cls:"continent"},
-  {n:3, label:"Europe",           cls:"continent"},
-  {n:4, label:"Afrique",          cls:"continent"},
-  {n:5, label:"Asie",             cls:"continent"},
-  {n:6, label:"Océanie",          cls:"continent"},
-  {n:7, label:"Antarctique",      cls:"continent"},
-  {n:8, label:"Océan Atlantique", cls:"ocean"},
-  {n:9, label:"Pacifique (Est)",  cls:"ocean"},
-  {n:10,label:"Pacifique (Ouest)",cls:"ocean"},
-  {n:11,label:"Océan Indien",     cls:"ocean"},
-  {n:12,label:"Gl. Antarctique",  cls:"ocean"},
-  {n:13,label:"Tropique du Cancer",    cls:"ligne"},
-  {n:14,label:"Équateur",              cls:"ligne"},
-  {n:15,label:"Tropique du Capricorne",cls:"ligne"},
-];
+const COLORS = {continent:'#2E7D32', ocean:'#1565C0', ligne:'#B71C1C'};
+let selected = null;
 
-const COLORS = {continent:"#2E7D32", ocean:"#1565C0", ligne:"#B71C1C"};
-
-// ── Construire les zones de dépôt ──
-const grid = document.getElementById('zonesGrid');
-DATA.forEach(d => {
-  const z = document.createElement('div');
-  z.className = 'dzone';
-  z.dataset.zone = d.n;
-  z.innerHTML = `<span class="dzone-num">Case ${d.n}</span>`;
-  grid.appendChild(z);
-});
-
-// ── Drag & Drop souris ──
-let dragged = null;
-
-document.querySelectorAll('.chip').forEach(chip => {
-  chip.addEventListener('dragstart', e => {
-    dragged = chip;
-    chip.classList.add('dragging');
-  });
-  chip.addEventListener('dragend', () => chip.classList.remove('dragging'));
-  chip.setAttribute('draggable','true');
-});
-
-document.querySelectorAll('.dzone').forEach(zone => {
-  zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('over'); });
-  zone.addEventListener('dragleave', () => zone.classList.remove('over'));
-  zone.addEventListener('drop', e => {
-    e.preventDefault();
-    zone.classList.remove('over');
-    if (dragged) drop(dragged, zone);
-  });
-});
-
-// ── Touch (mobile) ──
-let touchChip = null, clone = null;
-
-document.querySelectorAll('.chip').forEach(chip => {
-  chip.addEventListener('touchstart', e => {
-    touchChip = chip;
-    chip.classList.add('dragging');
-    // Créer un clone visuel
-    clone = chip.cloneNode(true);
-    clone.style.cssText = `position:fixed;opacity:.8;pointer-events:none;z-index:9999;
-      padding:6px 11px;border-radius:20px;color:#fff;font-size:13px;font-weight:bold;
-      background:${COLORS[chip.classList[1]] || '#666'};`;
-    document.body.appendChild(clone);
-    moveClone(e.touches[0]);
-  }, {passive:true});
-
-  chip.addEventListener('touchmove', e => {
-    e.preventDefault();
-    if (clone) moveClone(e.touches[0]);
-    // Highlight zone sous le doigt
-    document.querySelectorAll('.dzone').forEach(z => z.classList.remove('over'));
-    const el = document.elementFromPoint(e.touches[0].clientX, e.touches[0].clientY);
-    if (el && el.classList.contains('dzone')) el.classList.add('over');
-    else if (el && el.closest('.dzone')) el.closest('.dzone').classList.add('over');
-  }, {passive:false});
-
-  chip.addEventListener('touchend', e => {
-    chip.classList.remove('dragging');
-    if (clone) { clone.remove(); clone = null; }
-    document.querySelectorAll('.dzone').forEach(z => z.classList.remove('over'));
-    const t = e.changedTouches[0];
-    const el = document.elementFromPoint(t.clientX, t.clientY);
-    const zone = el ? (el.classList.contains('dzone') ? el : el.closest('.dzone')) : null;
-    if (zone && touchChip) drop(touchChip, zone);
-    touchChip = null;
-  });
-});
-
-function moveClone(touch) {
-  clone.style.left = (touch.clientX - 40) + 'px';
-  clone.style.top  = (touch.clientY - 20) + 'px';
+function selectChip(chip) {
+  // Désélectionner tout
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('selected'));
+  // Si on reclique sur le même, on désélectionne
+  if (selected === chip) { selected = null; return; }
+  chip.classList.add('selected');
+  selected = chip;
 }
 
-// ── Logique de dépôt ──
-function drop(chip, zone) {
-  // Retirer si déjà quelque part
+function placeChip(zone) {
+  if (!selected) return;
+  const ans = selected.dataset.ans;
+  const label = selected.textContent;
+  const cls = selected.classList[1]; // continent, ocean ou ligne
+  const color = COLORS[cls] || '#666';
+
+  // Retirer l'étiquette de son ancienne zone si déjà placée
   document.querySelectorAll('.dzone').forEach(z => {
-    if (z.dataset.placed === chip.dataset.ans) {
-      z.innerHTML = `<span class="dzone-num">Case ${z.dataset.zone}</span>`;
+    if (z.dataset.placed === ans) {
+      z.innerHTML = '<span class="dzone-num">Case ' + z.dataset.zone + '</span>';
       delete z.dataset.placed;
       z.classList.remove('correct','wrong');
     }
   });
-  // Remettre dans le pool ce qui était dans la zone
+
+  // Remettre dans le pool ce qui était dans cette zone
   if (zone.dataset.placed) {
-    const old = document.querySelector(`.chip[data-ans="${zone.dataset.placed}"]`);
-    if (old) old.style.display = '';
-    zone.innerHTML = `<span class="dzone-num">Case ${zone.dataset.zone}</span>`;
+    const old = document.querySelector('.chip[data-ans="' + zone.dataset.placed + '"]');
+    if (old) old.classList.remove('hidden');
+    zone.innerHTML = '<span class="dzone-num">Case ' + zone.dataset.zone + '</span>';
     delete zone.dataset.placed;
     zone.classList.remove('correct','wrong');
   }
-  // Placer
-  const color = COLORS[chip.classList[1]] || '#666';
-  zone.innerHTML = `<span class="dzone-num">Case ${zone.dataset.zone}</span>
-    <span class="dzone-chip" style="background:${color}">${chip.textContent}</span>`;
-  zone.dataset.placed = chip.dataset.ans;
+
+  // Placer la nouvelle étiquette
+  zone.innerHTML = '<span class="dzone-num">Case ' + zone.dataset.zone + '</span>' +
+    '<span class="dzone-chip" style="background:' + color + '">' + label + '</span>';
+  zone.dataset.placed = ans;
   zone.classList.remove('correct','wrong');
-  chip.style.display = 'none';
+
+  // Cacher l'étiquette du pool
+  selected.classList.add('hidden');
+  selected.classList.remove('selected');
+  selected = null;
 }
 
-// ── Vérification ──
 function check() {
   let ok = 0, total = 0;
   document.querySelectorAll('.dzone').forEach(z => {
     if (z.dataset.placed) {
       total++;
-      if (z.dataset.placed === z.dataset.zone) { z.classList.add('correct'); z.classList.remove('wrong'); ok++; }
-      else { z.classList.add('wrong'); z.classList.remove('correct'); }
+      if (z.dataset.placed === z.dataset.zone) {
+        z.classList.add('correct'); z.classList.remove('wrong'); ok++;
+      } else {
+        z.classList.add('wrong'); z.classList.remove('correct');
+      }
     }
   });
   const s = document.getElementById('score');
-  if (total === 0) { s.className='score bad'; s.textContent='Place au moins une étiquette !'; return; }
-  s.className = ok===total ? 'score good' : 'score bad';
-  s.textContent = `${ok} / ${total} ${ok===total ? '🎉 Bravo, tout est correct !' : '— Regarde les cases rouges et réessaie.'}`;
+  s.style.display = 'block';
+  if (total === 0) {
+    s.className = 'score bad';
+    s.textContent = 'Place au moins une étiquette !';
+    return;
+  }
+  s.className = ok === total ? 'score good' : 'score bad';
+  s.textContent = ok + ' / ' + total + (ok === total ? ' 🎉 Bravo, tout est correct !' : ' — Regarde les cases rouges et réessaie.');
 }
 
-// ── Reset ──
 function reset() {
   document.querySelectorAll('.dzone').forEach(z => {
-    z.innerHTML = `<span class="dzone-num">Case ${z.dataset.zone}</span>`;
+    z.innerHTML = '<span class="dzone-num">Case ' + z.dataset.zone + '</span>';
     delete z.dataset.placed;
     z.classList.remove('correct','wrong');
   });
-  document.querySelectorAll('.chip').forEach(c => c.style.display = '');
+  document.querySelectorAll('.chip').forEach(c => {
+    c.classList.remove('hidden','selected');
+  });
+  selected = null;
   const s = document.getElementById('score');
-  s.className = 'score'; s.textContent = '';
+  s.style.display = 'none';
+  s.textContent = '';
 }
 </script>
 </body>
