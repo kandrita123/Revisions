@@ -1,0 +1,16 @@
+[
+  {"question":"À quoi sert CAN en anglais ?","reponse":"CAN sert à exprimer une capacité ou un savoir-faire. Ex : I can sing → Je sais chanter.","indice":"💡 Pense à 'je sais faire quelque chose'..."},
+  {"question":"Quelle est la structure avec CAN (affirmatif) ?","reponse":"Sujet + CAN + Base Verbale. Ex : She can swim.","indice":"💡 Jamais de TO, jamais de -ING, jamais de S !"},
+  {"question":"CAN change-t-il selon le sujet ?","reponse":"Non ! CAN ne change jamais : I can, you can, he can, she can, we can, they can.","indice":"💡 C'est un modal — il est invariable..."},
+  {"question":"Comment dit-on 'je ne sais pas danser' ?","reponse":"I can't dance. (CAN'T + Base Verbale)","indice":"💡 CAN'T = cannot contracté..."},
+  {"question":"Comment former une question avec CAN ?","reponse":"CAN + sujet + Base Verbale ? Ex : Can you swim?","indice":"💡 On met CAN devant le sujet..."},
+  {"question":"Quelle est la réponse courte à 'Can you sing?' — OUI ?","reponse":"Yes, I can.","indice":"💡 On répète l'auxiliaire CAN..."},
+  {"question":"Quelle est la réponse courte à 'Can she dance?' — NON ?","reponse":"No, she can't.","indice":"💡 Même auxiliaire, forme négative..."},
+  {"question":"Quels sont les 3 pièges avec CAN ?","reponse":"1. Pas de TO : I can sing ✅ / I can to sing ❌\n2. Pas de -ING : I can sing ✅ / I can singing ❌\n3. Pas de S : She can sing ✅ / She can sings ❌","indice":"💡 CAN + BV directement, rien d'autre !"},
+  {"question":"À quoi sert LIKE + V-ing ?","reponse":"LIKE + V-ing exprime ce qu'on aime faire. Ex : I like swimming → J'aime nager.","indice":"💡 Pense à 'j'aime faire quelque chose'..."},
+  {"question":"Quelle est la différence entre LIKE + V-ing et LIKE + nom ?","reponse":"LIKE + V-ing = dire ce qu'on aime FAIRE (I like swimming)\nLIKE + nom = dire ce qu'on aime (I like music)","indice":"💡 Une action → V-ing / Un objet → nom..."},
+  {"question":"Avec he/she/it, comment écrit-on LIKE ?","reponse":"LIKES (avec S) : She likes dancing. He likes music.","indice":"💡 Comme tous les verbes à la 3ème personne..."},
+  {"question":"Complète l'exercice : Spiderman ___ crawl on walls.","reponse":"Spiderman CAN crawl on walls. (il sait faire ça !)","indice":"💡 Spiderman a ce pouvoir..."},
+  {"question":"Complète : Superman ___ fly but he ___ live without solar energy.","reponse":"Superman CAN fly but he CAN'T live without solar energy.","indice":"💡 Il peut voler mais a une faiblesse..."},
+  {"question":"Traduis : 'Elle aime jouer de la guitare.'","reponse":"She likes playing the guitar. (LIKE + V-ing, et LIKES avec she)","indice":"💡 She → likes / jouer → playing..."}
+]
