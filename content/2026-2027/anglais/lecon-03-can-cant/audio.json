@@ -1,0 +1,66 @@
+[
+  {
+    "titre": "CAN + BV — Dire ce qu'on sait faire",
+    "emoji": "✅",
+    "contenu": [
+      "Le modal CAN s'utilise pour exprimer une capacité ou un savoir-faire.",
+      "La structure est : sujet, CAN, puis la Base Verbale directement.",
+      "Attention : après CAN, on ne met jamais TO, jamais -ING, et jamais de S.",
+      "CAN ne change jamais selon le sujet : I can, you can, he can, she can, we can, they can — toujours pareil.",
+      "Exemple : Cordelia can do a handstand signifie Cordelia sait faire un appui renversé.",
+      "Exemple : I can sing signifie je sais chanter.",
+      "Exemple : She can play the guitar signifie elle sait jouer de la guitare."
+    ]
+  },
+  {
+    "titre": "CAN'T + BV — Dire ce qu'on ne sait pas faire",
+    "emoji": "❌",
+    "contenu": [
+      "CAN'T est la forme négative de CAN. CAN'T est la contraction de cannot.",
+      "La structure est : sujet, CAN'T, puis la Base Verbale directement.",
+      "Exemple : Dexter can't play the piano signifie Dexter ne sait pas jouer du piano.",
+      "Exemple : I can't dance signifie je ne sais pas danser.",
+      "Exemple : He can't swim signifie il ne sait pas nager.",
+      "Comme pour CAN, on ne met jamais TO, -ING ou S après CAN'T."
+    ]
+  },
+  {
+    "titre": "CAN + sujet + BV ? — Poser une question",
+    "emoji": "❓",
+    "contenu": [
+      "Pour poser une question avec CAN, on met CAN devant le sujet.",
+      "La structure est : CAN, sujet, Base Verbale, point d'interrogation.",
+      "Exemple : Can you play an instrument ? signifie Est-ce que tu sais jouer d'un instrument ?",
+      "Exemple : Can she swim ? signifie Est-ce qu'elle sait nager ?",
+      "Pour répondre, on utilise une réponse courte : Yes, I can. ou No, I can't.",
+      "On répète toujours l'auxiliaire CAN dans la réponse."
+    ]
+  },
+  {
+    "titre": "LIKE + V-ing et LIKE + nom",
+    "emoji": "❤️",
+    "contenu": [
+      "LIKE s'utilise pour dire ce qu'on aime faire ou ce qu'on aime.",
+      "Avec une action, on utilise LIKE suivi du verbe en -ING. C'est ce qu'on appelle le gérondif.",
+      "Exemple : I like swimming signifie j'aime nager.",
+      "Exemple : She likes dancing signifie elle aime danser.",
+      "Avec un nom, on utilise LIKE directement suivi du nom.",
+      "Exemple : I like music signifie j'aime la musique.",
+      "Attention : avec he, she ou it, LIKE prend un S. On dit she likes, he likes.",
+      "Piège : on ne dit pas I like swim — il faut I like swimming."
+    ]
+  },
+  {
+    "titre": "Pièges à éviter et points clés",
+    "emoji": "⚠️",
+    "contenu": [
+      "Voici les erreurs les plus fréquentes à éviter avec CAN.",
+      "Erreur numéro un : mettre TO après CAN. On dit I can sing, jamais I can to sing.",
+      "Erreur numéro deux : mettre -ING après CAN. On dit I can sing, jamais I can singing.",
+      "Erreur numéro trois : mettre un S avec CAN. On dit she can sing, jamais she can sings.",
+      "Erreur numéro quatre : avec LIKE, oublier le -ING. On dit I like swimming, jamais I like swim.",
+      "Pour résumer : CAN est toujours suivi directement de la Base Verbale, sans TO, sans -ING, et sans S.",
+      "Pour les questions, CAN se place devant le sujet. Pour répondre : Yes, I can. ou No, I can't."
+    ]
+  }
+]
