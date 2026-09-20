@@ -5,256 +5,353 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Points cardinaux & Frise chronologique</title>
 <style>
-  body { font-family: Arial, sans-serif; margin: 0; padding: 10px; background: #fff; }
-  h2 { color: #E65100; text-align: center; margin: 8px 0; }
-  h3 { color: #E65100; border-left: 5px solid #E65100; padding-left: 10px; background: #FFF3E0; margin: 14px 0 6px; padding: 8px 10px; border-radius: 4px; }
-  h4 { color: #1565C0; margin: 10px 0 4px; }
-  table { border-collapse: collapse; width: 100%; margin: 8px 0; }
-  th { background: #E65100; color: white; padding: 7px; font-size: 14px; }
-  td { border: 1px solid #ddd; padding: 6px 8px; font-size: 14px; }
-  tr:nth-child(even) td { background: #FFF3E0; }
-  .note { background: #FFF9C4; border-left: 4px solid #F57F17; padding: 8px 12px; border-radius: 4px; margin: 8px 0; font-size: 14px; }
-  .periode { display: inline-block; padding: 4px 10px; border-radius: 4px; color: white; font-weight: bold; margin: 2px; font-size: 13px; }
-  .prehistoire { background: #4527A0; }
-  .antiquite { background: #00695C; }
-  .moyenage { background: #1565C0; }
-  .moderne { background: #E65100; }
-  .contemporaine { background: #B71C1C; }
+  * { box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; margin: 0; padding: 12px; background: #fff; color: #212121; }
+  h2 { color: #E65100; text-align: center; font-size: 20px; margin: 6px 0 4px; }
+  .subtitle { text-align:center; color:#666; font-style:italic; font-size:13px; margin-bottom:14px; }
 
-  /* CARTE INTERACTIVE */
-  .carte-section { margin: 14px 0; }
-  .carte-container { position: relative; width: 100%; max-width: 700px; margin: 0 auto; }
-  .carte-container img { width: 100%; display: block; border-radius: 6px; }
+  h3 { font-size:15px; font-weight:bold; color:#fff; background:#E65100;
+       padding:7px 12px; border-radius:6px; margin:14px 0 8px; }
+  h4 { font-size:14px; color:#1565C0; margin:10px 0 5px; }
 
-  /* Zones numérotées sur la carte */
-  .zone { position: absolute; background: rgba(255,255,255,0.85); border: 2px solid #333; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 13px; cursor: default; }
-  .zone.continent { border-color: #2E7D32; color: #2E7D32; }
-  .zone.ocean { border-color: #1565C0; color: #1565C0; }
-  .zone.ligne { border-color: #B71C1C; color: #B71C1C; }
+  table { border-collapse:collapse; width:100%; margin:8px 0; font-size:14px; }
+  th { background:#E65100; color:#fff; padding:7px 8px; text-align:left; }
+  td { border:1px solid #ddd; padding:6px 8px; }
+  tr:nth-child(even) td { background:#FFF3E0; }
 
-  /* DRAG AND DROP */
-  .drag-section { margin: 16px 0; }
-  .drag-section h4 { color: #E65100; }
-  .labels-pool { display: flex; flex-wrap: wrap; gap: 6px; padding: 10px; background: #f5f5f5; border-radius: 8px; min-height: 50px; margin-bottom: 10px; }
-  .label-item { padding: 6px 12px; border-radius: 20px; cursor: grab; font-size: 13px; font-weight: bold; color: white; user-select: none; touch-action: none; }
-  .label-item.continent-label { background: #2E7D32; }
-  .label-item.ocean-label { background: #1565C0; }
-  .label-item.ligne-label { background: #B71C1C; }
-  .label-item.dragging { opacity: 0.4; }
+  .note { background:#FFF9C4; border-left:4px solid #F57F17; padding:8px 12px;
+          border-radius:4px; margin:8px 0; font-size:14px; line-height:1.5; }
+  .note b { color:#E65100; }
 
-  .drop-zones { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 8px 0; }
-  .drop-zone { border: 2px dashed #999; border-radius: 8px; padding: 8px; min-height: 45px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #666; text-align: center; background: #fafafa; transition: background 0.2s; }
-  .drop-zone.over { background: #E8F5E9; border-color: #2E7D32; }
-  .drop-zone.correct { background: #E8F5E9; border-color: #2E7D32; border-style: solid; }
-  .drop-zone.wrong { background: #FFEBEE; border-color: #B71C1C; border-style: solid; }
-  .drop-zone .zone-num { font-size: 10px; color: #999; display: block; margin-bottom: 3px; }
-  .drop-zone .placed-label { padding: 4px 8px; border-radius: 12px; color: white; font-size: 12px; font-weight: bold; }
+  /* FRISE */
+  .frise { display:flex; gap:0; margin:8px 0; overflow-x:auto; }
+  .periode { flex:1; min-width:90px; padding:6px 4px; text-align:center;
+             color:#fff; font-size:12px; font-weight:bold; border-right:2px solid #fff; }
+  .prehistoire { background:#4527A0; }
+  .antiquite   { background:#00695C; }
+  .moyenage    { background:#1565C0; }
+  .moderne     { background:#E65100; }
+  .contemporaine { background:#B71C1C; border-right:none; }
+  .frise-dates { display:flex; gap:0; margin-top:2px; }
+  .frise-date  { flex:1; min-width:90px; font-size:10px; color:#555; text-align:center; padding:2px; }
 
-  .btn { padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: bold; margin: 4px; }
-  .btn-check { background: #E65100; color: white; }
-  .btn-reset { background: #666; color: white; }
-  .score { text-align: center; font-size: 16px; font-weight: bold; margin: 10px 0; padding: 10px; border-radius: 8px; }
-  .score.good { background: #E8F5E9; color: #2E7D32; }
-  .score.bad { background: #FFEBEE; color: #B71C1C; }
+  /* CARTE SECTION */
+  .carte-wrap { position:relative; width:100%; max-width:680px; margin:0 auto; }
+  .carte-wrap img { width:100%; display:block; border-radius:6px; border:2px solid #E65100; }
+
+  /* LÉGENDE */
+  .legende { display:flex; gap:8px; flex-wrap:wrap; margin:8px 0; font-size:12px; }
+  .leg-item { display:flex; align-items:center; gap:4px; }
+  .leg-color { width:14px; height:14px; border-radius:3px; border:2px solid; }
+
+  /* TABLEAU NUMÉROS */
+  .num-table td:first-child { font-weight:bold; font-size:15px; width:36px; text-align:center; }
+
+  /* DRAG & DROP */
+  .drag-title { font-size:14px; font-weight:bold; color:#E65100; margin:14px 0 6px; }
+  .drag-instructions { font-size:13px; color:#555; margin-bottom:8px; line-height:1.4; }
+
+  .pool { display:flex; flex-wrap:wrap; gap:6px; padding:10px;
+          background:#f0f0f0; border-radius:8px; min-height:48px; margin-bottom:12px; }
+
+  .chip { display:inline-block; padding:6px 11px; border-radius:20px; color:#fff;
+          font-size:13px; font-weight:bold; cursor:grab; user-select:none;
+          touch-action:none; transition:opacity .2s; }
+  .chip.continent { background:#2E7D32; }
+  .chip.ocean     { background:#1565C0; }
+  .chip.ligne     { background:#B71C1C; }
+  .chip.dragging  { opacity:.4; }
+
+  .zones-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:6px; }
+  .dzone { border:2px dashed #aaa; border-radius:8px; padding:6px;
+           min-height:52px; display:flex; flex-direction:column;
+           align-items:center; justify-content:center; text-align:center;
+           background:#fafafa; transition:background .15s; }
+  .dzone.over    { background:#E8F5E9; border-color:#2E7D32; border-style:solid; }
+  .dzone.correct { background:#E8F5E9; border-color:#2E7D32; border-style:solid; }
+  .dzone.wrong   { background:#FFEBEE; border-color:#B71C1C; border-style:solid; }
+  .dzone-num  { font-size:11px; color:#888; margin-bottom:3px; }
+  .dzone-chip { padding:4px 8px; border-radius:12px; color:#fff;
+                font-size:12px; font-weight:bold; }
+
+  .btn-row { display:flex; gap:8px; justify-content:center; margin:10px 0; }
+  .btn { padding:10px 22px; border:none; border-radius:8px;
+         font-size:14px; font-weight:bold; cursor:pointer; }
+  .btn-ok    { background:#E65100; color:#fff; }
+  .btn-reset { background:#666; color:#fff; }
+  .score { text-align:center; font-size:16px; font-weight:bold;
+           padding:10px; border-radius:8px; margin-top:8px; display:none; }
+  .score.good { background:#E8F5E9; color:#2E7D32; display:block; }
+  .score.bad  { background:#FFEBEE; color:#B71C1C; display:block; }
 </style>
 </head>
 <body>
 
-<h2>Points cardinaux & Frise chronologique</h2>
-<p style="text-align:center;color:#666;font-size:13px;margin:4px 0 12px"><em>Comment s'orienter dans l'espace et dans le temps ?</em></p>
+<h2>Points cardinaux &amp; Frise chronologique</h2>
+<p class="subtitle">Comment s'orienter dans l'espace et dans le temps ?</p>
 
+<!-- I. POINTS CARDINAUX -->
 <h3>I. Les points cardinaux</h3>
 <table>
-  <tr><th>Point cardinal</th><th>Synonyme(s)</th></tr>
-  <tr><td><strong>Nord 🔼</strong></td><td>Boréal, Septentrional</td></tr>
-  <tr><td><strong>Sud 🔽</strong></td><td>Austral, Méridional</td></tr>
-  <tr><td><strong>Est ▶</strong></td><td>Oriental</td></tr>
-  <tr><td><strong>Ouest ◀</strong></td><td>Occidental</td></tr>
+  <tr><th>Point cardinal</th><th>Synonyme(s)</th><th>Position</th></tr>
+  <tr><td><b>Nord 🔼</b></td><td>Boréal, Septentrional</td><td>En haut</td></tr>
+  <tr><td><b>Sud 🔽</b></td><td>Austral, Méridional</td><td>En bas</td></tr>
+  <tr><td><b>Est ▶</b></td><td>Oriental</td><td>À droite</td></tr>
+  <tr><td><b>Ouest ◀</b></td><td>Occidental</td><td>À gauche</td></tr>
 </table>
-<div class="note">💡 <strong>ORANGE</strong> : le <strong>O</strong> est avant le <strong>E</strong> → <strong>O</strong>uest à gauche, <strong>E</strong>st à droite</div>
+<div class="note">💡 Moyen mnémotechnique : <b>ORANGE</b> — le <b>O</b> est avant le <b>E</b> dans l'alphabet → <b>O</b>uest à gauche, <b>E</b>st à droite.</div>
 
+<!-- II. CARTE NUMÉROTÉE -->
 <h3>II. Les continents et les océans</h3>
+<h4>🗺️ Carte numérotée — repère chaque zone</h4>
 
-<!-- CARTE NUMÉROTÉE -->
-<div class="carte-section">
-  <h4>🗺️ Carte numérotée — repère chaque zone :</h4>
-  <div class="carte-container" id="carte">
-    <img src="https://kandrita123.github.io/Revisions/content/2026-2027/histoire-geo/lecon-01-points-cardinaux-frise/carte_vierge.jpg" alt="Planisphère" id="carteImg">
-    <!-- Les zones sont positionnées en % pour s'adapter à toutes les tailles -->
-    <div class="zone continent" style="left:13%;top:22%;width:12%;height:7%">1</div>
-    <div class="zone continent" style="left:17%;top:53%;width:12%;height:7%">2</div>
-    <div class="zone continent" style="left:43%;top:23%;width:10%;height:7%">3</div>
-    <div class="zone continent" style="left:43%;top:38%;width:10%;height:7%">4</div>
-    <div class="zone continent" style="left:58%;top:18%;width:10%;height:7%">5</div>
-    <div class="zone continent" style="left:72%;top:52%;width:10%;height:7%">6</div>
-    <div class="zone continent" style="left:43%;top:78%;width:12%;height:7%">7</div>
-    <div class="zone ocean" style="left:25%;top:35%;width:13%;height:7%">8</div>
-    <div class="zone ocean" style="left:72%;top:35%;width:13%;height:7%">9</div>
-    <div class="zone ocean" style="left:4%;top:42%;width:9%;height:7%">10</div>
-    <div class="zone ocean" style="left:53%;top:53%;width:11%;height:7%">11</div>
-    <div class="zone ocean" style="left:27%;top:78%;width:13%;height:6%">12</div>
-    <div class="zone ligne" style="left:4%;top:29%;width:9%;height:5%">13</div>
-    <div class="zone ligne" style="left:4%;top:44%;width:9%;height:5%" style="display:none">14</div>
-    <div class="zone ligne" style="left:4%;top:57%;width:9%;height:5%">15</div>
-  </div>
+<div class="legende">
+  <div class="leg-item"><div class="leg-color" style="background:#2E7D32;border-color:#2E7D32"></div> Continent</div>
+  <div class="leg-item"><div class="leg-color" style="background:#1565C0;border-color:#1565C0"></div> Océan</div>
+  <div class="leg-item"><div class="leg-color" style="background:#B71C1C;border-color:#B71C1C"></div> Ligne</div>
 </div>
 
-<table style="margin-top:10px">
-  <tr><th>N°</th><th>Réponse</th><th>Type</th></tr>
-  <tr><td><strong style="color:#2E7D32">1</strong></td><td>Amérique du Nord</td><td><span class="periode prehistoire">Continent</span></td></tr>
-  <tr><td><strong style="color:#2E7D32">2</strong></td><td>Amérique du Sud</td><td><span class="periode prehistoire">Continent</span></td></tr>
-  <tr><td><strong style="color:#2E7D32">3</strong></td><td>Europe</td><td><span class="periode prehistoire">Continent</span></td></tr>
-  <tr><td><strong style="color:#2E7D32">4</strong></td><td>Afrique</td><td><span class="periode prehistoire">Continent</span></td></tr>
-  <tr><td><strong style="color:#2E7D32">5</strong></td><td>Asie</td><td><span class="periode prehistoire">Continent</span></td></tr>
-  <tr><td><strong style="color:#2E7D32">6</strong></td><td>Océanie</td><td><span class="periode prehistoire">Continent</span></td></tr>
-  <tr><td><strong style="color:#2E7D32">7</strong></td><td>Antarctique</td><td><span class="periode prehistoire">Continent</span></td></tr>
-  <tr><td><strong style="color:#1565C0">8</strong></td><td>Océan Atlantique</td><td><span class="periode antiquite">Océan</span></td></tr>
-  <tr><td><strong style="color:#1565C0">9</strong></td><td>Océan Pacifique</td><td><span class="periode antiquite">Océan</span></td></tr>
-  <tr><td><strong style="color:#1565C0">10</strong></td><td>Océan Pacifique (×2 car Terre ronde)</td><td><span class="periode antiquite">Océan</span></td></tr>
-  <tr><td><strong style="color:#1565C0">11</strong></td><td>Océan Indien</td><td><span class="periode antiquite">Océan</span></td></tr>
-  <tr><td><strong style="color:#1565C0">12</strong></td><td>Océan Glacial Antarctique</td><td><span class="periode antiquite">Océan</span></td></tr>
-  <tr><td><strong style="color:#B71C1C">13</strong></td><td>Tropique du Cancer (Nord)</td><td><span class="periode contemporaine">Ligne</span></td></tr>
-  <tr><td><strong style="color:#B71C1C">14</strong></td><td>Équateur</td><td><span class="periode contemporaine">Ligne</span></td></tr>
-  <tr><td><strong style="color:#B71C1C">15</strong></td><td>Tropique du Capricorne (Sud)</td><td><span class="periode contemporaine">Ligne</span></td></tr>
+<div class="carte-wrap">
+  <img src="carte_vierge.jpg" alt="Planisphère vierge" id="carteImg">
+</div>
+
+<p style="font-size:13px;color:#555;margin:6px 0">
+  Les numéros ci-dessous correspondent aux cases de la carte (vert = continent, bleu = océan, rouge = ligne).
+</p>
+
+<table class="num-table">
+  <tr><th>N°</th><th>Élément</th><th>Type</th></tr>
+  <tr><td style="color:#2E7D32">1</td><td>Amérique du Nord</td><td>🌍 Continent</td></tr>
+  <tr><td style="color:#2E7D32">2</td><td>Amérique du Sud</td><td>🌍 Continent</td></tr>
+  <tr><td style="color:#2E7D32">3</td><td>Europe</td><td>🌍 Continent</td></tr>
+  <tr><td style="color:#2E7D32">4</td><td>Afrique</td><td>🌍 Continent</td></tr>
+  <tr><td style="color:#2E7D32">5</td><td>Asie</td><td>🌍 Continent</td></tr>
+  <tr><td style="color:#2E7D32">6</td><td>Océanie</td><td>🌍 Continent</td></tr>
+  <tr><td style="color:#2E7D32">7</td><td>Antarctique</td><td>🌍 Continent</td></tr>
+  <tr><td style="color:#1565C0">8</td><td>Océan Atlantique</td><td>🌊 Océan</td></tr>
+  <tr><td style="color:#1565C0">9</td><td>Océan Pacifique (côté Est)</td><td>🌊 Océan</td></tr>
+  <tr><td style="color:#1565C0">10</td><td>Océan Pacifique (côté Ouest)</td><td>🌊 Océan</td></tr>
+  <tr><td style="color:#1565C0">11</td><td>Océan Indien</td><td>🌊 Océan</td></tr>
+  <tr><td style="color:#1565C0">12</td><td>Océan Glacial Antarctique</td><td>🌊 Océan</td></tr>
+  <tr><td style="color:#B71C1C">13</td><td>Tropique du Cancer</td><td>☀️ Ligne</td></tr>
+  <tr><td style="color:#B71C1C">14</td><td>Équateur</td><td>☀️ Ligne</td></tr>
+  <tr><td style="color:#B71C1C">15</td><td>Tropique du Capricorne</td><td>☀️ Ligne</td></tr>
 </table>
 
-<!-- DRAG AND DROP -->
-<div class="drag-section">
-  <h4>🎮 Exercice : place les étiquettes sur la bonne case</h4>
-  <p style="font-size:13px;color:#666">Glisse chaque étiquette vers la case qui lui correspond (numéro indiqué).</p>
+<!-- DRAG & DROP -->
+<div class="drag-title">🎮 Exercice : associe chaque numéro à son nom</div>
+<p class="drag-instructions">Fais glisser (ou appuie longuement sur mobile) chaque étiquette vers la case numérotée qui lui correspond.</p>
 
-  <div class="labels-pool" id="pool">
-    <div class="label-item continent-label" draggable="true" data-answer="1">Amérique du Nord</div>
-    <div class="label-item continent-label" draggable="true" data-answer="2">Amérique du Sud</div>
-    <div class="label-item continent-label" draggable="true" data-answer="3">Europe</div>
-    <div class="label-item continent-label" draggable="true" data-answer="4">Afrique</div>
-    <div class="label-item continent-label" draggable="true" data-answer="5">Asie</div>
-    <div class="label-item continent-label" draggable="true" data-answer="6">Océanie</div>
-    <div class="label-item continent-label" draggable="true" data-answer="7">Antarctique</div>
-    <div class="label-item ocean-label" draggable="true" data-answer="8">Océan Atlantique</div>
-    <div class="label-item ocean-label" draggable="true" data-answer="9">Océan Pacifique (Est)</div>
-    <div class="label-item ocean-label" draggable="true" data-answer="10">Océan Pacifique (Ouest)</div>
-    <div class="label-item ocean-label" draggable="true" data-answer="11">Océan Indien</div>
-    <div class="label-item ocean-label" draggable="true" data-answer="12">Océan Gl. Antarctique</div>
-    <div class="label-item ligne-label" draggable="true" data-answer="13">Tropique du Cancer</div>
-    <div class="label-item ligne-label" draggable="true" data-answer="14">Équateur</div>
-    <div class="label-item ligne-label" draggable="true" data-answer="15">Tropique du Capricorne</div>
-  </div>
-
-  <div class="drop-zones" id="dropZones">
-    <!-- générées par JS -->
-  </div>
-
-  <div style="text-align:center;margin-top:10px">
-    <button class="btn btn-check" onclick="checkAnswers()">✅ Vérifier</button>
-    <button class="btn btn-reset" onclick="resetDrag()">🔄 Recommencer</button>
-  </div>
-  <div id="scoreDiv"></div>
+<div class="pool" id="pool">
+  <div class="chip continent" data-ans="1">Amérique du Nord</div>
+  <div class="chip continent" data-ans="2">Amérique du Sud</div>
+  <div class="chip continent" data-ans="3">Europe</div>
+  <div class="chip continent" data-ans="4">Afrique</div>
+  <div class="chip continent" data-ans="5">Asie</div>
+  <div class="chip continent" data-ans="6">Océanie</div>
+  <div class="chip continent" data-ans="7">Antarctique</div>
+  <div class="chip ocean" data-ans="8">Océan Atlantique</div>
+  <div class="chip ocean" data-ans="9">Pacifique (Est)</div>
+  <div class="chip ocean" data-ans="10">Pacifique (Ouest)</div>
+  <div class="chip ocean" data-ans="11">Océan Indien</div>
+  <div class="chip ocean" data-ans="12">Gl. Antarctique</div>
+  <div class="chip ligne" data-ans="13">Tropique du Cancer</div>
+  <div class="chip ligne" data-ans="14">Équateur</div>
+  <div class="chip ligne" data-ans="15">Tropique du Capricorne</div>
 </div>
 
+<div class="zones-grid" id="zonesGrid"></div>
+
+<div class="btn-row">
+  <button class="btn btn-ok" onclick="check()">✅ Vérifier</button>
+  <button class="btn btn-reset" onclick="reset()">🔄 Recommencer</button>
+</div>
+<div class="score" id="score"></div>
+
+<!-- III. FRISE -->
 <h3>III. La frise chronologique</h3>
-<div style="overflow-x:auto">
-<table>
-  <tr>
-    <th style="background:#4527A0">Préhistoire</th>
-    <th style="background:#00695C">Antiquité</th>
-    <th style="background:#1565C0">Moyen Âge</th>
-    <th style="background:#E65100">Époque moderne</th>
-    <th style="background:#B71C1C">Époque contemporaine</th>
-  </tr>
-  <tr>
-    <td>- 4 millions → - 3000<br><em>1er Homme → Écriture</em></td>
-    <td>- 3000 → 476<br><em>Écriture → Chute Empire Romain</em></td>
-    <td>476 → 1492<br><em>Chute Rome → Christophe Colomb</em></td>
-    <td>1492 → 1789<br><em>C. Colomb → Révolution française</em></td>
-    <td>1789 → aujourd'hui<br><em>Révolution française → nos jours</em></td>
-  </tr>
-</table>
+<div class="frise">
+  <div class="periode prehistoire">Préhistoire</div>
+  <div class="periode antiquite">Antiquité</div>
+  <div class="periode moyenage">Moyen Âge</div>
+  <div class="periode moderne">Époque moderne</div>
+  <div class="periode contemporaine">Époque contemporaine</div>
 </div>
+<div class="frise-dates">
+  <div class="frise-date">-4M → -3000</div>
+  <div class="frise-date">-3000 → 476</div>
+  <div class="frise-date">476 → 1492</div>
+  <div class="frise-date">1492 → 1789</div>
+  <div class="frise-date">1789 → auj.</div>
+</div>
+<div class="note" style="margin-top:8px">⭐ En <b>5ème</b> : <b>Moyen Âge</b> (476–1492) et <b>Époque moderne</b> (1492–1789)</div>
 
-<div class="note">⭐ En 5ème : <strong>Moyen Âge</strong> (476–1492) et <strong>Époque moderne</strong> (1492–1789)</div>
-
+<!-- IV. MNÉMOTECHNIQUES -->
 <h3>IV. Moyens mnémotechniques</h3>
-<div class="note">🌍 <strong>Continents</strong> : <em>"Les 2 Américains Eric et Antoine sont Allés en Orbite"</em><br>
-2 <strong>A</strong>méricains = Am. Nord + Am. Sud | <strong>E</strong>ric = <strong>E</strong>urope | <strong>A</strong>ntoine = <strong>A</strong>frique | <strong>A</strong>llés = <strong>A</strong>sie | <strong>O</strong>rbite = <strong>O</strong>céanie | + Antarctique (tout seul en bas !)</div>
-<div class="note">🌊 <strong>Océans</strong> : Pacifique écrit ×2 (Terre ronde) | Atlantique coincé entre 2 continents | Antarctique + de lettres = plus lourd = en bas</div>
-<div class="note">☀️ <strong>Tropiques</strong> : Cancer = 6 lettres → léger → en HAUT (Nord) | Capricorne = 10 lettres → lourd → en BAS (Sud)</div>
+<div class="note">🌍 <b>Continents</b> : <i>"Les 2 Américains Eric et Antoine sont Allés en Orbite"</i><br>
+2 <b>A</b>méricains = Am. Nord + Am. Sud &nbsp;|&nbsp; <b>E</b>ric = <b>E</b>urope &nbsp;|&nbsp; <b>A</b>ntoine = <b>A</b>frique<br>
+<b>A</b>llés = <b>A</b>sie &nbsp;|&nbsp; <b>O</b>rbite = <b>O</b>céanie &nbsp;|&nbsp; + Antarctique (tout seul en bas !)
+</div>
+<div class="note">🌊 <b>Océans</b> :<br>
+• Pacifique écrit ×2 → la Terre est ronde !<br>
+• Atlantique coincé entre les Amériques et l'Europe-Afrique<br>
+• <b>Ant</b>arctique a plus de lettres qu'<b>Arc</b>tique → plus lourd → il est en bas (Sud)
+</div>
+<div class="note">☀️ <b>Tropiques</b> :<br>
+• <b>Cancer</b> = 6 lettres → léger → en <b>HAUT</b> (Nord)<br>
+• <b>Capricorne</b> = 10 lettres → lourd → tombe en <b>BAS</b> (Sud)
+</div>
 
 <script>
-// Initialiser les zones de dépôt
-const zones = [
-  {n:1,label:"Case 1"},{n:2,label:"Case 2"},{n:3,label:"Case 3"},
-  {n:4,label:"Case 4"},{n:5,label:"Case 5"},{n:6,label:"Case 6"},
-  {n:7,label:"Case 7"},{n:8,label:"Case 8"},{n:9,label:"Case 9"},
-  {n:10,label:"Case 10"},{n:11,label:"Case 11"},{n:12,label:"Case 12"},
-  {n:13,label:"Case 13"},{n:14,label:"Case 14"},{n:15,label:"Case 15"},
+// ── Données ──
+const DATA = [
+  {n:1, label:"Amérique du Nord", cls:"continent"},
+  {n:2, label:"Amérique du Sud",  cls:"continent"},
+  {n:3, label:"Europe",           cls:"continent"},
+  {n:4, label:"Afrique",          cls:"continent"},
+  {n:5, label:"Asie",             cls:"continent"},
+  {n:6, label:"Océanie",          cls:"continent"},
+  {n:7, label:"Antarctique",      cls:"continent"},
+  {n:8, label:"Océan Atlantique", cls:"ocean"},
+  {n:9, label:"Pacifique (Est)",  cls:"ocean"},
+  {n:10,label:"Pacifique (Ouest)",cls:"ocean"},
+  {n:11,label:"Océan Indien",     cls:"ocean"},
+  {n:12,label:"Gl. Antarctique",  cls:"ocean"},
+  {n:13,label:"Tropique du Cancer",    cls:"ligne"},
+  {n:14,label:"Équateur",              cls:"ligne"},
+  {n:15,label:"Tropique du Capricorne",cls:"ligne"},
 ];
 
-const container = document.getElementById('dropZones');
-zones.forEach(z => {
-  const div = document.createElement('div');
-  div.className = 'drop-zone';
-  div.dataset.zone = z.n;
-  div.innerHTML = `<span class="zone-num">Case ${z.n}</span>`;
-  div.addEventListener('dragover', e => { e.preventDefault(); div.classList.add('over'); });
-  div.addEventListener('dragleave', () => div.classList.remove('over'));
-  div.addEventListener('drop', e => {
+const COLORS = {continent:"#2E7D32", ocean:"#1565C0", ligne:"#B71C1C"};
+
+// ── Construire les zones de dépôt ──
+const grid = document.getElementById('zonesGrid');
+DATA.forEach(d => {
+  const z = document.createElement('div');
+  z.className = 'dzone';
+  z.dataset.zone = d.n;
+  z.innerHTML = `<span class="dzone-num">Case ${d.n}</span>`;
+  grid.appendChild(z);
+});
+
+// ── Drag & Drop souris ──
+let dragged = null;
+
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('dragstart', e => {
+    dragged = chip;
+    chip.classList.add('dragging');
+  });
+  chip.addEventListener('dragend', () => chip.classList.remove('dragging'));
+  chip.setAttribute('draggable','true');
+});
+
+document.querySelectorAll('.dzone').forEach(zone => {
+  zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('over'); });
+  zone.addEventListener('dragleave', () => zone.classList.remove('over'));
+  zone.addEventListener('drop', e => {
     e.preventDefault();
-    div.classList.remove('over');
-    const data = e.dataTransfer.getData('text/plain');
-    const [answer, text, cls] = data.split('|');
-    // Retirer de l'ancienne zone si déjà placé
-    document.querySelectorAll('.drop-zone').forEach(dz => {
-      if (dz !== div && dz.dataset.placed === answer) {
-        dz.innerHTML = `<span class="zone-num">Case ${dz.dataset.zone}</span>`;
-        delete dz.dataset.placed;
-        dz.classList.remove('correct','wrong');
-      }
-    });
-    div.innerHTML = `<span class="zone-num">Case ${z.n}</span><span class="placed-label" style="background:${cls}">${text}</span>`;
-    div.dataset.placed = answer;
-    div.classList.remove('correct','wrong');
+    zone.classList.remove('over');
+    if (dragged) drop(dragged, zone);
   });
-  container.appendChild(div);
 });
 
-// Drag events sur les étiquettes
-document.querySelectorAll('.label-item').forEach(item => {
-  item.addEventListener('dragstart', e => {
-    const bg = item.classList.contains('continent-label') ? '#2E7D32' :
-               item.classList.contains('ocean-label') ? '#1565C0' : '#B71C1C';
-    e.dataTransfer.setData('text/plain', `${item.dataset.answer}|${item.textContent}|${bg}`);
-    item.classList.add('dragging');
+// ── Touch (mobile) ──
+let touchChip = null, clone = null;
+
+document.querySelectorAll('.chip').forEach(chip => {
+  chip.addEventListener('touchstart', e => {
+    touchChip = chip;
+    chip.classList.add('dragging');
+    // Créer un clone visuel
+    clone = chip.cloneNode(true);
+    clone.style.cssText = `position:fixed;opacity:.8;pointer-events:none;z-index:9999;
+      padding:6px 11px;border-radius:20px;color:#fff;font-size:13px;font-weight:bold;
+      background:${COLORS[chip.classList[1]] || '#666'};`;
+    document.body.appendChild(clone);
+    moveClone(e.touches[0]);
+  }, {passive:true});
+
+  chip.addEventListener('touchmove', e => {
+    e.preventDefault();
+    if (clone) moveClone(e.touches[0]);
+    // Highlight zone sous le doigt
+    document.querySelectorAll('.dzone').forEach(z => z.classList.remove('over'));
+    const el = document.elementFromPoint(e.touches[0].clientX, e.touches[0].clientY);
+    if (el && el.classList.contains('dzone')) el.classList.add('over');
+    else if (el && el.closest('.dzone')) el.closest('.dzone').classList.add('over');
+  }, {passive:false});
+
+  chip.addEventListener('touchend', e => {
+    chip.classList.remove('dragging');
+    if (clone) { clone.remove(); clone = null; }
+    document.querySelectorAll('.dzone').forEach(z => z.classList.remove('over'));
+    const t = e.changedTouches[0];
+    const el = document.elementFromPoint(t.clientX, t.clientY);
+    const zone = el ? (el.classList.contains('dzone') ? el : el.closest('.dzone')) : null;
+    if (zone && touchChip) drop(touchChip, zone);
+    touchChip = null;
   });
-  item.addEventListener('dragend', () => item.classList.remove('dragging'));
 });
 
-function checkAnswers() {
-  let correct = 0, total = 0;
-  document.querySelectorAll('.drop-zone').forEach(dz => {
-    if (dz.dataset.placed !== undefined) {
-      total++;
-      if (dz.dataset.placed === dz.dataset.zone) {
-        dz.classList.add('correct'); dz.classList.remove('wrong'); correct++;
-      } else {
-        dz.classList.add('wrong'); dz.classList.remove('correct');
-      }
-    }
-  });
-  const div = document.getElementById('scoreDiv');
-  div.className = 'score ' + (correct === total && total > 0 ? 'good' : 'bad');
-  div.textContent = total === 0 ? 'Place au moins une étiquette !' :
-    `${correct} / ${total} correct${correct > 1 ? 's' : ''} ${correct === total ? '🎉 Bravo !' : '— Continue !'}`;
+function moveClone(touch) {
+  clone.style.left = (touch.clientX - 40) + 'px';
+  clone.style.top  = (touch.clientY - 20) + 'px';
 }
 
-function resetDrag() {
-  document.querySelectorAll('.drop-zone').forEach(dz => {
-    dz.innerHTML = `<span class="zone-num">Case ${dz.dataset.zone}</span>`;
-    delete dz.dataset.placed;
-    dz.classList.remove('correct','wrong');
+// ── Logique de dépôt ──
+function drop(chip, zone) {
+  // Retirer si déjà quelque part
+  document.querySelectorAll('.dzone').forEach(z => {
+    if (z.dataset.placed === chip.dataset.ans) {
+      z.innerHTML = `<span class="dzone-num">Case ${z.dataset.zone}</span>`;
+      delete z.dataset.placed;
+      z.classList.remove('correct','wrong');
+    }
   });
-  document.getElementById('scoreDiv').textContent = '';
-  document.getElementById('scoreDiv').className = 'score';
+  // Remettre dans le pool ce qui était dans la zone
+  if (zone.dataset.placed) {
+    const old = document.querySelector(`.chip[data-ans="${zone.dataset.placed}"]`);
+    if (old) old.style.display = '';
+    zone.innerHTML = `<span class="dzone-num">Case ${zone.dataset.zone}</span>`;
+    delete zone.dataset.placed;
+    zone.classList.remove('correct','wrong');
+  }
+  // Placer
+  const color = COLORS[chip.classList[1]] || '#666';
+  zone.innerHTML = `<span class="dzone-num">Case ${zone.dataset.zone}</span>
+    <span class="dzone-chip" style="background:${color}">${chip.textContent}</span>`;
+  zone.dataset.placed = chip.dataset.ans;
+  zone.classList.remove('correct','wrong');
+  chip.style.display = 'none';
+}
+
+// ── Vérification ──
+function check() {
+  let ok = 0, total = 0;
+  document.querySelectorAll('.dzone').forEach(z => {
+    if (z.dataset.placed) {
+      total++;
+      if (z.dataset.placed === z.dataset.zone) { z.classList.add('correct'); z.classList.remove('wrong'); ok++; }
+      else { z.classList.add('wrong'); z.classList.remove('correct'); }
+    }
+  });
+  const s = document.getElementById('score');
+  if (total === 0) { s.className='score bad'; s.textContent='Place au moins une étiquette !'; return; }
+  s.className = ok===total ? 'score good' : 'score bad';
+  s.textContent = `${ok} / ${total} ${ok===total ? '🎉 Bravo, tout est correct !' : '— Regarde les cases rouges et réessaie.'}`;
+}
+
+// ── Reset ──
+function reset() {
+  document.querySelectorAll('.dzone').forEach(z => {
+    z.innerHTML = `<span class="dzone-num">Case ${z.dataset.zone}</span>`;
+    delete z.dataset.placed;
+    z.classList.remove('correct','wrong');
+  });
+  document.querySelectorAll('.chip').forEach(c => c.style.display = '');
+  const s = document.getElementById('score');
+  s.className = 'score'; s.textContent = '';
 }
 </script>
 </body>
