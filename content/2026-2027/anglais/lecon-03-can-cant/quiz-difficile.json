@@ -1,0 +1,22 @@
+[
+  {"type":"qcm","question":"Laquelle est INCORRECTE ?","options":["I can swim.","She can dances.","They can't fly.","Can he sing?"],"answer":1},
+  {"type":"qcm","question":"Traduis : 'Elle ne sait pas jouer du piano.'","options":["She can play the piano.","She cans't play the piano.","She can't play the piano.","She don't can play the piano."],"answer":2},
+  {"type":"qcm","question":"Pourquoi dit-on 'I can sing' et pas 'I can to sing' ?","options":["Parce que CAN est déjà un verbe","Parce que CAN est suivi directement de la Base Verbale, sans TO","Parce que TO n'existe pas en anglais","Parce que sing est un nom"],"answer":1},
+  {"type":"qcm","question":"Complète : Superman ___ fly but he ___ live without solar energy.","options":["can / can","can't / can","can / can't","can't / can't"],"answer":2},
+  {"type":"qcm","question":"Complète : Thing in the Addams family ___ move but it ___ speak.","options":["can / can't","can't / can","can / can","can't / can't"],"answer":0},
+  {"type":"qcm","question":"Laquelle utilise LIKE correctement ?","options":["I like swim.","She likes dance.","He likes playing football.","They like to swims."],"answer":2},
+  {"type":"qcm","question":"Comment dit-on 'Est-ce qu'elle sait nager ?' ?","options":["She can swim?","Does she can swim?","Can she swim?","Is she can swim?"],"answer":2},
+  {"type":"qcm","question":"Quelle réponse courte correspond à 'Can they dance?' — NON ?","options":["No, they don't.","No, they aren't.","No, they can't.","No, they hasn't."],"answer":2},
+  {"type":"qcm","question":"Complète : Mulgarath ___ change form. People ___ defeat him!","options":["can / can","can / can't","can't / can","can't / can't"],"answer":1},
+  {"type":"qcm","question":"Laquelle est correcte ?","options":["I like music. / I like swimming.","I like musicing. / I like swim.","I likes music. / I likes swimming.","I am like music. / I am like swimming."],"answer":0},
+  {"type":"vrai-faux","question":"'Can you play an instrument? Yes, I do.' est correct.","answer":false},
+  {"type":"vrai-faux","question":"'She likes dogs' est correct (she + like + nom).","answer":true},
+  {"type":"vrai-faux","question":"CAN'T = cannot contracté.","answer":true},
+  {"type":"vrai-faux","question":"'He can swims' est correct.","answer":false},
+  {"type":"vrai-faux","question":"'I like swim' est incorrect — il faut 'I like swimming'.","answer":true},
+  {"type":"oral","question":"Conjugue CAN à toutes les personnes (affirmatif, négatif, interrogatif)."},
+  {"type":"oral","question":"Explique la différence entre CAN + BV et LIKE + V-ing. Donne un exemple de chaque."},
+  {"type":"oral","question":"Cite les 4 pièges à éviter avec CAN."},
+  {"type":"oral","question":"Présente-toi : dis 3 choses que tu sais faire, 2 que tu ne sais pas faire, et 2 choses que tu aimes."},
+  {"type":"oral","question":"Pose 3 questions avec CAN à un camarade imaginaire et donne les réponses courtes."}
+]
