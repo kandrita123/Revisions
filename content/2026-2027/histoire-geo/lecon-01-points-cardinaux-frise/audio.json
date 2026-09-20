@@ -1,0 +1,63 @@
+[
+  {
+    "titre": "Les points cardinaux et leurs synonymes",
+    "emoji": "🧭",
+    "contenu": [
+      "Les quatre points cardinaux sont Nord, Sud, Est et Ouest.",
+      "Le Nord a deux synonymes : Boréal et Septentrional.",
+      "Le Sud a deux synonymes : Austral et Méridional.",
+      "L'Est a un synonyme : Oriental.",
+      "L'Ouest a un synonyme : Occidental.",
+      "Pour ne pas confondre Ouest et Est sur une carte, utilise le mot ORANGE. Le O est avant le E dans l'alphabet, donc l'Ouest est à gauche et l'Est est à droite.",
+      "Sur une carte, le Nord est en haut, le Sud est en bas, l'Est est à droite et l'Ouest est à gauche."
+    ]
+  },
+  {
+    "titre": "Les continents",
+    "emoji": "🌍",
+    "contenu": [
+      "Il y a 6 continents sur Terre.",
+      "Dans l'ordre Ouest vers Est : l'Amérique du Nord, l'Amérique du Sud, l'Europe, l'Afrique, l'Asie et l'Océanie. L'Antarctique est tout seul en bas.",
+      "Pour les retenir, utilise la phrase : Les 2 Américains Eric et Antoine sont Allés en Orbite.",
+      "Les 2 Américains désignent l'Amérique du Nord et l'Amérique du Sud.",
+      "Eric désigne l'Europe. Antoine désigne l'Afrique. Allés désigne l'Asie. Orbite désigne l'Océanie.",
+      "L'Antarctique n'est pas dans la phrase car il est facile à retenir : il est tout seul en bas de la carte.",
+      "L'Asie est le plus grand continent. L'Europe est le plus petit.",
+      "Sur la carte numérotée, les continents ont des cases vertes : 1 pour l'Amérique du Nord, 2 pour l'Amérique du Sud, 3 pour l'Europe, 4 pour l'Afrique, 5 pour l'Asie, 6 pour l'Océanie et 7 pour l'Antarctique."
+    ]
+  },
+  {
+    "titre": "Les océans",
+    "emoji": "🌊",
+    "contenu": [
+      "Il y a 5 océans sur Terre : le Pacifique, l'Atlantique, l'Indien, l'Arctique et l'Antarctique.",
+      "L'Océan Pacifique est le plus grand océan du monde. Il est tellement grand qu'il apparaît deux fois sur le planisphère, une fois à gauche et une fois à droite. Cela est dû au fait que la Terre est ronde.",
+      "L'Océan Atlantique est coincé entre deux continents : les Amériques à gauche et l'Europe avec l'Afrique à droite.",
+      "L'Océan Glacial Antarctique a plus de lettres que l'Océan Arctique, il est donc plus lourd et coule au fond, c'est-à-dire au Sud.",
+      "Sur la carte numérotée, les océans ont des cases bleues : 8 pour l'Atlantique, 9 et 10 pour le Pacifique, 11 pour l'Indien et 12 pour le Glacial Antarctique."
+    ]
+  },
+  {
+    "titre": "Les tropiques et l'équateur",
+    "emoji": "☀️",
+    "contenu": [
+      "L'équateur est la ligne qui coupe la Terre en deux parties égales : l'hémisphère Nord et l'hémisphère Sud. C'est la zone où il fait le plus chaud toute l'année.",
+      "Le Tropique du Cancer est au Nord de l'équateur. Cancer a 6 lettres, c'est léger, donc il monte en haut.",
+      "Le Tropique du Capricorne est au Sud de l'équateur. Capricorne a 10 lettres, c'est plus lourd, donc il tombe en bas.",
+      "Sur la carte numérotée, les lignes ont des cases rouges : 13 pour le Tropique du Cancer, 14 pour l'équateur et 15 pour le Tropique du Capricorne."
+    ]
+  },
+  {
+    "titre": "La frise chronologique",
+    "emoji": "📅",
+    "contenu": [
+      "L'Histoire est divisée en 5 grandes périodes.",
+      "La Préhistoire va des premiers hommes, il y a 4 millions d'années, jusqu'à l'apparition de l'écriture vers moins 3000.",
+      "L'Antiquité va de l'apparition de l'écriture à la chute de l'Empire romain en 476.",
+      "Le Moyen Âge va de 476 à 1492, date de la découverte des Amériques par Christophe Colomb.",
+      "L'Époque moderne va de 1492 à 1789, début de la Révolution française.",
+      "L'Époque contemporaine va de 1789 à aujourd'hui.",
+      "En 5ème, vous allez étudier deux périodes : le Moyen Âge, de 476 à 1492, et l'Époque moderne, de 1492 à 1789."
+    ]
+  }
+]
