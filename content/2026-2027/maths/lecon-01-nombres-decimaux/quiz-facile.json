@@ -1,0 +1,22 @@
+[
+  {"type":"qcm","question":"Dans le nombre 47,36, quelle est la partie entière ?","options":["36","47","4","7"],"answer":1},
+  {"type":"qcm","question":"Dans le nombre 47,36, quelle est la partie décimale ?","options":["47","4","36","3"],"answer":2},
+  {"type":"qcm","question":"Comment s'écrit la fraction 75/100 en nombre décimal ?","options":["7,5","750","0,75","75"],"answer":2},
+  {"type":"qcm","question":"Comment s'écrit 203/10 en nombre décimal ?","options":["0,203","2,03","203,0","20,3"],"answer":3},
+  {"type":"qcm","question":"Quel est le résultat de 2,5 + 3,5 ?","options":["5,10","60","6","5,05"],"answer":2},
+  {"type":"qcm","question":"Quel est le résultat de 5 − 2,5 ?","options":["3,5","2,5","7,5","2"],"answer":1},
+  {"type":"qcm","question":"facteur × facteur = ?","options":["différence","somme","produit","quotient"],"answer":2},
+  {"type":"qcm","question":"dividende ÷ diviseur = ?","options":["produit","somme","différence","quotient"],"answer":3},
+  {"type":"qcm","question":"500 × 10 = ?","options":["50","50 000","510","5 000"],"answer":3},
+  {"type":"qcm","question":"0,0022 × 10 = ?","options":["0,022","0,0022","22","0,22"],"answer":0},
+  {"type":"qcm","question":"Dans 3 + 4 × 2, que calcule-t-on en premier ?","options":["3 + 4","4 × 2","3 × 2","tout ensemble"],"answer":1},
+  {"type":"qcm","question":"Résultat de 3 + 4 × 2 = ?","options":["14","11","24","10"],"answer":1},
+  {"type":"qcm","question":"Dans (3 + 4) × 2, que calcule-t-on en premier ?","options":["4 × 2","3 × 2","3 + 4","rien, c'est pareil"],"answer":2},
+  {"type":"qcm","question":"Résultat de (3 + 4) × 2 = ?","options":["11","14","24","10"],"answer":1},
+  {"type":"qcm","question":"Pour vérifier une division, on fait :","options":["dividende × quotient","diviseur + quotient","diviseur × quotient","dividende ÷ quotient"],"answer":2},
+  {"type":"vrai-faux","question":"3 + 5 + 7 = 7 + 5 + 3 (on peut changer l'ordre dans une addition).","answer":true},
+  {"type":"vrai-faux","question":"5 − 2,5 = 2,5 − 5","answer":false},
+  {"type":"vrai-faux","question":"Dans 5 + 3 × 2, on calcule 5 + 3 en premier.","answer":false},
+  {"type":"vrai-faux","question":"65/1000 s'écrit 0,065 en décimal.","answer":true},
+  {"type":"vrai-faux","question":"Multiplier par 0,1 revient à décaler la virgule d'un rang vers la droite.","answer":true}
+]
