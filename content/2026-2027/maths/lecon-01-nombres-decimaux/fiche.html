@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les Nombres Décimaux</title>
+<style>
+  :root {
+    --bg:#ffffff;--text:#212121;--text2:#555;--border:#ddd;
+    --rouge:#C62828;--rouge-clair:#FFEBEE;
+    --vert:#2E7D32;--vert-clair:#E8F5E9;
+    --bleu:#1565C0;--bleu-clair:#E3F2FD;
+    --or:#E65100;--or-clair:#FFF3E0;
+    --violet:#4527A0;--violet-clair:#EDE7F6;
+    --jaune:#F57F17;--jaune-clair:#FFF9C4;
+    --gris:#424242;
+  }
+  @media(prefers-color-scheme:dark){:root{
+    --bg:#1a1a2e;--text:#e0e0e0;--text2:#aaa;--border:#444;
+    --rouge-clair:#2a0808;--vert-clair:#0a2010;--bleu-clair:#0a1a30;
+    --or-clair:#2a1000;--violet-clair:#1a1030;--jaune-clair:#2a1a00;
+  }}
+  *{box-sizing:border-box;}
+  body{font-family:Arial,sans-serif;margin:0;padding:12px;background:var(--bg);color:var(--text);font-size:14px;}
+  .titre{background:var(--rouge);border-radius:8px;padding:14px;text-align:center;margin-bottom:12px;}
+  .titre .sur{color:#EF9A9A;font-size:12px;font-weight:bold;margin-bottom:4px;}
+  .titre h1{color:#fff;font-size:22px;margin:0 0 4px;}
+  .titre .sous{color:#FFCDD2;font-size:13px;font-weight:bold;}
+  .titre .pb{color:#FFCDD2;font-size:12px;font-style:italic;}
+  .sec{display:flex;margin:12px 0 6px;}
+  .sec-bar{width:6px;border-radius:3px 0 0 3px;flex-shrink:0;}
+  .sec-title{border:1px solid;border-left:none;border-radius:0 6px 6px 0;padding:7px 12px;font-size:14px;font-weight:bold;flex:1;}
+  .rouge-bar{background:var(--rouge);} .rouge-title{background:var(--rouge-clair);border-color:var(--rouge);color:var(--rouge);}
+  .vert-bar{background:var(--vert);} .vert-title{background:var(--vert-clair);border-color:var(--vert);color:var(--vert);}
+  .bleu-bar{background:var(--bleu);} .bleu-title{background:var(--bleu-clair);border-color:var(--bleu);color:var(--bleu);}
+  .or-bar{background:var(--or);} .or-title{background:var(--or-clair);border-color:var(--or);color:var(--or);}
+  .violet-bar{background:var(--violet);} .violet-title{background:var(--violet-clair);border-color:var(--violet);color:var(--violet);}
+  table{border-collapse:collapse;width:100%;margin:6px 0;}
+  th{padding:7px 8px;color:#fff;font-size:13px;text-align:left;}
+  td{border:1px solid var(--border);padding:6px 8px;font-size:13px;color:var(--text);vertical-align:top;}
+  .box{border-radius:6px;padding:8px 12px;margin:5px 0;font-size:13px;line-height:1.6;color:var(--text);}
+  .box-rouge{background:var(--rouge-clair);border:1px solid var(--rouge);}
+  .box-vert{background:var(--vert-clair);border:1px solid var(--vert);}
+  .box-bleu{background:var(--bleu-clair);border:1px solid var(--bleu);}
+  .box-or{background:var(--or-clair);border:1px solid var(--or);}
+  .box-violet{background:var(--violet-clair);border:1px solid var(--violet);}
+  .box-jaune{background:var(--jaune-clair);border-left:4px solid var(--jaune);}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0;}
+  .op-head{color:#fff;border-radius:4px 4px 0 0;padding:5px 10px;font-weight:bold;font-size:13px;}
+  .op-body{border-radius:0 0 4px 4px;padding:8px 10px;font-size:13px;color:var(--text);}
+  .methode{border-radius:6px;padding:8px 12px;margin:5px 0;font-size:13px;}
+  .methode b{display:block;margin-bottom:4px;}
+  .methode ol{margin:0;padding-left:18px;}
+  .methode li{margin-bottom:3px;}
+  p.intro{font-size:13px;color:var(--text2);margin:2px 0 5px;}
+  .exemple{font-style:italic;color:var(--bleu);}
+  .priorite-box{border-radius:6px;padding:10px 12px;margin:5px 0;font-size:13px;color:var(--text);}
+  .nb{font-weight:bold;margin-right:4px;}
+  .ex-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:6px 0;}
+  .ex-cell{border-radius:6px;padding:8px;font-size:13px;}
+</style>
+</head>
+<body>
+
+<div class="titre">
+  <div class="sur">MATHÉMATIQUES 5ème  •  Chapitre 1</div>
+  <h1>Les Nombres Décimaux</h1>
+  <div class="sous">Opérations  •  Priorités  •  Parenthèses</div>
+  <div class="pb">Comment calculer avec des nombres décimaux ?</div>
+</div>
+
+<!-- I. RAPPELS -->
+<div class="sec"><div class="sec-bar rouge-bar"></div><div class="sec-title rouge-title">📚 I. RAPPELS — LES NOMBRES DÉCIMAUX</div></div>
+
+<div class="box box-rouge">
+  <b style="color:var(--rouge)">Définition :</b> Un nombre décimal est un nombre qui s'écrit avec une quantité finie de chiffres. Il est composé de deux parties : la <b>partie entière</b> et la <b>partie décimale</b>.
+</div>
+
+<div class="box box-rouge" style="margin-top:5px">
+  <b style="color:var(--rouge)">Exemple :</b> <span style="font-size:18px;font-weight:bold">23,45</span><br>
+  Partie entière : <b>23</b> &nbsp;|&nbsp; Partie décimale : <b>45</b><br>
+  <span class="exemple">23,45 = 23 + 0,45</span>
+</div>
+
+<div class="box box-rouge" style="margin-top:5px">
+  <b style="color:var(--rouge)">Propriété :</b> Un nombre décimal est la somme de sa partie entière et de sa partie décimale.
+</div>
+
+<div class="box box-bleu" style="margin-top:5px">
+  <b style="color:var(--bleu)">Fraction décimale :</b> Une fraction décimale est une fraction dont le dénominateur est 10, 100, 1000...
+</div>
+
+<table>
+  <tr><th style="background:var(--bleu)">Fraction</th><th style="background:var(--bleu)">Se lit</th><th style="background:var(--bleu)">S'écrit</th></tr>
+  <tr><td><b style="color:var(--bleu)">75/100</b></td><td>75 centièmes</td><td><b style="color:var(--vert)">0,75</b></td></tr>
+  <tr><td><b style="color:var(--bleu)">203/10</b></td><td>203 dixièmes</td><td><b style="color:var(--vert)">20,3</b></td></tr>
+  <tr><td><b style="color:var(--bleu)">65/1000</b></td><td>65 millièmes</td><td><b style="color:var(--vert)">0,065</b></td></tr>
+</table>
+
+<!-- II. OPÉRATIONS -->
+<div class="sec"><div class="sec-bar rouge-bar"></div><div class="sec-title rouge-title">🧮 II. LES QUATRE OPÉRATIONS</div></div>
+
+<!-- A. Addition / Soustraction -->
+<div class="grid2">
+  <div>
+    <div class="op-head" style="background:var(--vert)">➕ Addition</div>
+    <div class="op-body box-vert" style="border-radius:0 0 6px 6px;border:1px solid var(--vert);border-top:none">
+      termes + termes = <b>somme</b><br>
+      Ex : <span class="exemple">2,5 + 3,5 = <b>6</b></span><br><br>
+      <span style="color:var(--vert);font-size:12px">⚠️ Propriété : changer l'ordre des termes ne change pas la somme.</span><br>
+      <span class="exemple" style="font-size:12px">3+5+7+25 = 5+25+3+7 = <b>40</b></span>
+    </div>
+  </div>
+  <div>
+    <div class="op-head" style="background:var(--rouge)">➖ Soustraction</div>
+    <div class="op-body box-rouge" style="border-radius:0 0 6px 6px;border:1px solid var(--rouge);border-top:none">
+      termes − termes = <b>différence</b><br>
+      Ex : <span class="exemple">5 − 2,5 = <b>2,5</b></span><br><br>
+      <span style="color:var(--rouge);font-size:12px">⚠️ Attention : on ne peut pas changer l'ordre des termes !</span><br>
+      <span class="exemple" style="font-size:12px">5 − 2,5 ≠ 2,5 − 5</span>
+    </div>
+  </div>
+</div>
+
+<div class="methode box-vert">
+  <b style="color:var(--vert)">Méthode :</b>
+  <ol>
+    <li>S'assurer que les nombres ont autant de chiffres dans leur partie décimale (ajouter des 0 si besoin).</li>
+    <li>Aligner les chiffres selon leur rang (dixième, unité, dizaine...).</li>
+    <li>Calculer normalement.</li>
+    <li>Vérifier qu'on a bien reporté la virgule au résultat.</li>
+  </ol>
+</div>
+
+<!-- B. Multiplication -->
+<div class="box box-or" style="margin-top:8px">
+  <b style="color:var(--or)">B. Multiplication</b> — facteur × facteur = <b>produit</b><br>
+  Ex : <span class="exemple">2,5 × 3 = 7,5</span><br><br>
+  <b style="color:var(--or)">× 10/100/1000 :</b> décaler d'autant de rangs vers la <b>gauche</b>.<br>
+  <b style="color:var(--or)">× 0,1 / 0,01 :</b> décaler d'autant de rangs vers la <b>droite</b>.<br>
+  <span class="exemple" style="font-size:12px">500 × 100 = 50 000 &nbsp;|&nbsp; 0,0022 × 10 = 0,022 &nbsp;|&nbsp; 12,34 × 34,765 = 429,0001</span>
+</div>
+
+<div class="methode box-or">
+  <b style="color:var(--or)">Méthode :</b>
+  <ol>
+    <li>Aligner les chiffres selon leur dernier chiffre (plus grand nombre en haut).</li>
+    <li>Calculer sans se préoccuper des virgules.</li>
+    <li>Compter le nombre total de chiffres après la virgule dans les deux facteurs.</li>
+    <li>Placer la virgule : autant de décimales que les deux facteurs ensemble.</li>
+  </ol>
+</div>
+
+<!-- C. Division -->
+<div class="box box-bleu" style="margin-top:8px">
+  <b style="color:var(--bleu)">C. Division décimale</b> — dividende ÷ diviseur = <b>quotient</b> (diviseur ≠ 0)<br>
+  <b style="color:var(--bleu)">Vérification :</b> <span class="exemple">diviseur × quotient = dividende</span><br>
+  <b style="color:var(--bleu)">÷ 10/100/1000 :</b> décaler d'autant de rangs vers la <b>droite</b>.<br>
+  <span class="exemple" style="font-size:12px">Exemple : Paul achète 4 pantalons pour 23,80€ → 23,80 ÷ 4 = 5,95€ par pantalon.</span>
+</div>
+
+<!-- III. PRIORITÉS SANS PARENTHÈSES -->
+<div class="sec"><div class="sec-bar violet-bar"></div><div class="sec-title violet-title">📐 III. CALCULS SANS PARENTHÈSES — PRIORITÉS</div></div>
+
+<div class="priorite-box box-violet">
+  <b style="color:var(--violet)">En l'absence de parenthèse, on procède dans cet ordre :</b><br><br>
+  <span class="nb" style="color:var(--rouge)">1.</span> On effectue les <b>multiplications et les divisions</b> en premier.<br>
+  <span class="nb" style="color:var(--rouge)">2.</span> On termine par les <b>additions et soustractions</b>.<br>
+  <span class="nb" style="color:var(--gris)">3.</span> <span style="color:var(--gris)">À même priorité, on calcule de <b>gauche à droite</b>.</span>
+</div>
+
+<div class="box box-jaune">💡 La règle 3 peut être ignorée pour des calculs astucieux, mais les 2 premières sont incontournables.</div>
+
+<div class="ex-grid">
+  <div class="ex-cell box-violet">
+    <b style="color:var(--violet)">A = 75 − 15 + 12 − 6</b><br>
+    = 60 + 12 − 6<br>= 72 − 6<br>
+    <b style="color:var(--vert)">= 66</b>
+  </div>
+  <div class="ex-cell box-violet">
+    <b style="color:var(--violet)">B = 75 ÷ 15 × 16 ÷ 6</b><br>
+    = 5 × 16 ÷ 6<br>= 80 ÷ 6<br>
+    <b style="color:var(--vert)">≈ 13,33</b>
+  </div>
+  <div class="ex-cell box-violet">
+    <b style="color:var(--violet)">C = 75 ÷ 15 + 12 × 2</b><br>
+    = 5 + 24<br><span style="font-size:12px;color:var(--gris)">(÷ et × d'abord)</span><br>
+    <b style="color:var(--vert)">= 29</b>
+  </div>
+</div>
+
+<!-- IV. AVEC PARENTHÈSES -->
+<div class="sec"><div class="sec-bar rouge-bar"></div><div class="sec-title rouge-title">🔢 IV. CALCULS AVEC PARENTHÈSES</div></div>
+
+<div class="priorite-box box-rouge">
+  <b style="color:var(--rouge)">Règles :</b><br>
+  <span class="nb" style="color:var(--rouge)">1.</span> Les calculs entre <b>parenthèses ou crochets</b> sont prioritaires sur ceux situés en dehors.<br>
+  <span class="nb" style="color:var(--rouge)">2.</span> On commence par les <b>parenthèses les plus intérieures</b>.<br>
+  <span style="font-size:12px;color:var(--gris);font-style:italic">ℹ️ La barre horizontale d'une fraction joue le rôle d'une parenthèse.</span>
+</div>
+
+<div class="ex-grid">
+  <div class="ex-cell box-rouge">
+    <b style="color:var(--rouge)">F) 4×8×(6−3)</b><br>
+    = 4×8×(3)<br>= 32×3<br><b style="color:var(--vert)">= 96 ✓</b>
+  </div>
+  <div class="ex-cell box-rouge">
+    <b style="color:var(--rouge)">G) (4+6)−4+2−(6−1)</b><br>
+    = (10)−4+2−(5)<br>= 6+2−5<br><b style="color:var(--vert)">= 3 ✓</b>
+  </div>
+  <div class="ex-cell box-rouge">
+    <b style="color:var(--rouge)">H) 8−(12−(3+5))</b><br>
+    = 8−(12−(8))<br>= 8−(4)<br><b style="color:var(--vert)">= 4 ✓</b>
+  </div>
+  <div class="ex-cell box-or">
+    <b style="color:var(--or)">I) 3×(9−(3+1×6))</b><br>
+    = 3×(9−(9))<br>= 3×(−7)<br><b style="color:var(--vert)">= −21</b>
+  </div>
+  <div class="ex-cell box-or">
+    <b style="color:var(--or)">J) (15+5) ÷ 10</b><br>
+    = (20) ÷ 10<br>= 20/10<br><b style="color:var(--vert)">= 2 ✓</b>
+  </div>
+  <div class="ex-cell box-or">
+    <b style="color:var(--or)">K) 5÷(6−4)</b><br>
+    = 5÷(2)<br><br><b style="color:var(--vert)">= 2,5 ✓</b>
+  </div>
+</div>
+
+<!-- PIÈGES -->
+<div class="sec"><div class="sec-bar rouge-bar"></div><div class="sec-title rouge-title">⚠️ PIÈGES À ÉVITER &amp; POINTS CLÉS</div></div>
+<div class="grid2">
+  <div class="box box-rouge">
+    <b style="color:var(--rouge)">❌ NE PAS OUBLIER :</b>
+    <ul style="margin:6px 0;padding-left:16px">
+      <li>Aligner les virgules pour + et −</li>
+      <li>Compter les décimales pour ×</li>
+      <li><b>× et ÷ AVANT + et −</b> (sans parenthèses)</li>
+      <li>Parenthèses les plus intérieures d'abord</li>
+    </ul>
+  </div>
+  <div class="box box-vert">
+    <b style="color:var(--vert)">✅ TOUJOURS RETENIR :</b>
+    <ul style="margin:6px 0;padding-left:16px">
+      <li>×10 = décaler gauche | ÷10 = décaler droite</li>
+      <li>×0,1 = décaler 1 rang droite</li>
+      <li><b>Vérif division : diviseur × quotient = dividende</b></li>
+      <li>Barre de fraction = parenthèse</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
