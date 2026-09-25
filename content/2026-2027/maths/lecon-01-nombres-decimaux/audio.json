@@ -1,0 +1,66 @@
+[
+  {
+    "titre": "Rappels — Les nombres décimaux",
+    "emoji": "📚",
+    "contenu": [
+      "Un nombre décimal est un nombre qui s'écrit avec une quantité finie de chiffres.",
+      "Il est composé de deux parties : la partie entière et la partie décimale, séparées par une virgule.",
+      "Par exemple, dans 23,45 : 23 est la partie entière et 45 est la partie décimale.",
+      "On peut écrire 23,45 = 23 + 0,45.",
+      "Une fraction décimale est une fraction dont le dénominateur est 10, 100 ou 1000.",
+      "Par exemple, 75 sur 100 s'écrit 0,75 en décimal. On lit 75 centièmes.",
+      "203 sur 10 s'écrit 20,3 en décimal. On lit 203 dixièmes.",
+      "65 sur 1000 s'écrit 0,065 en décimal. On lit 65 millièmes."
+    ]
+  },
+  {
+    "titre": "Addition et Soustraction",
+    "emoji": "➕",
+    "contenu": [
+      "Dans une addition, les nombres qu'on additionne s'appellent les termes, et le résultat s'appelle la somme.",
+      "Dans une soustraction, le résultat s'appelle la différence.",
+      "Propriété importante : dans une addition, on peut changer l'ordre des termes sans changer le résultat. Par exemple : 3 + 5 + 7 + 25 = 5 + 25 + 3 + 7 = 40.",
+      "Attention : dans une soustraction, on ne peut PAS changer l'ordre. 5 moins 2,5 n'est pas égal à 2,5 moins 5.",
+      "Pour additionner ou soustraire des décimaux : s'assurer que les nombres ont autant de chiffres après la virgule, aligner les chiffres selon leur rang, calculer normalement, et bien reporter la virgule."
+    ]
+  },
+  {
+    "titre": "Multiplication",
+    "emoji": "✖️",
+    "contenu": [
+      "Dans une multiplication, les nombres s'appellent les facteurs et le résultat s'appelle le produit.",
+      "Pour placer la virgule dans le résultat, on compte le nombre total de chiffres après la virgule dans les deux facteurs.",
+      "Par exemple, 1,5 fois 2,3 : 1 décimale plus 1 décimale = 2 décimales dans le résultat. Donc 1,5 fois 2,3 = 3,45.",
+      "Multiplier par 10 revient à décaler la virgule d'un rang vers la gauche.",
+      "Multiplier par 100 revient à décaler de 2 rangs, et par 1000 de 3 rangs.",
+      "Multiplier par 0,1 revient à décaler d'un rang vers la droite.",
+      "Exemples : 500 fois 100 = 50 000. 0,0022 fois 10 = 0,022."
+    ]
+  },
+  {
+    "titre": "Division décimale",
+    "emoji": "➗",
+    "contenu": [
+      "Dans une division, le nombre qu'on divise s'appelle le dividende, le nombre par lequel on divise s'appelle le diviseur, et le résultat s'appelle le quotient.",
+      "Attention : le diviseur ne peut jamais être égal à zéro.",
+      "Pour vérifier une division, on multiplie le diviseur par le quotient et on vérifie qu'on retrouve le dividende.",
+      "Par exemple : 23,80 divisé par 4 = 5,95. Vérification : 4 fois 5,95 = 23,80. C'est correct.",
+      "Diviser par 10 revient à décaler la virgule d'un rang vers la droite."
+    ]
+  },
+  {
+    "titre": "Priorités opératoires et parenthèses",
+    "emoji": "📐",
+    "contenu": [
+      "Sans parenthèses, on applique les règles de priorité dans cet ordre.",
+      "Premier : on effectue toutes les multiplications et divisions.",
+      "Deuxième : on termine avec les additions et soustractions.",
+      "Troisième : à même niveau de priorité, on calcule de gauche à droite.",
+      "Par exemple : 3 + 4 fois 2 = 3 + 8 = 11. On ne fait PAS 3 + 4 en premier.",
+      "Avec des parenthèses, les calculs à l'intérieur sont toujours prioritaires.",
+      "On commence par les parenthèses les plus intérieures.",
+      "Par exemple : 8 moins parenthèse 12 moins parenthèse 3 + 5. On calcule d'abord 3 + 5 = 8, puis 12 moins 8 = 4, puis 8 moins 4 = 4.",
+      "La barre horizontale d'une fraction joue le rôle d'une parenthèse."
+    ]
+  }
+]
