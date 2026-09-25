@@ -1,0 +1,19 @@
+[
+  {"question":"Qu'est-ce qu'un nombre décimal ?","reponse":"Un nombre décimal est un nombre qui s'écrit avec une quantité finie de chiffres. Il est composé d'une partie entière et d'une partie décimale.","indice":"💡 Pense à 23,45 : 23 est la partie entière, 45 est la partie décimale..."},
+  {"question":"Dans 47,36, quelle est la partie entière et la partie décimale ?","reponse":"Partie entière : 47 / Partie décimale : 36. On peut écrire 47,36 = 47 + 0,36","indice":"💡 Tout ce qui est avant la virgule = entière / après la virgule = décimale..."},
+  {"question":"Qu'est-ce qu'une fraction décimale ?","reponse":"Une fraction décimale est une fraction dont le dénominateur est 10, 100, 1000... Ex : 75/100 = 0,75","indice":"💡 Le dénominateur est une puissance de 10..."},
+  {"question":"Comment s'écrit 203/10 en nombre décimal ?","reponse":"203/10 = 20,3 (on lit 203 dixièmes, donc on décale la virgule d'un rang)","indice":"💡 Diviser par 10 = décaler la virgule vers la droite d'un rang..."},
+  {"question":"Comment s'appelle le résultat d'une addition ?","reponse":"La somme. Les nombres qu'on additionne s'appellent les termes.","indice":"💡 termes + termes = ?"},
+  {"question":"Comment s'appelle le résultat d'une soustraction ?","reponse":"La différence. Les nombres s'appellent aussi les termes.","indice":"💡 termes − termes = ?"},
+  {"question":"Peut-on changer l'ordre des termes dans une soustraction ?","reponse":"Non ! 5 − 2,5 ≠ 2,5 − 5. Par contre, dans une addition, l'ordre ne change pas le résultat.","indice":"💡 5 − 2,5 = 2,5 mais 2,5 − 5 = −2,5 ..."},
+  {"question":"Méthode pour additionner des décimaux ?","reponse":"1. Même nombre de décimales (ajouter des 0 si besoin). 2. Aligner par rang. 3. Calculer. 4. Reporter la virgule.","indice":"💡 L'alignement des virgules est la clé..."},
+  {"question":"Comment s'appelle le résultat d'une multiplication ?","reponse":"Le produit. Les nombres multipliés s'appellent les facteurs.","indice":"💡 facteur × facteur = ?"},
+  {"question":"Règle pour placer la virgule dans une multiplication ?","reponse":"On compte le nombre total de chiffres après la virgule dans les deux facteurs, et on met autant de décimales dans le résultat.","indice":"💡 1,5 × 2,3 → 1 + 1 = 2 décimales → 3,45"},
+  {"question":"Que vaut 500 × 100 ?","reponse":"50 000. Multiplier par 100 = décaler la virgule de 2 rangs vers la gauche (ajouter 2 zéros pour un entier).","indice":"💡 × 100 = 2 rangs vers la gauche..."},
+  {"question":"Comment vérifier le résultat d'une division ?","reponse":"diviseur × quotient = dividende. Ex : 23,80 ÷ 4 = 5,95 → vérif : 4 × 5,95 = 23,80 ✓","indice":"💡 On fait la multiplication inverse..."},
+  {"question":"Quelles opérations sont prioritaires sans parenthèses ?","reponse":"× et ÷ sont prioritaires sur + et −. On calcule les multiplications et divisions EN PREMIER.","indice":"💡 × et ÷ passent avant + et −..."},
+  {"question":"Résultat de 3 + 4 × 2 = ?","reponse":"= 3 + 8 = 11. On calcule d'abord 4 × 2 = 8, puis 3 + 8 = 11.","indice":"💡 × avant + !"},
+  {"question":"Résultat de (3 + 4) × 2 = ?","reponse":"= 7 × 2 = 14. Les parenthèses sont prioritaires : on calcule d'abord 3 + 4 = 7.","indice":"💡 Parenthèses d'abord !"},
+  {"question":"Comment calcule-t-on 8 − (12 − (3 + 5)) ?","reponse":"On commence par la parenthèse la plus intérieure : 3+5=8, puis 12−8=4, puis 8−4=4.","indice":"💡 De l'intérieur vers l'extérieur..."},
+  {"question":"La barre de fraction joue quel rôle ?","reponse":"Elle joue le rôle d'une parenthèse. (15+5)/10 = (15+5) ÷ 10 = 20 ÷ 10 = 2.","indice":"💡 Tout ce qui est au numérateur est entre parenthèses..."}
+]
