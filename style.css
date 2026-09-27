@@ -382,4 +382,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .quiz-question p {
   color: var(--text);
 }
+.fc-text {
+  color: var(--text);
+}
+
 
