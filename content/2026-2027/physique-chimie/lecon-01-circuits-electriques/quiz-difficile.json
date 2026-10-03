@@ -1,0 +1,22 @@
+[
+  {"type":"qcm","question":"Quelle est la différence entre un dipôle actif et un dipôle passif ?","options":["L'actif a 2 bornes, le passif en a 1","L'actif produit de l'énergie électrique, le passif l'utilise","L'actif consomme l'énergie, le passif la produit","Il n'y a pas de différence"],"answer":1},
+  {"type":"qcm","question":"Un générateur transfère de l'énergie électrique à un moteur. Quelle énergie le moteur produit-il ?","options":["Lumineuse","Thermique","Mécanique","Électrique"],"answer":2},
+  {"type":"qcm","question":"Pourquoi la perle est-elle un composant important d'une ampoule ?","options":["Elle produit de la lumière","Elle isole les fils électriques","Elle protège le filament","Elle constitue une borne"],"answer":1},
+  {"type":"qcm","question":"Une lampe ne s'allume pas. Quelle peut être la cause ?","options":["Uniquement un circuit ouvert","Uniquement une lampe grillée","Un circuit ouvert OU une lampe grillée","Le générateur est trop puissant"],"answer":2},
+  {"type":"qcm","question":"Combien de bornes faut-il connecter pour allumer une lampe avec une pile ?","options":["1 seule borne suffit","2 bornes de la pile et 1 de la lampe","Les 2 bornes de la pile aux 2 bornes de la lampe","3 bornes"],"answer":2},
+  {"type":"qcm","question":"Parmi ces composants, lesquels sont des dipôles actifs ?","options":["Lampe et moteur","Pile et photopile","LED et résistance","Moteur et buzzer"],"answer":1},
+  {"type":"qcm","question":"Qu'est-ce que l'énergie mécanique ?","options":["L'énergie produite par une lampe","L'énergie de mouvement produite par un moteur","L'énergie stockée dans une pile","L'énergie lumineuse du soleil"],"answer":1},
+  {"type":"qcm","question":"Pourquoi le verre de l'ampoule n'est PAS une borne ?","options":["Parce qu'il est transparent","Parce qu'il ne conduit pas l'électricité — il protège le filament","Parce qu'il est trop fragile","Parce qu'il est trop petit"],"answer":1},
+  {"type":"qcm","question":"Un circuit est ouvert. Que se passe-t-il ?","options":["La lampe s'allume normalement","Le courant circule moins vite","Le courant ne peut pas circuler, la lampe ne s'allume pas","La pile se recharge"],"answer":2},
+  {"type":"qcm","question":"Quelle conversion d'énergie réalise une photopile ?","options":["Électrique → lumineuse","Mécanique → électrique","Lumineuse → électrique","Thermique → électrique"],"answer":2},
+  {"type":"vrai-faux","question":"Le culot est la 2ème borne de l'ampoule.","answer":false},
+  {"type":"vrai-faux","question":"Un circuit électrique peut contenir plusieurs dipôles.","answer":true},
+  {"type":"vrai-faux","question":"Une batterie est un dipôle passif.","answer":false},
+  {"type":"vrai-faux","question":"Si un fil est coupé dans un circuit, la lampe peut quand même s'allumer.","answer":false},
+  {"type":"vrai-faux","question":"Un moteur convertit l'énergie électrique en énergie mécanique.","answer":true},
+  {"type":"oral","question":"Explique la différence entre un dipôle actif et un dipôle passif. Donne 2 exemples de chaque."},
+  {"type":"oral","question":"Décris les composants d'une ampoule et indique quelles parties sont les bornes électriques."},
+  {"type":"oral","question":"Quelles sont les conditions nécessaires pour qu'une lampe s'allume dans un circuit ?"},
+  {"type":"oral","question":"Explique la chaîne de conversion d'énergie d'un générateur vers un moteur."},
+  {"type":"oral","question":"Qu'est-ce qu'un circuit électrique ? Cite les éléments indispensables."}
+]
