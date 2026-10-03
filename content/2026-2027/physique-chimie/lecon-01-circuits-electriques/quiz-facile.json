@@ -1,0 +1,20 @@
+[
+  {"type":"qcm","question":"Qu'est-ce qu'un dipôle ?","options":["Un composant avec une seule borne","Un composant avec deux bornes de connexion","Un générateur d'énergie","Un fil conducteur"],"answer":1},
+  {"type":"qcm","question":"Une pile est un dipôle :","options":["Passif","Actif","Ni l'un ni l'autre","Les deux à la fois"],"answer":1},
+  {"type":"qcm","question":"Une lampe est un dipôle :","options":["Actif","Passif","Actif et passif","Ni actif ni passif"],"answer":1},
+  {"type":"qcm","question":"Quelles sont les deux bornes d'une lampe ?","options":["Le filament et le verre","Le culot et le plot","La perle et le support","Le verre noir et le filament"],"answer":1},
+  {"type":"qcm","question":"Quel composant produit de la lumière dans une ampoule ?","options":["Le culot","La perle","Le filament","Le plot"],"answer":2},
+  {"type":"qcm","question":"Quelle est la 1ère borne d'une ampoule ?","options":["Le plot","Le filament","Le culot","La perle"],"answer":2},
+  {"type":"qcm","question":"Parmi ces composants, lequel est un dipôle ACTIF ?","options":["Lampe","LED","Moteur","Pile"],"answer":3},
+  {"type":"qcm","question":"Parmi ces composants, lequel est un dipôle PASSIF ?","options":["Générateur","Batterie","Photopile","Moteur"],"answer":3},
+  {"type":"qcm","question":"Qu'est-ce qu'un circuit électrique ?","options":["Un seul dipôle","Un ensemble de dipôles reliés par des fils conducteurs","Une pile et un interrupteur","Un générateur seul"],"answer":1},
+  {"type":"qcm","question":"Pour allumer une lampe, le circuit doit être :","options":["Ouvert","Coupé","Fermé","Cassé"],"answer":2},
+  {"type":"qcm","question":"La photopile convertit :","options":["L'énergie électrique en lumière","L'énergie mécanique en électrique","L'énergie lumineuse en énergie électrique","L'énergie thermique en électrique"],"answer":2},
+  {"type":"qcm","question":"Un générateur transfère de l'énergie électrique à une lampe. La lampe produit :","options":["De l'énergie mécanique","De l'énergie thermique","De l'énergie lumineuse","De l'énergie électrique"],"answer":2},
+  {"type":"vrai-faux","question":"Une pile est un dipôle passif.","answer":false},
+  {"type":"vrai-faux","question":"Une lampe possède deux bornes : le plot et le culot.","answer":true},
+  {"type":"vrai-faux","question":"Pour allumer une lampe, il faut que le circuit soit ouvert.","answer":false},
+  {"type":"vrai-faux","question":"Un moteur est un dipôle passif.","answer":true},
+  {"type":"vrai-faux","question":"Le filament d'une ampoule produit de la lumière.","answer":true},
+  {"type":"vrai-faux","question":"Un générateur est un dipôle actif.","answer":true}
+]
