@@ -1,0 +1,15 @@
+[
+  {"question":"Qu'est-ce qu'un dipôle ?","reponse":"Un composant électrique possédant deux bornes de connexion. Ex : pile, lampe, moteur.","indice":"💡 Di = deux..."},
+  {"question":"Quelle est la différence entre dipôle actif et passif ?","reponse":"Actif : produit de l'énergie électrique (pile, générateur, photopile). Passif : utilise l'énergie électrique (lampe, moteur, LED).","indice":"💡 Actif = action de produire..."},
+  {"question":"Cite 4 exemples de dipôles ACTIFS.","reponse":"Générateur, pile, batterie, photopile (panneaux solaires), prise électrique.","indice":"💡 Ils fournissent de l'électricité..."},
+  {"question":"Cite 4 exemples de dipôles PASSIFS.","reponse":"Lampe, LED (diode électroluminescente), moteur, résistance, buzzer.","indice":"💡 Ils consomment l'électricité..."},
+  {"question":"Quelles sont les deux bornes d'une lampe ?","reponse":"Le plot (2ème borne) et le culot (1ère borne).","indice":"💡 Une en haut, une en bas de l'ampoule..."},
+  {"question":"Quel est le rôle du filament dans une ampoule ?","reponse":"Le filament produit de la lumière quand le courant le traverse.","indice":"💡 C'est le fil fin qui brille..."},
+  {"question":"Quel est le rôle de la perle dans une ampoule ?","reponse":"La perle isole les fils électriques à l'intérieur de l'ampoule.","indice":"💡 Elle empêche les fils de se toucher..."},
+  {"question":"Qu'est-ce qu'un circuit électrique ?","reponse":"Un ensemble de dipôles reliés entre eux par des fils conducteurs.","indice":"💡 Circuit = chemin fermé..."},
+  {"question":"Quelles sont les conditions pour allumer une lampe ?","reponse":"1. Le circuit doit être fermé (pas de coupure). 2. Les deux bornes de la pile doivent être connectées aux deux bornes de la lampe (plot et culot).","indice":"💡 Pense aux deux lames de la pile et aux deux bornes de la lampe..."},
+  {"question":"Quelle énergie un moteur produit-il ?","reponse":"Un moteur convertit l'énergie électrique en énergie mécanique (mouvement).","indice":"💡 Un moteur fait tourner des roues..."},
+  {"question":"Quelle énergie une lampe produit-elle ?","reponse":"Une lampe convertit l'énergie électrique en énergie lumineuse (et un peu de chaleur).","indice":"💡 Une lampe éclaire..."},
+  {"question":"Quelle conversion fait une photopile ?","reponse":"La photopile convertit l'énergie lumineuse (du soleil) en énergie électrique.","indice":"💡 Photo = lumière..."},
+  {"question":"Pourquoi une lampe peut-elle ne pas s'allumer même si le circuit est branché ?","reponse":"Parce que la lampe peut être grillée (filament cassé) — une lampe éteinte n'est pas forcément un circuit ouvert.","indice":"💡 Le filament peut être cassé..."}
+]
