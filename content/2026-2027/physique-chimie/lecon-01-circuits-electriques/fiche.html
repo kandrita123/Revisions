@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les Circuits Électriques</title>
+<style>
+  :root {
+    --bg:transparent;--text:#212121;--text2:#555;--border:#ddd;
+    --bleu:#1565C0;--bleu-clair:#E3F2FD;
+    --vert:#2E7D32;--vert-clair:#E8F5E9;
+    --rouge:#B71C1C;--rouge-clair:#FFEBEE;
+    --or:#E65100;--or-clair:#FFF3E0;
+    --jaune:#F57F17;--jaune-clair:#FFF9C4;
+    --gris:#424242;
+  }
+  @media(prefers-color-scheme:dark){:root{
+    --bg:transparent;--text:#eaeaea;--text2:#a0a0b0;--border:rgba(255,255,255,0.1);
+    --bleu-clair:#0a1a30;--vert-clair:#0a2010;--rouge-clair:#2a0808;
+    --or-clair:#2a1000;--jaune-clair:#2a1500;--gris:#c0c0c0;
+  }}
+  *{box-sizing:border-box;}
+  body{font-family:Arial,sans-serif;margin:0;padding:12px;background:transparent;color:var(--text);font-size:14px;}
+  .titre{background:var(--bleu);border-radius:8px;padding:14px;text-align:center;margin-bottom:12px;}
+  .titre .sur{color:#90CAF9;font-size:12px;font-weight:bold;margin-bottom:4px;}
+  .titre h1{color:#fff;font-size:22px;margin:0 0 4px;}
+  .titre .sous{color:#BBDEFB;font-size:13px;font-weight:bold;}
+  .titre .pb{color:#BBDEFB;font-size:12px;font-style:italic;}
+  .sec{display:flex;margin:12px 0 6px;}
+  .sec-bar{width:6px;border-radius:3px 0 0 3px;flex-shrink:0;background:var(--bleu);}
+  .sec-title{background:var(--bleu-clair);border:1px solid var(--bleu);border-left:none;border-radius:0 6px 6px 0;padding:7px 12px;font-size:14px;font-weight:bold;color:var(--bleu);flex:1;}
+  table{border-collapse:collapse;width:100%;margin:6px 0;}
+  th{padding:7px 8px;color:#fff;font-size:13px;text-align:left;}
+  td{border:1px solid var(--border);padding:6px 8px;font-size:13px;color:var(--text);vertical-align:top;}
+  .box{border-radius:6px;padding:8px 12px;margin:5px 0;font-size:13px;line-height:1.6;color:var(--text);}
+  .box-bleu{background:var(--bleu-clair);border:1px solid var(--bleu);}
+  .box-vert{background:var(--vert-clair);border:1px solid var(--vert);}
+  .box-rouge{background:var(--rouge-clair);border:1px solid var(--rouge);}
+  .box-or{background:var(--or-clair);border:1px solid var(--or);}
+  .box-jaune{background:var(--jaune-clair);border-left:4px solid var(--jaune);}
+  .retenir{background:var(--jaune-clair);border-left:4px solid var(--jaune);padding:8px 12px;border-radius:0 6px 6px 0;margin:6px 0;font-size:13px;color:var(--text);}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0;}
+  .col-head{color:#fff;border-radius:4px 4px 0 0;padding:5px 8px;font-weight:bold;font-size:13px;margin-bottom:0;}
+  .col-body{border-radius:0 0 6px 6px;padding:8px;font-size:13px;color:var(--text);}
+  ul{margin:4px 0;padding-left:16px;}
+  li{margin-bottom:3px;}
+  .schema{text-align:center;padding:8px;background:var(--bleu-clair);border:1px solid var(--bleu);border-radius:6px;margin:6px 0;}
+  .schema img{max-width:100%;border-radius:4px;}
+  .fleche{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:6px 0;}
+  .fbox{border-radius:6px;padding:6px 10px;font-size:13px;font-weight:bold;text-align:center;flex:1;min-width:80px;}
+  .arr{font-size:18px;font-weight:bold;color:var(--bleu);}
+  p.intro{font-size:13px;color:var(--text2);margin:2px 0 5px;}
+</style>
+</head>
+<body>
+
+<div class="titre">
+  <div class="sur">PHYSIQUE-CHIMIE 5ème  •  Chapitre 1</div>
+  <h1>Les Circuits Électriques</h1>
+  <div class="sous">Composants  •  Dipôles  •  Énergie</div>
+  <div class="pb">Comment fonctionne un circuit électrique ?</div>
+</div>
+
+<!-- INTRO -->
+<div class="sec"><div class="sec-bar"></div><div class="sec-title">⚡ INTRODUCTION — L'ÉNERGIE ÉLECTRIQUE</div></div>
+<p class="intro">Un générateur produit de l'énergie électrique qui est convertie par les appareils :</p>
+<div class="fleche">
+  <div class="fbox" style="background:var(--bleu-clair);border:1px solid var(--bleu);color:var(--bleu)">⚡ Générateur</div>
+  <span class="arr">→</span>
+  <div class="fbox" style="background:var(--or-clair);border:1px solid var(--or);color:var(--or)">Énergie électrique</div>
+  <span class="arr">→</span>
+  <div class="fbox" style="background:var(--vert-clair);border:1px solid var(--vert);color:var(--vert)">🔧 Moteur<br><small>Énergie mécanique</small></div>
+  <span class="arr">+</span>
+  <div class="fbox" style="background:var(--rouge-clair);border:1px solid var(--rouge);color:var(--rouge)">🔥 Énergie thermique</div>
+</div>
+<div class="box-jaune box">💡 Ex : Un générateur → lampe : énergie <b>lumineuse</b>. Un générateur → moteur : énergie <b>mécanique</b>.</div>
+
+<!-- I. DIPÔLES -->
+<div class="sec"><div class="sec-bar"></div><div class="sec-title">🔌 I. QU'EST-CE QU'UN DIPÔLE ?</div></div>
+<div class="box box-bleu"><b style="color:var(--bleu)">Définition :</b> La plupart des composants électriques sont des <b>dipôles</b> : ils possèdent <b>deux bornes</b> de connexion.</div>
+
+<div class="grid2">
+  <div>
+    <div class="col-head" style="background:var(--vert)">✅ Dipôles ACTIFS</div>
+    <div class="col-body box-vert" style="border:1px solid var(--vert);border-top:none;border-radius:0 0 6px 6px">
+      <b style="color:var(--vert)">Produisent de l'énergie électrique</b>
+      <ul>
+        <li>Générateur</li>
+        <li>Pile / Batterie</li>
+        <li>Prise électrique</li>
+        <li>Photopile (panneaux solaires)<br><small style="color:var(--gris)">↳ lumineuse → électrique</small></li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <div class="col-head" style="background:var(--bleu)">⚙️ Dipôles PASSIFS</div>
+    <div class="col-body box-bleu" style="border:1px solid var(--bleu);border-top:none;border-radius:0 0 6px 6px">
+      <b style="color:var(--bleu)">Utilisent l'énergie électrique</b>
+      <ul>
+        <li>Lampe / LED</li>
+        <li>Moteur</li>
+        <li>Résistance</li>
+        <li>Buzzer, ...</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="retenir">💡 <b>À retenir :</b> Actif = produit l'énergie (pile, générateur) | Passif = utilise l'énergie (lampe, moteur, LED)</div>
+
+<!-- II. CIRCUITS -->
+<div class="sec"><div class="sec-bar"></div><div class="sec-title">💡 II. LES CIRCUITS ÉLECTRIQUES</div></div>
+<div class="box box-bleu"><b style="color:var(--bleu)">Définition :</b> Un circuit électrique est un ensemble de dipôles reliés entre eux par des <b>fils conducteurs</b>.</div>
+
+<div class="grid2" style="margin-top:6px">
+  <div class="schema">
+    <b style="color:var(--or);font-size:13px">🔦 Schéma d'une ampoule</b><br>
+    <img src="https://kandrita123.github.io/Revisions/content/2026-2027/physique/lecon-01-circuits-electriques/ampoule_schema.jpeg" alt="Schéma ampoule légendée">
+  </div>
+  <div>
+    <table>
+      <tr><th style="background:var(--or)">Partie</th><th style="background:var(--or)">Rôle</th><th style="background:var(--or)">Borne</th></tr>
+      <tr><td><b style="color:var(--or)">Culot</b></td><td>Support métallique</td><td><b style="color:var(--vert)">1ère</b></td></tr>
+      <tr><td><b style="color:var(--or)">Plot</b></td><td>Contact électrique</td><td><b style="color:var(--vert)">2ème</b></td></tr>
+      <tr><td><b style="color:var(--or)">Filament</b></td><td>Produit la lumière</td><td>—</td></tr>
+      <tr><td><b style="color:var(--or)">Verre</b></td><td>Protège le filament</td><td>—</td></tr>
+      <tr><td><b style="color:var(--or)">Perle</b></td><td>Isole les fils</td><td>—</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="grid2" style="margin-top:6px">
+  <div class="box box-bleu">
+    <b style="color:var(--bleu)">🔋 Conditions pour allumer une lampe :</b>
+    <ul>
+      <li>Une pile possède deux lames = ses <b>bornes</b> → dipôle.</li>
+      <li>Une lampe est un dipôle dont les bornes sont le <b>plot</b> et le <b>culot</b>.</li>
+      <li><b>Pour allumer :</b> une lame de la pile en contact avec le plot, l'autre avec le culot.</li>
+    </ul>
+  </div>
+  <div class="schema">
+    <b style="color:var(--bleu);font-size:13px">Circuit simple :</b><br>
+    <img src="https://kandrita123.github.io/Revisions/content/2026-2027/physique/lecon-01-circuits-electriques/circuit_simple.jpeg" alt="Circuit pile et lampe" style="max-height:120px;width:auto">
+  </div>
+</div>
+
+<div class="retenir">💡 <b>À retenir :</b> Pour qu'une lampe s'allume : le circuit doit être <b>FERMÉ</b> (pas de coupure) et branché aux deux bornes du générateur.</div>
+
+<!-- PIÈGES -->
+<div class="sec"><div class="sec-bar" style="background:var(--rouge)"></div><div class="sec-title" style="background:var(--rouge-clair);border-color:var(--rouge);color:var(--rouge)">⚠️ PIÈGES À ÉVITER &amp; POINTS CLÉS</div></div>
+<div class="grid2">
+  <div class="box box-rouge">
+    <b style="color:var(--rouge)">❌ NE PAS CONFONDRE :</b>
+    <ul>
+      <li>Dipôle <b>actif</b> ≠ dipôle <b>passif</b></li>
+      <li>Lampe éteinte ≠ circuit ouvert (peut être grillée)</li>
+      <li>Énergie électrique ≠ énergie lumineuse (conversion !)</li>
+    </ul>
+  </div>
+  <div class="box box-vert">
+    <b style="color:var(--vert)">✅ TOUJOURS RETENIR :</b>
+    <ul>
+      <li>Dipôle = <b>2 bornes</b> de connexion</li>
+      <li>Actif = produit | Passif = consomme</li>
+      <li>Pour allumer : <b>circuit fermé + 2 bornes en contact</b></li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
