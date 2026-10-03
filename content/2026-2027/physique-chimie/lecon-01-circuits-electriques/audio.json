@@ -1,0 +1,61 @@
+[
+  {
+    "titre": "Introduction — L'énergie électrique",
+    "emoji": "⚡",
+    "contenu": [
+      "Un générateur produit de l'énergie électrique qui est ensuite convertie par les appareils.",
+      "Par exemple, un générateur transfère de l'énergie électrique à une lampe, qui la convertit en énergie lumineuse.",
+      "Un générateur transfère aussi de l'énergie électrique à un moteur, qui la convertit en énergie mécanique, c'est-à-dire du mouvement.",
+      "Souvent, un moteur produit aussi de la chaleur en même temps : c'est l'énergie thermique."
+    ]
+  },
+  {
+    "titre": "Les dipôles — actifs et passifs",
+    "emoji": "🔌",
+    "contenu": [
+      "La plupart des composants électriques sont des dipôles. Un dipôle possède deux bornes de connexion.",
+      "Il existe deux types de dipôles : les dipôles actifs et les dipôles passifs.",
+      "Les dipôles actifs produisent et fournissent de l'énergie électrique. Par exemple : le générateur, la pile, la batterie et la photopile, qui convertit l'énergie lumineuse du soleil en énergie électrique.",
+      "Les dipôles passifs utilisent l'énergie électrique pour fonctionner. Par exemple : la lampe, la LED, le moteur et la résistance.",
+      "Moyen mnémotechnique : Actif égale action de produire. Passif égale consommer."
+    ]
+  },
+  {
+    "titre": "Les composants d'une ampoule",
+    "emoji": "💡",
+    "contenu": [
+      "Une ampoule est un dipôle passif qui possède deux bornes.",
+      "La première borne est le culot, qui est le support métallique fileté.",
+      "La deuxième borne est le plot, qui est le contact électrique en bas de l'ampoule.",
+      "Le filament est le fil fin à l'intérieur qui produit de la lumière quand le courant le traverse.",
+      "Le verre protège le filament.",
+      "La perle isole les fils électriques à l'intérieur de l'ampoule.",
+      "Pour allumer la lampe, il faut mettre une lame de la pile en contact avec le plot et l'autre lame en contact avec le culot."
+    ]
+  },
+  {
+    "titre": "Les circuits électriques",
+    "emoji": "🔋",
+    "contenu": [
+      "Un circuit électrique est un ensemble de dipôles reliés entre eux par des fils conducteurs.",
+      "Pour qu'un circuit fonctionne, il doit être fermé : il ne doit y avoir aucune coupure.",
+      "Si le circuit est ouvert, le courant ne peut pas circuler et la lampe ne s'allume pas.",
+      "Une pile possède deux lames qui constituent ses bornes, c'est donc un dipôle.",
+      "Pour allumer une lampe avec une pile, il faut connecter une borne de la pile au plot de la lampe et l'autre borne de la pile au culot de la lampe.",
+      "Attention : si une lampe ne s'allume pas, ce n'est pas forcément parce que le circuit est ouvert. La lampe peut aussi être grillée, c'est-à-dire que son filament est cassé."
+    ]
+  },
+  {
+    "titre": "Points clés à retenir",
+    "emoji": "⭐",
+    "contenu": [
+      "Voici les points essentiels de ce chapitre.",
+      "Un dipôle possède toujours deux bornes de connexion.",
+      "Les dipôles actifs produisent de l'énergie électrique : pile, générateur, photopile.",
+      "Les dipôles passifs consomment de l'énergie électrique : lampe, moteur, LED.",
+      "Les deux bornes d'une lampe sont le plot et le culot.",
+      "Pour qu'une lampe s'allume, le circuit doit être fermé et les deux bornes doivent être connectées.",
+      "Ne pas confondre énergie électrique et énergie lumineuse : la lampe convertit l'une en l'autre."
+    ]
+  }
+]
