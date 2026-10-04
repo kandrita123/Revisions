@@ -1,0 +1,21 @@
+[
+  {"type":"qcm","question":"Qu'est-ce qui distingue principalement un empire d'un simple royaume ?","options":["Sa taille uniquement","Un ensemble de peuples et territoires sous l'autorité d'un même chef","Sa richesse","Sa religion"],"answer":1},
+  {"type":"qcm","question":"Pourquoi Justinien est-il considéré comme un héritier des Romains ?","options":["Il parle latin","Il rédige le Code Justinien et construit Sainte-Sophie pour faire de Constantinople une nouvelle Rome","Il conquiert Rome","Il est né à Rome"],"answer":1},
+  {"type":"qcm","question":"Quelle est la différence entre l'évangélisation des Slaves et celle des Saxons ?","options":["Il n'y a pas de différence","Les Slaves sont convertis par la force, les Saxons pacifiquement","Les Byzantins évangélisent pacifiquement (alphabet cyrillique) tandis que Charlemagne use de la violence avec les Saxons","Les deux sont pacifiques"],"answer":2},
+  {"type":"qcm","question":"Pourquoi Constantinople est-elle une ville stratégique ?","options":["Car elle est la plus grande ville du monde","Car elle est au croisement des routes entre Orient et Occident, sur le Bosphore","Car elle possède la plus grande armée","Car c'est la ville du Pape"],"answer":1},
+  {"type":"qcm","question":"Quelle est la cause principale du Schisme de 1054 ?","options":["Une guerre entre l'Orient et l'Occident","Le pape et le Patriarche s'accordent","Le pape se prétend chef unique de la chrétienté mais le Patriarche refuse","L'Église byzantine veut parler latin"],"answer":2},
+  {"type":"qcm","question":"Pourquoi l'Empire carolingien est-il dit 'éphémère' ?","options":["Il n'a duré que 10 ans","Il est partagé entre les petits-fils de Charlemagne en 843 (traité de Verdun)","Il est conquis par les Byzantins","Il n'avait pas de religion commune"],"answer":1},
+  {"type":"qcm","question":"Quel édifice Justinien fait-il construire pour rivaliser avec Rome ?","options":["L'Hippodrome","Le Sénat","La basilique Sainte-Sophie","Le Palais impérial"],"answer":2},
+  {"type":"qcm","question":"Qu'est-ce que le Code Justinien ?","options":["Un alphabet inventé par Justinien","Un rassemblement des lois des anciens empereurs romains, héritage romain","Un livre religieux byzantin","Un traité de paix avec les Carolingiens"],"answer":1},
+  {"type":"qcm","question":"En quoi l'Aqueduc de Constantinople est-il classé en fonction commerciale ?","options":["Il sert à irriguer les champs","Il approvisionne la ville en eau, indispensable au commerce et à la vie urbaine","Il est décoratif","Il sert de frontière"],"answer":1},
+  {"type":"qcm","question":"Quelle est la différence entre 'Église' et 'église' ?","options":["Aucune différence","Église (majuscule) = l'institution chrétienne / église (minuscule) = le bâtiment de culte","Église = catholique / église = orthodoxe","Église = bâtiment / église = institution"],"answer":1},
+  {"type":"vrai-faux","question":"Le Patriarche de Constantinople est indépendant de l'Empereur byzantin.","answer":false},
+  {"type":"vrai-faux","question":"L'alphabet cyrillique a été créé pour traduire la Bible en langue slave.","answer":true},
+  {"type":"vrai-faux","question":"1054 et 1204 sont la même date historique.","answer":false},
+  {"type":"vrai-faux","question":"Justinien et Charlemagne ont tous deux voulu se présenter comme héritiers de l'Empire romain.","answer":true},
+  {"type":"oral","question":"Explique les points communs et les différences entre les Empires byzantin et carolingien."},
+  {"type":"oral","question":"Quelles sont les 4 fonctions de Constantinople ? Donne un exemple de lieu pour chacune."},
+  {"type":"oral","question":"Explique les causes et les conséquences du Schisme de 1054."},
+  {"type":"oral","question":"Compare les méthodes d'évangélisation des Byzantins (Slaves) et des Carolingiens (Saxons)."},
+  {"type":"oral","question":"Pourquoi dit-on que Constantinople est une ville 'convoitée' ? Cite 2 preuves historiques."}
+]
