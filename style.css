@@ -379,12 +379,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* Espagnol et Technologie */
 .matiere-card.espagnol { background: linear-gradient(135deg, #AD1457, #880E4F); }
 .matiere-card.techno   { background: linear-gradient(135deg, #00838F, #006064); }
-.quiz-question p {
-  color: #eaeaea;
-}
-.fc-text {
-  color: #eaeaea;
-}
 
 
 
