@@ -19,7 +19,7 @@ const MATIERES_6 = [
   { id: 'maths',        label: 'Maths',           icon: '📐', class: 'maths'   },
   { id: 'francais',     label: 'Français',        icon: '✍️', class: 'francais'},
   { id: 'svt',          label: 'SVT',             icon: '🌿', class: 'svt'     },
-  { id: 'physique',     label: 'Physique-Chimie', icon: '⚗️', class: 'physique'},
+  { id: 'physique-chimie',     label: 'Physique-Chimie', icon: '⚗️', class: 'physique'},
   { id: 'anglais',      label: 'Anglais',         icon: '🇬🇧', class: 'anglais' },
 ];
 
@@ -28,7 +28,7 @@ const MATIERES_5_ET_PLUS = [
   { id: 'maths',        label: 'Maths',           icon: '📐', class: 'maths'   },
   { id: 'francais',     label: 'Français',        icon: '✍️', class: 'francais'},
   { id: 'svt',          label: 'SVT',             icon: '🌿', class: 'svt'     },
-  { id: 'physique',     label: 'Physique-Chimie', icon: '⚗️', class: 'physique'},
+  { id: 'physique-chimie',     label: 'Physique-Chimie', icon: '⚗️', class: 'physique'},
   { id: 'anglais',      label: 'Anglais',         icon: '🇬🇧', class: 'anglais' },
   { id: 'espagnol',     label: 'Espagnol',        icon: '🇪🇸', class: 'espagnol'},
   { id: 'technologie',  label: 'Technologie',     icon: '⚙️', class: 'techno'  },
