@@ -1,0 +1,22 @@
+[
+  {"type":"qcm","question":"En quelle année l'Empire romain d'Occident s'effondre-t-il ?","options":["395","476","800","1054"],"answer":1},
+  {"type":"qcm","question":"Quelle est la capitale de l'Empire byzantin ?","options":["Rome","Aix-la-Chapelle","Constantinople","Jérusalem"],"answer":2},
+  {"type":"qcm","question":"Quelle est la capitale de l'Empire carolingien ?","options":["Constantinople","Paris","Rome","Aix-la-Chapelle"],"answer":3},
+  {"type":"qcm","question":"Que signifie 'Basileus' ?","options":["Évêque en grec","Roi en grec, titre de l'Empereur byzantin","Chef de l'Église catholique","Fonctionnaire de Charlemagne"],"answer":1},
+  {"type":"qcm","question":"Qui est le grand Empereur byzantin du VIe siècle ?","options":["Charlemagne","Constantin","Justinien","Auguste"],"answer":2},
+  {"type":"qcm","question":"En quelle année Charlemagne est-il sacré Empereur ?","options":["476","768","800","843"],"answer":2},
+  {"type":"qcm","question":"Qui couronne Charlemagne Empereur ?","options":["Le Patriarche de Constantinople","Le roi des Francs","Le pape Léon III","L'Empereur byzantin"],"answer":2},
+  {"type":"qcm","question":"Que sont les missi dominici ?","options":["Des moines évangélisateurs","Des fonctionnaires envoyés par Charlemagne pour inspecter les comtés","Des soldats byzantins","Des évêques romains"],"answer":1},
+  {"type":"qcm","question":"En quelle année a lieu le Schisme ?","options":["800","843","1054","1204"],"answer":2},
+  {"type":"qcm","question":"Que se sépare lors du Schisme de 1054 ?","options":["L'Empire byzantin et carolingien","L'Église catholique et l'Église orthodoxe","Le pape et l'Empereur","La France et l'Allemagne"],"answer":1},
+  {"type":"qcm","question":"Qui sont Cyrille et Méthode ?","options":["Deux empereurs byzantins","Deux généraux carolingiens","Deux moines byzantins qui évangélisèrent les Slaves","Deux papes romains"],"answer":2},
+  {"type":"qcm","question":"Quelle est la méthode d'évangélisation des Carolingiens chez les Saxons ?","options":["Pacifique et culturelle","Par la traduction de la Bible","Militaire et forcée","Par la création d'un alphabet"],"answer":2},
+  {"type":"qcm","question":"En quelle année Constantinople est-elle prise par les Ottomans ?","options":["1054","1204","1453","843"],"answer":2},
+  {"type":"qcm","question":"Quelle fonction remplit l'Hippodrome à Constantinople ?","options":["Politique","Religieuse","Commerciale","Loisirs"],"answer":3},
+  {"type":"qcm","question":"Quelle fonction remplit la basilique Sainte-Sophie ?","options":["Politique","Religieuse","Commerciale","Loisirs"],"answer":1},
+  {"type":"vrai-faux","question":"L'Empire byzantin est aussi appelé l'Empire romain d'Orient.","answer":true},
+  {"type":"vrai-faux","question":"Charlemagne partage son empire entre ses petits-fils en 843.","answer":true},
+  {"type":"vrai-faux","question":"L'Église orthodoxe est dirigée par le Pape.","answer":false},
+  {"type":"vrai-faux","question":"Constantinople est située sur le détroit du Bosphore.","answer":true},
+  {"type":"vrai-faux","question":"Les Carolingiens ont évangélisé les Slaves de façon pacifique.","answer":false}
+]
