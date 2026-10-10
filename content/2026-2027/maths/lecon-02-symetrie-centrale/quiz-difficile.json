@@ -1,0 +1,113 @@
+[
+ {
+  "type": "qcm",
+  "question": "Pour construire le symétrique B de A par rapport à O, on commence par tracer…",
+  "options": [
+   "la perpendiculaire à (AO)",
+   "la demi-droite [AO)",
+   "un cercle de centre A",
+   "la médiatrice de [AO]"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "qcm",
+  "question": "A' est le symétrique de A par rapport à O et OA = 3 cm. Combien mesure AA' ?",
+  "options": [
+   "3 cm",
+   "1,5 cm",
+   "6 cm",
+   "9 cm"
+  ],
+  "answer": 2
+ },
+ {
+  "type": "qcm",
+  "question": "Pour construire le symétrique d'un cercle, on construit d'abord le symétrique…",
+  "options": [
+   "de tous les points du cercle",
+   "du centre du cercle",
+   "d'un seul point du cercle",
+   "du diamètre"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "qcm",
+  "question": "Combien de points faut-il construire au minimum pour obtenir le symétrique d'une droite ?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "qcm",
+  "question": "Le symétrique d'un segment de 7 cm par rapport à un point mesure…",
+  "options": [
+   "3,5 cm",
+   "7 cm",
+   "14 cm",
+   "on ne peut pas savoir"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "qcm",
+  "question": "Que NE conserve PAS forcément la symétrie centrale dans cette liste ?",
+  "options": [
+   "les longueurs",
+   "les mesures d'angles",
+   "les aires",
+   "la position de la figure"
+  ],
+  "answer": 3
+ },
+ {
+  "type": "vrai-faux",
+  "question": "Dans la méthode au compas (symétrie axiale), on peut changer l'écartement entre les arcs.",
+  "answer": false
+ },
+ {
+  "type": "vrai-faux",
+  "question": "Pour une figure quelconque, on construit le symétrique des sommets, des points d'intersection et des centres de cercles.",
+  "answer": true
+ },
+ {
+  "type": "vrai-faux",
+  "question": "Le motif minimal est le motif à partir duquel on produit une frise ou un pavage.",
+  "answer": true
+ },
+ {
+  "type": "vrai-faux",
+  "question": "Dans une symétrie centrale, le centre O est la médiatrice de [AA'].",
+  "answer": false
+ },
+ {
+  "type": "vrai-faux",
+  "question": "On peut reproduire une frise ou un pavage grâce aux symétries centrales.",
+  "answer": true
+ },
+ {
+  "type": "oral",
+  "question": "Explique la différence entre la symétrie axiale et la symétrie centrale (ce qu'on fait, et le rôle de la droite ou du point)."
+ },
+ {
+  "type": "oral",
+  "question": "Récite la phrase importante : « B est le symétrique de A par rapport à O revient à dire que… »"
+ },
+ {
+  "type": "oral",
+  "question": "Explique les 3 étapes pour construire le symétrique d'un point par rapport à O."
+ },
+ {
+  "type": "oral",
+  "question": "Explique comment construire le symétrique d'un cercle, puis celui d'une droite."
+ },
+ {
+  "type": "oral",
+  "question": "Quelle est la différence entre une frise et un pavage ? Donne un exemple de chaque."
+ }
+]
