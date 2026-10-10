@@ -128,12 +128,34 @@ async function loadChapitres(matiere) {
       return;
     }
 
+    // Les dossiers "Theme-XX" contiennent eux-mêmes des dossiers de chapitres :
+    // on descend d'un niveau pour les lister (chemin = "Theme-01/Chapitre-01-...").
+    const entrees = [];
+    for (const ch of chapitres) {
+      const theme = ch.name.match(/^th[eè]me-?(\d+)/i);
+      if (theme) {
+        const r = await fetch(`${API_URL}/${path}/${ch.name}?ref=${BRANCH}`, {
+          headers: { 'Accept': 'application/vnd.github.v3+json' }
+        });
+        if (!r.ok) continue;
+        const sous = (await r.json()).filter(i => i.type === 'dir').sort((a,b) => a.name.localeCompare(b.name));
+        sous.forEach(sc => entrees.push({ chemin: `${ch.name}/${sc.name}`, nom: sc.name, groupe: `Thème ${parseInt(theme[1])}` }));
+      } else {
+        entrees.push({ chemin: ch.name, nom: ch.name, groupe: matiere.label });
+      }
+    }
+
+    if (!entrees.length) {
+      list.innerHTML = '<div class="empty-state"><div class="empty-icon">📭</div>Aucun chapitre disponible</div>';
+      return;
+    }
+
     list.innerHTML = '';
-    chapitres.forEach(ch => {
+    entrees.forEach(e => {
       const div = document.createElement('div');
       div.className = 'chapitre-item';
-      div.innerHTML = `<div class="chapitre-num">${matiere.label}</div><div>${formatChapitreLabel(ch.name)}</div>`;
-      div.addEventListener('click', () => loadChapitre(matiere, ch.name));
+      div.innerHTML = `<div class="chapitre-num">${e.groupe}</div><div>${formatChapitreLabel(e.nom)}</div>`;
+      div.addEventListener('click', () => loadChapitre(matiere, e.chemin));
       list.appendChild(div);
     });
   } catch {
@@ -142,7 +164,7 @@ async function loadChapitres(matiere) {
 }
 
 function formatChapitreLabel(name) {
-  const match = name.match(/^ch(\d+)-(.+)$/);
+  const match = name.match(/^(?:ch|chapitre-)(\d+)-(.+)$/i);
   if (match) {
     const num = parseInt(match[1]);
     const titre = match[2].replace(/-/g, ' ');
