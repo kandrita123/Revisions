@@ -1,0 +1,82 @@
+[
+ {
+  "titre": "Rappels : la symétrie axiale",
+  "emoji": "🔁",
+  "contenu": [
+   "La symétrie axiale correspond à un pliage le long de l'axe de symétrie.",
+   "Si A et A prime sont symétriques par rapport à la droite d, alors la droite d est la médiatrice du segment A A prime.",
+   "La symétrie axiale conserve le parallélisme, les angles, les distances et les aires.",
+   "Méthode à l'équerre : on trace la perpendiculaire à la droite d passant par A, puis on reporte la distance de A à la droite, de l'autre côté de la droite.",
+   "Méthode au compas : on pique sur A et on trace deux arcs qui coupent la droite d, sans changer l'écartement.",
+   "Avec le même écartement, on pique sur chaque intersection et on trace deux arcs de l'autre côté de la droite. Ils se coupent au symétrique de A. Il ne reste plus qu'à le nommer."
+  ]
+ },
+ {
+  "titre": "La symétrie centrale",
+  "emoji": "🔄",
+  "contenu": [
+   "La symétrie centrale correspond à faire un demi-tour autour d'un point.",
+   "Si B et B prime sont symétriques par rapport au point O, alors O est le milieu du segment B B prime.",
+   "Le point autour duquel on fait un demi-tour s'appelle le centre de symétrie."
+  ]
+ },
+ {
+  "titre": "Construire le symétrique d'un point",
+  "emoji": "📍",
+  "contenu": [
+   "Phrase importante : B est le symétrique du point A par rapport à O revient à dire que O est le milieu du segment A B.",
+   "Étape 1 : on trace la demi-droite A O.",
+   "Étape 2 : on reporte la longueur A O sur la demi-droite, de l'autre côté de O, à la règle ou au compas. On obtient le point B.",
+   "Étape 3 : on vérifie que les points A, O et B sont alignés, et que A O est égal à O B."
+  ]
+ },
+ {
+  "titre": "Construire le symétrique d'une figure",
+  "emoji": "🔺",
+  "contenu": [
+   "Pour construire le symétrique F prime d'une figure F, on construit le symétrique de chacun des points de F, puis on les relie entre eux convenablement.",
+   "Par exemple, le symétrique du triangle A B C par rapport à O est le triangle A prime B prime C prime."
+  ]
+ },
+ {
+  "titre": "Les propriétés",
+  "emoji": "📏",
+  "contenu": [
+   "La symétrie centrale conserve l'alignement, les longueurs, les mesures d'angles et les aires.",
+   "Le symétrique d'un segment est un segment de même longueur.",
+   "Le symétrique d'une droite est une droite.",
+   "Le symétrique d'un angle est un angle de même mesure.",
+   "Le symétrique d'un cercle est un cercle de même rayon."
+  ]
+ },
+ {
+  "titre": "Les méthodes de construction",
+  "emoji": "🧭",
+  "contenu": [
+   "Pour une droite : on trace le symétrique de deux points quelconques de la droite, puis on trace la droite qui passe par les deux points obtenus.",
+   "Pour un cercle : on trace le symétrique du centre du cercle, puis on trace le cercle de même rayon, dont le centre est le point obtenu.",
+   "Pour une figure quelconque : on trace le symétrique des points faciles à repérer, comme les sommets, les points d'intersection ou le centre d'un cercle. Puis on trace les segments, droites et cercles correspondants."
+  ]
+ },
+ {
+  "titre": "Frises et pavages",
+  "emoji": "🧩",
+  "contenu": [
+   "Une frise est constituée d'un motif reproduit dans une seule direction. Exemple : une guirlande en papier.",
+   "Un pavage est constitué d'un motif qui se répète pour couvrir toute une surface, sans trou ni chevauchement. Exemple : les dalles sur la route.",
+   "Le motif à partir duquel on produit la frise ou le pavage s'appelle le motif minimal.",
+   "On peut reproduire une frise ou un pavage grâce aux symétries centrales. En sixième, on l'a fait avec des symétries axiales."
+  ]
+ },
+ {
+  "titre": "Pièges à éviter",
+  "emoji": "⚠️",
+  "contenu": [
+   "Ne confonds pas : la symétrie axiale est un pliage autour d'une droite, la symétrie centrale est un demi-tour autour d'un point.",
+   "En symétrie axiale, la droite est la médiatrice. En symétrie centrale, le point O est le milieu.",
+   "Pour un cercle, on prend le symétrique du centre.",
+   "Le symétrique A prime se place de l'autre côté de O, jamais du même côté que A.",
+   "N'oublie pas de reporter la même longueur : A O est égal à O A prime."
+  ]
+ }
+]
