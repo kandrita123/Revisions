@@ -1,0 +1,98 @@
+[
+ {
+  "type": "qcm",
+  "question": "La symétrie centrale correspond à…",
+  "options": [
+   "un pliage",
+   "un demi-tour autour d'un point",
+   "un tour complet",
+   "un glissement"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "qcm",
+  "question": "La symétrie axiale correspond à…",
+  "options": [
+   "un demi-tour",
+   "un pliage le long d'un axe",
+   "un agrandissement",
+   "une rotation d'un quart de tour"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "qcm",
+  "question": "B est le symétrique de A par rapport à O. Alors O est…",
+  "options": [
+   "le milieu de [AB]",
+   "sur la médiatrice de [AB]",
+   "à côté de A",
+   "en dehors du segment [AB]"
+  ],
+  "answer": 0
+ },
+ {
+  "type": "qcm",
+  "question": "Comment s'appelle le point autour duquel on fait le demi-tour ?",
+  "options": [
+   "l'axe de symétrie",
+   "le centre de symétrie",
+   "le motif minimal",
+   "la médiatrice"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "qcm",
+  "question": "Le symétrique d'un cercle par rapport à un point est…",
+  "options": [
+   "un cercle de même rayon",
+   "un cercle deux fois plus grand",
+   "un segment",
+   "une droite"
+  ],
+  "answer": 0
+ },
+ {
+  "type": "qcm",
+  "question": "Un motif reproduit dans une seule direction forme…",
+  "options": [
+   "un pavage",
+   "une frise",
+   "une médiatrice",
+   "un cercle"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "vrai-faux",
+  "question": "La symétrie centrale conserve les longueurs.",
+  "answer": true
+ },
+ {
+  "type": "vrai-faux",
+  "question": "Le symétrique d'un angle est un angle de même mesure.",
+  "answer": true
+ },
+ {
+  "type": "vrai-faux",
+  "question": "Si B est le symétrique de A par rapport à O, alors A, O et B sont alignés.",
+  "answer": true
+ },
+ {
+  "type": "vrai-faux",
+  "question": "Le symétrique de A par rapport à O se place du même côté que A.",
+  "answer": false
+ },
+ {
+  "type": "vrai-faux",
+  "question": "Un pavage peut laisser des trous.",
+  "answer": false
+ },
+ {
+  "type": "vrai-faux",
+  "question": "En symétrie axiale, l'axe (d) est la médiatrice de [AA'].",
+  "answer": true
+ }
+]
