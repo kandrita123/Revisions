@@ -1,0 +1,92 @@
+[
+ {
+  "question": "À quoi correspond la symétrie axiale ?",
+  "reponse": "À un pliage le long de l'axe de symétrie.",
+  "indice": "💡 Pense à plier une feuille..."
+ },
+ {
+  "question": "A et A' sont symétriques par rapport à (d). Que représente (d) pour [AA'] ?",
+  "reponse": "(d) est la médiatrice de [AA'].",
+  "indice": "💡 Une droite perpendiculaire qui passe par le milieu..."
+ },
+ {
+  "question": "Que conserve la symétrie axiale ?",
+  "reponse": "Le parallélisme, les angles, les distances et les aires.",
+  "indice": "💡 4 choses : parallélisme, angles, d..., a..."
+ },
+ {
+  "question": "Méthode à l'équerre : quelle est la 1re étape ?",
+  "reponse": "Tracer la perpendiculaire à (d) passant par A.",
+  "indice": "💡 L'équerre sert à tracer des droites..."
+ },
+ {
+  "question": "Méthode au compas : quelle règle ne faut-il pas oublier ?",
+  "reponse": "Garder toujours le même écartement du compas.",
+  "indice": "💡 Il ne faut pas toucher au compas entre les arcs..."
+ },
+ {
+  "question": "À quoi correspond la symétrie centrale ?",
+  "reponse": "À un demi-tour autour d'un point.",
+  "indice": "💡 On tourne de la moitié d'un tour..."
+ },
+ {
+  "question": "Comment s'appelle le point autour duquel on fait le demi-tour ?",
+  "reponse": "Le centre de symétrie.",
+  "indice": "💡 Centre de..."
+ },
+ {
+  "question": "B est le symétrique de A par rapport à O. Que peut-on dire de O ?",
+  "reponse": "O est le milieu de [AB].",
+  "indice": "💡 C'est la phrase écrite en rouge dans le cahier..."
+ },
+ {
+  "question": "Quelles sont les 3 étapes pour construire le symétrique B du point A par rapport à O ?",
+  "reponse": "1. Tracer la demi-droite [AO). 2. Reporter la longueur AO de l'autre côté de O. 3. Vérifier que A, O, B sont alignés et AO = OB.",
+  "indice": "💡 Demi-droite, reporter, vérifier..."
+ },
+ {
+  "question": "Comment construire le symétrique F' d'une figure F ?",
+  "reponse": "Construire le symétrique de chacun des points de F, puis les relier entre eux convenablement.",
+  "indice": "💡 Point par point, puis on relie..."
+ },
+ {
+  "question": "Que conserve la symétrie centrale ?",
+  "reponse": "L'alignement, les longueurs, les mesures d'angles et les aires.",
+  "indice": "💡 4 choses : a..., l..., angles, aires"
+ },
+ {
+  "question": "Quel est le symétrique d'un segment ?",
+  "reponse": "Un segment de même longueur.",
+  "indice": "💡 Les longueurs sont conservées..."
+ },
+ {
+  "question": "Quel est le symétrique d'un cercle ?",
+  "reponse": "Un cercle de même rayon (ou même diamètre).",
+  "indice": "💡 Il garde la même taille..."
+ },
+ {
+  "question": "Comment construire le symétrique d'une droite ?",
+  "reponse": "Tracer le symétrique de deux points quelconques de la droite, puis la droite passant par les deux points obtenus.",
+  "indice": "💡 Il suffit de 2 points pour tracer une droite..."
+ },
+ {
+  "question": "Comment construire le symétrique d'un cercle ?",
+  "reponse": "Tracer le symétrique du centre, puis le cercle de même rayon de centre le point obtenu.",
+  "indice": "💡 On ne s'occupe que du centre et du rayon..."
+ },
+ {
+  "question": "Qu'est-ce qu'une frise ?",
+  "reponse": "Un motif reproduit dans une seule direction. Ex : guirlandes en papier.",
+  "indice": "💡 Une seule direction..."
+ },
+ {
+  "question": "Qu'est-ce qu'un pavage ?",
+  "reponse": "Un motif qui se répète pour couvrir toute une surface, sans trou ni chevauchement. Ex : dalles sur la route.",
+  "indice": "💡 Toute la surface..."
+ },
+ {
+  "question": "Comment s'appelle le motif à partir duquel on produit une frise ou un pavage ?",
+  "reponse": "Le motif minimal.",
+  "indice": "💡 Le plus petit motif..."
+ }
+]
