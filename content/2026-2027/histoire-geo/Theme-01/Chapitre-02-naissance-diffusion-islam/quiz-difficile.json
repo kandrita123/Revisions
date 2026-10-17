@@ -1,0 +1,145 @@
+[
+  {
+    "type": "qcm",
+    "question": "Dans quel ordre se succèdent les califes ?",
+    "options": [
+      "Abbassides, Omeyyades, premiers califes",
+      "Premiers califes, Omeyyades, Abbassides",
+      "Omeyyades, premiers califes, Abbassides",
+      "Premiers califes, Abbassides, Omeyyades"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "Qui transmet la parole de Dieu aux hommes ?",
+    "options": [
+      "L'archange Gabriel",
+      "Le calife",
+      "Mohammed, le prophète",
+      "Le vizir"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "L'hégire est l'exil de Mohammed de Médine vers La Mecque.",
+    "answer": false
+  },
+  {
+    "type": "qcm",
+    "question": "Comment s'appelait Médine avant de prendre ce nom ?",
+    "options": [
+      "Bagdad",
+      "Yathrib",
+      "Djibril",
+      "Kur'an"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "Mohammed est le « sceau des prophètes ». Qu'est-ce que cela veut dire d'après ton cours ?",
+    "options": [
+      "Il scelle la révélation",
+      "Il est le premier calife",
+      "Il a écrit la Bible",
+      "Il a fondé Bagdad"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "qcm",
+    "question": "Quel pilier consiste à donner une partie de ses richesses aux pauvres ?",
+    "options": [
+      "La chahada",
+      "Le pèlerinage",
+      "Le jeûne du Ramadan",
+      "La zakât"
+    ],
+    "answer": 3
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Le pèlerinage à La Mecque est obligatoire pour tous les musulmans, même ceux qui n'en ont pas les moyens.",
+    "answer": false
+  },
+  {
+    "type": "qcm",
+    "question": "Pourquoi La Mecque est-elle le principal lieu de pèlerinage ?",
+    "options": [
+      "C'est la capitale des Abbassides",
+      "Le prophète y est né et un temple y a été érigé",
+      "C'est la seule ville ronde au monde",
+      "Le prophète y est mort"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "Qui est à la tête de l'administration de l'empire ?",
+    "options": [
+      "Le cadi",
+      "L'émir",
+      "Le vizir",
+      "Al-Mansur"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Les émirs et les cadis représentent le calife dans les provinces.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Appliquer les peines légales fait partie de quel pouvoir du calife ?",
+    "options": [
+      "Religieux",
+      "Judiciaire",
+      "Militaire",
+      "Aucun"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "À quelle dynastie appartient le calife Al-Mansur ?",
+    "options": [
+      "Les Omeyyades",
+      "Les premiers califes",
+      "Les Mongols",
+      "Les Abbassides"
+    ],
+    "answer": 3
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Le Coran a des liens avec la Bible : on y trouve Abraham, Marie et l'ange Gabriel.",
+    "answer": true
+  },
+  {
+    "type": "oral",
+    "question": "Explique ce qu'est un calife et quels sont ses pouvoirs."
+  },
+  {
+    "type": "oral",
+    "question": "Présente les cinq piliers de l'islam."
+  },
+  {
+    "type": "oral",
+    "question": "Raconte les grandes étapes de la vie de Mohammed, avec les dates."
+  },
+  {
+    "type": "oral",
+    "question": "Explique pourquoi on peut dire qu'Al-Mansur est un bâtisseur, puis décris sa capitale."
+  },
+  {
+    "type": "oral",
+    "question": "Explique pourquoi on dit que l'islam s'inscrit dans la continuité du judaïsme et du christianisme."
+  },
+  {
+    "type": "oral",
+    "question": "Explique ce que devient l'empire après la mort de Mohammed, jusqu'en 1258."
+  }
+]
