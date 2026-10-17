@@ -1,0 +1,71 @@
+[
+  {
+    "titre": "Qu'est-ce que l'islam ?",
+    "emoji": "🕌",
+    "contenu": [
+      "Islam est un mot de langue arabe qui veut dire soumission à un Dieu unique.",
+      "Les croyants de l'islam s'appellent les musulmans, ce qui veut dire ceux qui se soumettent.",
+      "L'islam est né en Arabie, en Asie, dans le désert, au septième siècle.",
+      "C'est la troisième religion monothéiste, c'est-à-dire qui croit en un seul Dieu, Allah.",
+      "Elle s'inscrit dans la continuité du judaïsme et du christianisme."
+    ]
+  },
+  {
+    "titre": "Mohammed, le prophète",
+    "emoji": "📜",
+    "contenu": [
+      "Mohammed, qu'on appelle aussi Muhammad ou Mahomet, est né à La Mecque en 570.",
+      "Selon la tradition, en 610, l'archange Gabriel, appelé Djibril, lui révèle la parole de Dieu.",
+      "Mohammed se présente comme l'envoyé de Dieu, chargé de révéler aux hommes un message nouveau.",
+      "Il commence sa prédication, c'est-à-dire la diffusion de son message, vers 610 à La Mecque.",
+      "Puis il s'exile à Yathrib, qui deviendra Médine. Cet exil s'appelle l'hégire.",
+      "Il meurt à Médine en 632. On l'appelle le sceau des prophètes, car il scelle la révélation."
+    ]
+  },
+  {
+    "titre": "Le Coran",
+    "emoji": "📖",
+    "contenu": [
+      "Le Coran est le livre sacré des musulmans. Son nom veut dire récitation.",
+      "Il est écrit en arabe, la langue de la révélation, considérée comme sacrée.",
+      "Il est divisé en chapitres appelés sourates.",
+      "Il a des liens avec la Bible : on y trouve Abraham, l'ange Gabriel et Marie.",
+      "La profession de foi dit : il n'y a de Dieu qu'Allah et Mohammed est son prophète."
+    ]
+  },
+  {
+    "titre": "Les cinq piliers de l'islam",
+    "emoji": "⭐",
+    "contenu": [
+      "Le premier pilier est la chahada, la profession de foi : il n'y a qu'un seul Dieu et Mohammed est son prophète.",
+      "Le deuxième pilier, ce sont les cinq prières obligatoires, cinq fois par jour, tourné vers La Mecque. Le vendredi, on prie à la mosquée.",
+      "Le troisième pilier est le jeûne du Ramadan : pendant un mois, on ne mange pas pendant la journée.",
+      "Le quatrième pilier est la zakât, l'aumône : le riche purifie ses richesses en en donnant une partie aux pauvres.",
+      "Le cinquième pilier est le pèlerinage à La Mecque, recommandé à tous ceux qui en ont la force et les moyens.",
+      "La Mecque est le principal lieu de pèlerinage, car le prophète y est né et un temple y a été érigé."
+    ]
+  },
+  {
+    "titre": "Le calife et l'empire",
+    "emoji": "👑",
+    "contenu": [
+      "Calife veut dire successeur du prophète. C'est le chef politique et religieux des musulmans.",
+      "Après la mort de Mohammed en 632, les premiers califes, de 632 à 661, puis les Omeyyades, de 661 à 750, conquièrent un vaste empire, de l'Espagne jusqu'aux portes de l'Inde.",
+      "L'empire, trop vaste, se divise. En 1258, les Mongols détruisent Bagdad, la capitale des Abbassides.",
+      "Les peuples conquis se convertissent, mais les juifs et les chrétiens peuvent garder leur religion en payant un impôt.",
+      "Le calife a un pouvoir absolu : un pouvoir religieux, un pouvoir judiciaire et un pouvoir militaire.",
+      "Il gouverne avec le vizir, à la tête de l'administration, et avec les émirs et les cadis, qui le représentent dans les provinces."
+    ]
+  },
+  {
+    "titre": "Al-Mansur et Bagdad",
+    "emoji": "🏙️",
+    "contenu": [
+      "Al-Mansur est un calife abbasside, qui règne de 754 à 775.",
+      "C'est un bâtisseur : il fait bâtir sa capitale, Bagdad, la seule ville ronde au monde.",
+      "Au centre se trouvent le palais du calife et, à côté, la grande mosquée.",
+      "Plus loin, on trouve les demeures de ses enfants, le trésor, les ministères et les administrations.",
+      "Dans les rues habitent les officiers et les fonctionnaires de confiance, logés près du calife."
+    ]
+  }
+]
