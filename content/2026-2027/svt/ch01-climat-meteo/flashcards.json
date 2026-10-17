@@ -1,0 +1,87 @@
+[
+  {
+    "question": "Qu'est-ce que la météo ?",
+    "reponse": "La météo est le temps qu'il fait et ses changements sur quelques jours. Elle prend en compte trois paramètres : les précipitations, la température et la vitesse des vents.",
+    "indice": "💡 Pense à la durée : quelques jours seulement."
+  },
+  {
+    "question": "Qu'est-ce qui contrôle la température ?",
+    "reponse": "C'est le Soleil. La température dépend de la quantité d'ensoleillement reçue, qui dépend notamment de la latitude, c'est-à-dire du lieu où l'on se trouve sur la Terre.",
+    "indice": "💡 Pense à ce qui éclaire et chauffe toutes les planètes."
+  },
+  {
+    "question": "À quelles trois échelles observe-t-on que le Soleil contrôle la température ?",
+    "reponse": "Dans le système solaire, les planètes les plus éloignées du Soleil sont les plus froides. Sur la Terre, la température est la plus basse vers le lever du Soleil, monte dans la journée, puis baisse. Dans une cour, le sol au soleil est beaucoup plus chaud qu'à l'ombre.",
+    "indice": "💡 Système solaire, Terre, cour du collège."
+  },
+  {
+    "question": "Dans quel ordre sont les planètes à partir du Soleil ?",
+    "reponse": "Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune. Astuce : « Ma Vieille Tortue Micha Joue Sur Une Nappe ».",
+    "indice": "💡 Pense à la tortue Micha."
+  },
+  {
+    "question": "Comment se forme le vent ?",
+    "reponse": "L'air chaud, plus léger, s'élève et crée une basse pression au sol. En altitude, l'air se déplace (vent d'altitude), se refroidit, devient plus lourd et redescend : au sol il est comprimé, c'est la haute pression. Puis l'air se déplace au sol de la haute vers la basse pression : c'est le vent de surface.",
+    "indice": "💡 L'air chaud monte, l'air froid descend."
+  },
+  {
+    "question": "Qu'est-ce qui cause les vents ?",
+    "reponse": "Les vents sont dus aux différences de pression, elles-mêmes expliquées par les différences de température. Ils sont mis en mouvement par la force de Coriolis, liée à la rotation de la Terre.",
+    "indice": "💡 Pression, température et rotation de la Terre."
+  },
+  {
+    "question": "Quelles sont les 5 étapes de la formation de la pluie ?",
+    "reponse": "1. L'eau liquide s'évapore et devient de la vapeur d'eau. 2. La vapeur d'eau s'élève dans l'atmosphère et se refroidit. 3. Elle s'accroche à des poussières ou des pollens. 4. Les gouttelettes s'assemblent et forment des nuages. 5. Les nuages se refroidissent encore, les gouttelettes se condensent et tombent : c'est la pluie.",
+    "indice": "💡 Évaporation, montée, poussières, nuages, chute."
+  },
+  {
+    "question": "Quelle est la différence entre l'évaporation et la condensation ?",
+    "reponse": "L'évaporation est le passage de l'état liquide à l'état gazeux (l'eau devient vapeur). La condensation est le passage inverse, de l'état gazeux à l'état liquide (la vapeur redevient de l'eau).",
+    "indice": "💡 L'une monte vers le gaz, l'autre redescend vers le liquide."
+  },
+  {
+    "question": "Qu'est-ce que le climat ?",
+    "reponse": "Le climat correspond au temps qu'il fait en général dans une région. Il est déterminé par des relevés météorologiques sur au moins 25 ans. Les climats influencent la vie de la végétation, des animaux et des populations.",
+    "indice": "💡 Pense à la durée : plusieurs dizaines d'années."
+  },
+  {
+    "question": "Quels sont les 5 grands climats et leurs critères ?",
+    "reponse": "Tropical : plus de 21 °C et plus de 1 000 mm. Sec : plus de 21 °C et moins de 1 000 mm. Tempéré : de 11 à 20 °C et plus de 500 mm. Continental : de 2 à 10 °C et moins de 1 000 mm. Polaire : moins de 2 °C.",
+    "indice": "💡 Tropical et sec ont la même température, seule la pluie change."
+  },
+  {
+    "question": "Comment trouver le climat d'une ville avec un diagramme ombrothermique ?",
+    "reponse": "On additionne les précipitations des 12 mois (les bâtons, lus sur l'axe de droite en mm), on calcule la moyenne des 12 températures (la courbe, lue sur l'axe de gauche en °C), puis on compare les deux résultats au tableau des 5 climats.",
+    "indice": "💡 Une somme, une moyenne, puis le tableau."
+  },
+  {
+    "question": "Pourquoi l'équateur est-il la zone la plus chaude ?",
+    "reponse": "À l'équateur, les rayons du Soleil arrivent perpendiculairement et se concentrent sur une petite zone, qui chauffe davantage. Plus on s'éloigne de l'équateur, plus la zone éclairée s'étale : la surface chauffée est plus grande, il fait donc moins chaud.",
+    "indice": "💡 Pense au TP : 4 carreaux contre 12 carreaux."
+  },
+  {
+    "question": "Pourquoi l'eau chaude reste-t-elle en surface et l'eau froide plonge-t-elle ?",
+    "reponse": "L'eau chaude est moins dense : elle se déplace à la surface des océans. Quand elle rencontre des zones plus froides, elle se refroidit, devient plus dense et plonge vers le fond, où elle se déplace.",
+    "indice": "💡 Tout est une question de densité."
+  },
+  {
+    "question": "Pourquoi Lyon a-t-elle un climat plus doux que Montréal ?",
+    "reponse": "Les deux villes sont à la même latitude, mais le Gulf Stream, un courant chaud qui se déplace en surface, transporte la chaleur des Bahamas jusqu'en Europe. Les courants océaniques répartissent la chaleur sur le globe.",
+    "indice": "💡 Pense au courant chaud de l'Atlantique."
+  },
+  {
+    "question": "Quels capteurs utilise-t-on pour faire un bulletin météo ?",
+    "reponse": "Anémomètre pour la vitesse du vent (km/h), girouette pour sa direction (N, S, E, O), luxmètre pour l'ensoleillement (lux), thermomètre pour la température (°C), pluviomètre pour les précipitations (mm) et hygromètre pour l'humidité (%).",
+    "indice": "💡 Un capteur par paramètre, chacun avec son unité."
+  },
+  {
+    "question": "Qu'est-ce que la latitude et la longitude ?",
+    "reponse": "La latitude est une coordonnée géographique qui situe un point de la Terre par rapport au nord ou au sud. La longitude repère la position est ou ouest d'un point de la Terre.",
+    "indice": "💡 Latitude : nord-sud. Longitude : est-ouest."
+  },
+  {
+    "question": "Qu'est-ce que la climatologie ?",
+    "reponse": "C'est la science qui étudie les conditions atmosphériques moyennes (températures, précipitations, vent, humidité) sur de longues périodes, généralement 30 ans, et à grande échelle géographique.",
+    "indice": "💡 C'est l'étude du climat, pas de la météo du jour."
+  }
+]
