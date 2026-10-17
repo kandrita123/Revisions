@@ -6,7 +6,8 @@
    "La plupart des composants électriques sont des dipôles : ils possèdent deux bornes de connexion.",
    "Les dipôles actifs produisent et, ou, fournissent de l'énergie électrique. Par exemple : le générateur, la prise, la pile, la batterie, et la photopile, c'est-à-dire le panneau solaire, qui convertit l'énergie lumineuse en énergie électrique.",
    "Les dipôles passifs utilisent l'énergie électrique pour fonctionner. Par exemple : la lampe, le moteur, la résistance, le buzzer, et la diode électroluminescente, qu'on appelle aussi D E L.",
-   "À retenir : actif, ça produit de l'énergie, comme la pile ou le générateur. Passif, ça utilise l'énergie, comme la lampe, le moteur ou la D E L."
+   "À retenir : actif, ça produit de l'énergie, comme la pile ou le générateur. Passif, ça utilise l'énergie, comme la lampe, le moteur ou la D E L.",
+   "Ne confonds pas : le dipôle actif fournit l'énergie, le dipôle passif l'utilise."
   ]
  },
  {
@@ -24,7 +25,8 @@
   "contenu": [
    "Pour qu'une lampe éclaire ou qu'un moteur tourne, le circuit doit contenir au moins un dipôle actif.",
    "Le circuit doit être fermé pour que le dipôle actif puisse y transférer son énergie électrique. Un courant électrique circule alors dans le circuit.",
-   "Un interrupteur permet d'ouvrir le circuit : la lampe est éteinte, il n'y a pas de courant. Ou de le fermer : la lampe est allumée, le courant circule."
+   "Un interrupteur permet d'ouvrir le circuit : la lampe est éteinte, il n'y a pas de courant. Ou de le fermer : la lampe est allumée, le courant circule.",
+   "Attention : circuit ouvert, pas de courant. Circuit fermé, le courant circule."
   ]
  },
  {
@@ -56,16 +58,6 @@
    "Le symbole de la lampe : un cercle avec une croix à l'intérieur. Le symbole du moteur : un cercle avec la lettre M.",
    "L'interrupteur ouvert : un trait levé, qui ne touche pas l'autre point. L'interrupteur fermé : un trait droit entre les deux points.",
    "Sur un schéma, les fils sont représentés par des traits horizontaux et verticaux. Le schéma a une forme rectangulaire, avec les symboles des composants sur ses côtés."
-  ]
- },
- {
-  "titre": "Les pièges à éviter",
-  "emoji": "⚠️",
-  "contenu": [
-   "Ne confonds pas dipôle actif, qui fournit l'énergie, et dipôle passif, qui l'utilise.",
-   "Circuit ouvert : pas de courant. Circuit fermé : le courant circule.",
-   "Si les deux bornes de la pile sont sur le culot, la lampe ne brille pas.",
-   "Et pour justifier, utilise toujours : on voit, or on sait, donc."
   ]
  }
 ]
