@@ -1,0 +1,113 @@
+[
+ {
+  "type": "qcm",
+  "question": "Que fait une photopile (panneau solaire) ?",
+  "options": [
+   "Elle convertit l'énergie électrique en énergie lumineuse",
+   "Elle convertit l'énergie lumineuse en énergie électrique",
+   "Elle convertit l'énergie mécanique en énergie électrique",
+   "Elle utilise l'énergie électrique pour éclairer"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "qcm",
+  "question": "Les deux bornes de la pile touchent le culot de la lampe. Que se passe-t-il ?",
+  "options": [
+   "La lampe brille",
+   "La lampe ne brille pas",
+   "La lampe brille faiblement",
+   "La pile s'arrête"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "qcm",
+  "question": "Dans la justification « on voit / or on sait / donc », que met-on après « or on sait » ?",
+  "options": [
+   "L'observation de l'image",
+   "La conclusion",
+   "Ce qu'on a appris dans le cours",
+   "Une question"
+  ],
+  "answer": 2
+ },
+ {
+  "type": "qcm",
+  "question": "Un circuit contient une pile, deux lampes et des fils. Combien de fils faut-il pour un seul circuit fermé ?",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "qcm",
+  "question": "Dans le symbole de la pile, que représente le grand trait ?",
+  "options": [
+   "La borne –",
+   "La borne +",
+   "Un fil",
+   "L'interrupteur"
+  ],
+  "answer": 1
+ },
+ {
+  "type": "qcm",
+  "question": "En plus de l'énergie lumineuse, quelle énergie une lampe produit-elle ?",
+  "options": [
+   "Mécanique",
+   "Électrique",
+   "Thermique",
+   "Aucune"
+  ],
+  "answer": 2
+ },
+ {
+  "type": "vrai-faux",
+  "question": "Un moteur convertit l'énergie mécanique en énergie électrique.",
+  "answer": false
+ },
+ {
+  "type": "vrai-faux",
+  "question": "Un circuit sans dipôle actif ne peut pas allumer une lampe.",
+  "answer": true
+ },
+ {
+  "type": "vrai-faux",
+  "question": "Si l'interrupteur est ouvert, la lampe est allumée.",
+  "answer": false
+ },
+ {
+  "type": "vrai-faux",
+  "question": "La perle de l'ampoule protège le filament.",
+  "answer": false
+ },
+ {
+  "type": "vrai-faux",
+  "question": "Un schéma électrique a une forme rectangulaire, avec les symboles sur ses côtés.",
+  "answer": true
+ },
+ {
+  "type": "oral",
+  "question": "Explique la différence entre un dipôle actif et un dipôle passif, avec deux exemples de chaque."
+ },
+ {
+  "type": "oral",
+  "question": "Explique comment l'énergie passe du générateur à un moteur, et en quelles énergies elle est convertie."
+ },
+ {
+  "type": "oral",
+  "question": "Une borne de la pile touche le culot et l'autre le plot. Justifie si la lampe brille avec « on voit / or on sait / donc »."
+ },
+ {
+  "type": "oral",
+  "question": "Explique pourquoi un circuit doit être fermé, et le rôle de l'interrupteur."
+ },
+ {
+  "type": "oral",
+  "question": "Décris le symbole de la pile, de la lampe, du moteur et de l'interrupteur ouvert."
+ }
+]
