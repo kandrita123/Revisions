@@ -1,0 +1,156 @@
+[
+  {
+    "type": "qcm",
+    "question": "Une ville a une température moyenne de 25 °C et reçoit 600 mm de précipitations par an. Quel est son climat ?",
+    "options": [
+      "Sec",
+      "Continental",
+      "Tropical",
+      "Tempéré"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "qcm",
+    "question": "Une ville a une température moyenne de 15 °C et reçoit 800 mm de précipitations par an. Quel est son climat ?",
+    "options": [
+      "Polaire",
+      "Tropical",
+      "Tempéré",
+      "Sec"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "qcm",
+    "question": "Une ville a une température moyenne de 6 °C et reçoit 500 mm de précipitations par an. Quel est son climat ?",
+    "options": [
+      "Polaire",
+      "Tempéré",
+      "Continental",
+      "Sec"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "qcm",
+    "question": "Sur un diagramme ombrothermique, les bâtons représentent…",
+    "options": [
+      "L'ensoleillement",
+      "La température, en °C",
+      "Les précipitations, en mm",
+      "La vitesse du vent"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "qcm",
+    "question": "Pour calculer la température moyenne de l'année à partir d'un diagramme ombrothermique, on…",
+    "options": [
+      "Additionne les précipitations",
+      "Prend la température la plus haute",
+      "Soustrait la plus basse à la plus haute",
+      "Additionne les 12 températures et divise par 12"
+    ],
+    "answer": 3
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Dans le TP, la même lampe éclaire 12 carreaux en Europe du Nord et 4 carreaux à l'équateur : chaque carreau de l'équateur reçoit donc plus d'énergie.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "À l'équateur, les rayons du Soleil arrivent…",
+    "options": [
+      "Seulement en été",
+      "Inclinés, sur une grande zone",
+      "Perpendiculairement, sur une petite zone",
+      "Parallèles au sol"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Lyon et Montréal sont à la même latitude mais n'ont pas le même climat.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Pourquoi l'eau froide plonge-t-elle vers le fond des océans ?",
+    "options": [
+      "Elle s'évapore",
+      "Elle est plus dense que l'eau chaude",
+      "Elle est moins dense que l'eau chaude",
+      "Elle est poussée par le vent de surface"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "qcm",
+    "question": "Les vents sont dus…",
+    "options": [
+      "Aux différences de pression",
+      "À la Lune",
+      "À la présence de nuages",
+      "À la pluie"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Les vents sont mis en mouvement par la force de Coriolis, liée à la rotation de la Terre.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Dans la formation de la pluie, que se passe-t-il juste après l'évaporation ?",
+    "options": [
+      "Les gouttelettes se condensent",
+      "Les gouttelettes tombent",
+      "La vapeur d'eau se mélange à l'air, s'élève et se refroidit",
+      "Les nuages se forment"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Le passage de l'état solide à l'état gazeux s'appelle la sublimation.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Pour justifier une réponse avec un document, quel est le bon ordre ?",
+    "options": [
+      "Je vois que… / Or je sais que… / Donc je conclus que…",
+      "Donc… / Or je sais que… / Je vois que…",
+      "Or je sais que… / Je vois que… / Donc…",
+      "Je conclus que… / Je vois que… / Or…"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "oral",
+    "question": "Explique comment se forme le vent, en utilisant les mots : air chaud, basse pression, air froid et haute pression."
+  },
+  {
+    "type": "oral",
+    "question": "Raconte les 5 étapes de la formation de la pluie, de l'évaporation jusqu'à la chute des gouttes."
+  },
+  {
+    "type": "oral",
+    "question": "Explique pourquoi il fait plus chaud à l'équateur qu'en Europe du Nord, en t'appuyant sur le TP avec la lampe."
+  },
+  {
+    "type": "oral",
+    "question": "Explique pourquoi Lyon a un climat plus doux que Montréal alors que les deux villes sont à la même latitude."
+  },
+  {
+    "type": "oral",
+    "question": "Quelle est la différence entre la météo et le climat ? Donne la durée prise en compte pour chacun."
+  },
+  {
+    "type": "oral",
+    "question": "Avec la méthode « Je vois que… Or je sais que… Donc… », explique ce que montre le document des températures des planètes du système solaire."
+  }
+]
