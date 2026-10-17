@@ -1,0 +1,87 @@
+[
+ {
+  "question": "Qu'est-ce qu'un dipôle ?",
+  "reponse": "Un composant électrique qui possède deux bornes de connexion.",
+  "indice": "💡 Combien de bornes ?"
+ },
+ {
+  "question": "Qu'est-ce qu'un dipôle actif ?",
+  "reponse": "Un dipôle qui produit et/ou fournit de l'énergie électrique.",
+  "indice": "💡 Il donne l'énergie…"
+ },
+ {
+  "question": "Qu'est-ce qu'un dipôle passif ?",
+  "reponse": "Un dipôle qui utilise l'énergie électrique pour fonctionner.",
+  "indice": "💡 Il reçoit l'énergie…"
+ },
+ {
+  "question": "Cite 3 dipôles actifs.",
+  "reponse": "Générateur, prise, pile, batterie, photopile (panneau solaire, qui convertit l'énergie lumineuse en énergie électrique).",
+  "indice": "💡 Ce qui fournit l'électricité…"
+ },
+ {
+  "question": "Cite 3 dipôles passifs.",
+  "reponse": "Lampe, moteur, diode électroluminescente (DEL), résistance, buzzer.",
+  "indice": "💡 Ce qui fonctionne grâce à l'électricité…"
+ },
+ {
+  "question": "En quelle énergie une lampe convertit-elle l'énergie électrique ?",
+  "reponse": "En énergie lumineuse (et un peu d'énergie thermique : elle chauffe).",
+  "indice": "💡 Elle éclaire…"
+ },
+ {
+  "question": "En quelle énergie un moteur convertit-il l'énergie électrique ?",
+  "reponse": "En énergie mécanique (de mouvement), avec aussi de l'énergie thermique.",
+  "indice": "💡 Il tourne…"
+ },
+ {
+  "question": "Que doit contenir un circuit pour qu'une lampe éclaire ?",
+  "reponse": "Au moins un dipôle actif.",
+  "indice": "💡 Il faut une source d'énergie…"
+ },
+ {
+  "question": "À quoi sert un interrupteur ?",
+  "reponse": "À ouvrir le circuit (lampe éteinte, pas de courant) ou à le fermer (lampe allumée, le courant circule). Le circuit doit être fermé pour que l'énergie soit transférée.",
+  "indice": "💡 Ouvrir ou fermer…"
+ },
+ {
+  "question": "Quelles sont les deux bornes d'une ampoule ?",
+  "reponse": "Le plot et le culot.",
+  "indice": "💡 Tout en bas, et le pas de vis…"
+ },
+ {
+  "question": "À quoi servent le filament, le verre et la perle ?",
+  "reponse": "Le filament produit la lumière, le verre protège le filament et la perle isole les fils.",
+  "indice": "💡 Briller, protéger, isoler…"
+ },
+ {
+  "question": "Comment allumer une lampe avec une pile ?",
+  "reponse": "Une borne de la pile en contact avec le plot, l'autre borne en contact avec le culot.",
+  "indice": "💡 Les deux bornes de la lampe…"
+ },
+ {
+  "question": "Les deux bornes de la pile touchent le culot. La lampe brille-t-elle ?",
+  "reponse": "Non : il manque le contact avec le plot.",
+  "indice": "💡 Il faut toucher les 2 bornes de la lampe…"
+ },
+ {
+  "question": "Quelles sont les 3 étapes pour justifier ?",
+  "reponse": "On voit… (observation) / Or on sait… (cours) / Donc… (conclusion).",
+  "indice": "💡 Trois petits mots…"
+ },
+ {
+  "question": "Comment dessine-t-on les symboles d'une lampe et d'un moteur ?",
+  "reponse": "La lampe : un cercle avec une croix à l'intérieur. Le moteur : un cercle avec la lettre M.",
+  "indice": "💡 Deux cercles…"
+ },
+ {
+  "question": "Comment dessine-t-on le symbole d'une pile ?",
+  "reponse": "Un grand trait (borne +) et un petit trait épais (borne –).",
+  "indice": "💡 Deux traits de tailles différentes…"
+ },
+ {
+  "question": "Comment dessine-t-on les fils sur un schéma ?",
+  "reponse": "Par des traits horizontaux et verticaux ; le schéma a une forme rectangulaire.",
+  "indice": "💡 Traits droits…"
+ }
+]
