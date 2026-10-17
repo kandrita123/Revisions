@@ -1,0 +1,163 @@
+[
+  {
+    "type": "qcm",
+    "question": "Que veut dire le mot « islam » ?",
+    "options": [
+      "La paix entre les peuples",
+      "La soumission à un Dieu unique",
+      "La récitation",
+      "Le successeur"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "vrai-faux",
+    "question": "L'islam est né en Arabie au VIIe siècle.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Comment appelle-t-on les croyants de l'islam ?",
+    "options": [
+      "Les califes",
+      "Les vizirs",
+      "Les musulmans",
+      "Les cadis"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "L'islam est la première religion monothéiste.",
+    "answer": false
+  },
+  {
+    "type": "qcm",
+    "question": "Selon la tradition, qui révèle la parole de Dieu à Mohammed ?",
+    "options": [
+      "L'archange Gabriel",
+      "Abraham",
+      "Le calife",
+      "Marie"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "qcm",
+    "question": "En quelle année Mohammed est-il né ?",
+    "options": [
+      "610",
+      "632",
+      "750",
+      "570"
+    ],
+    "answer": 3
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Mohammed est mort à Médine en 632.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Que veut dire le mot « Coran » ?",
+    "options": [
+      "Soumission",
+      "Récitation",
+      "Successeur",
+      "Prière"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Le Coran est écrit en latin.",
+    "answer": false
+  },
+  {
+    "type": "qcm",
+    "question": "Combien y a-t-il de piliers de l'islam ?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "7"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "qcm",
+    "question": "Combien de fois par jour un musulman doit-il prier ?",
+    "options": [
+      "5 fois",
+      "3 fois",
+      "1 fois",
+      "7 fois"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Pendant le Ramadan, il faut s'abstenir de manger pendant la journée.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Quelle est la principale ville de pèlerinage des musulmans ?",
+    "options": [
+      "Bagdad",
+      "Médine",
+      "Yathrib",
+      "La Mecque"
+    ],
+    "answer": 3
+  },
+  {
+    "type": "qcm",
+    "question": "Que signifie le mot « calife » ?",
+    "options": [
+      "Envoyé",
+      "Récitation",
+      "Successeur",
+      "Juge"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Dans l'empire, les juifs et les chrétiens peuvent garder leur religion contre le paiement d'un impôt.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Quelle est la capitale des Abbassides ?",
+    "options": [
+      "La Mecque",
+      "Bagdad",
+      "Médine",
+      "Yathrib"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "vrai-faux",
+    "question": "En 1258, les Mongols détruisent Bagdad.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Quelle est la forme de la ville bâtie par Al-Mansur ?",
+    "options": [
+      "Carrée",
+      "Triangulaire",
+      "Ronde",
+      "En étoile"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "L'iconoclasme est la construction de monuments religieux.",
+    "answer": false
+  }
+]
