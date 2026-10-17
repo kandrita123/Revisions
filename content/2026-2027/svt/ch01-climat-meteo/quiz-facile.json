@@ -1,0 +1,174 @@
+[
+  {
+    "type": "qcm",
+    "question": "La météo, c'est…",
+    "options": [
+      "Le temps qu'il fait en moyenne sur au moins 25 ans",
+      "Le temps qu'il fait et ses changements sur quelques jours",
+      "L'étude des planètes",
+      "L'étude des courants océaniques"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "vrai-faux",
+    "question": "La météo prend en compte les précipitations, la température et la vitesse des vents.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Qu'est-ce qui contrôle la température dans le système solaire ?",
+    "options": [
+      "Les océans",
+      "Le vent",
+      "Le Soleil",
+      "La Lune"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Sur Terre, au cours d'une journée, la température est la plus basse vers le lever du Soleil.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Par rapport à l'air froid, l'air chaud est…",
+    "options": [
+      "Plus léger",
+      "Aussi lourd",
+      "Toujours immobile",
+      "Plus lourd"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Quand l'air chaud s'élève, il crée une haute pression au sol.",
+    "answer": false
+  },
+  {
+    "type": "qcm",
+    "question": "Le vent de surface se déplace…",
+    "options": [
+      "Uniquement en altitude",
+      "De la basse pression vers la haute pression",
+      "De la haute pression vers la basse pression",
+      "Toujours du nord vers le sud"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "qcm",
+    "question": "Quand l'eau liquide devient de la vapeur d'eau, on parle de…",
+    "options": [
+      "Fusion",
+      "Condensation",
+      "Évaporation",
+      "Solidification"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Pour former des nuages, la vapeur d'eau s'accroche à des poussières ou des pollens.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Selon la température, les précipitations peuvent être…",
+    "options": [
+      "De la vapeur d'eau",
+      "Du vent",
+      "Seulement de la pluie",
+      "De la neige, de la pluie…"
+    ],
+    "answer": 3
+  },
+  {
+    "type": "qcm",
+    "question": "Le climat est déterminé par des relevés météorologiques sur au moins…",
+    "options": [
+      "25 ans",
+      "3 jours",
+      "1 an",
+      "1 000 ans"
+    ],
+    "answer": 0
+  },
+  {
+    "type": "qcm",
+    "question": "Combien existe-t-il de grands types de climats dans le cours ?",
+    "options": [
+      "4",
+      "5",
+      "3",
+      "8"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Le climat polaire a une température moyenne inférieure à 2 °C.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Quelle zone de la Terre reçoit le plus d'énergie solaire ?",
+    "options": [
+      "Les pôles",
+      "L'Antarctique",
+      "L'équateur",
+      "L'Europe du Nord"
+    ],
+    "answer": 2
+  },
+  {
+    "type": "vrai-faux",
+    "question": "L'eau chaude est plus dense que l'eau froide.",
+    "answer": false
+  },
+  {
+    "type": "qcm",
+    "question": "Comment s'appelle le courant chaud qui traverse l'océan Atlantique jusqu'en Europe ?",
+    "options": [
+      "Le vent d'altitude",
+      "Le courant de Coriolis",
+      "Le courant arctique",
+      "Le Gulf Stream"
+    ],
+    "answer": 3
+  },
+  {
+    "type": "qcm",
+    "question": "Quel capteur mesure la température ?",
+    "options": [
+      "La girouette",
+      "Le thermomètre",
+      "L'hygromètre",
+      "L'anémomètre"
+    ],
+    "answer": 1
+  },
+  {
+    "type": "vrai-faux",
+    "question": "L'équateur est une ligne imaginaire tracée à égale distance des deux pôles.",
+    "answer": true
+  },
+  {
+    "type": "qcm",
+    "question": "Avec quel capteur mesure-t-on la vitesse du vent ?",
+    "options": [
+      "Le luxmètre",
+      "Le pluviomètre",
+      "La girouette",
+      "L'anémomètre"
+    ],
+    "answer": 3
+  },
+  {
+    "type": "vrai-faux",
+    "question": "Le pluviomètre mesure l'humidité de l'air.",
+    "answer": false
+  }
+]
