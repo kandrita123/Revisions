@@ -1,0 +1,83 @@
+[
+  {
+    "titre": "La météo et la température",
+    "emoji": "🌡️",
+    "contenu": [
+      "La météo, c'est le temps qu'il fait et ses changements sur quelques jours.",
+      "Elle prend en compte trois choses : les précipitations, la température et la vitesse des vents.",
+      "C'est le Soleil qui contrôle la température.",
+      "Dans le système solaire, les planètes les plus éloignées du Soleil sont les plus froides.",
+      "Sur la Terre, il fait le plus froid vers le lever du Soleil, puis la température monte dans la journée et baisse le soir.",
+      "Dans une cour, le sol au soleil est beaucoup plus chaud que le sol à l'ombre.",
+      "Pour retenir l'ordre des planètes, retiens cette phrase : Ma Vieille Tortue Micha Joue Sur Une Nappe. Cela donne Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus et Neptune.",
+      "Pour justifier avec un document, on dit : je vois que, or je sais que, donc je conclus que. Et on le fait pour chaque document."
+    ]
+  },
+  {
+    "titre": "Le vent",
+    "emoji": "💨",
+    "contenu": [
+      "Le vent se forme en quatre étapes.",
+      "D'abord, l'air chaud, plus léger, s'élève. Cela crée une basse pression au sol.",
+      "Ensuite, en altitude, l'air se déplace : c'est le vent d'altitude.",
+      "Puis l'air se refroidit, devient plus lourd et redescend. Au sol, il est comprimé : c'est la haute pression.",
+      "Enfin, l'air se déplace au sol de la haute pression vers la basse pression : c'est le vent de surface.",
+      "Les vents sont donc dus aux différences de pression, elles-mêmes causées par les différences de température.",
+      "Ils sont mis en mouvement par la force de Coriolis, liée à la rotation de la Terre."
+    ]
+  },
+  {
+    "titre": "La pluie",
+    "emoji": "🌧️",
+    "contenu": [
+      "La pluie se forme en cinq étapes.",
+      "Un : l'eau des lacs, des océans et des fleuves s'évapore et devient de la vapeur d'eau.",
+      "Deux : cette vapeur d'eau se mélange à l'air, s'élève dans l'atmosphère et se refroidit.",
+      "Trois : la vapeur d'eau s'accroche à des poussières ou à des pollens.",
+      "Quatre : quand l'air est très chargé en eau, les gouttelettes s'assemblent et forment des nuages.",
+      "Cinq : quand les nuages se refroidissent encore, les gouttelettes se condensent et tombent. C'est la pluie.",
+      "Attention à ne pas confondre : l'évaporation, c'est le liquide qui devient gaz. La condensation, c'est le gaz qui redevient liquide.",
+      "Selon la température, les précipitations peuvent être de la pluie ou de la neige."
+    ]
+  },
+  {
+    "titre": "Le climat et les cinq grands climats",
+    "emoji": "🌍",
+    "contenu": [
+      "Le climat, c'est le temps qu'il fait en général dans une région, mesuré sur au moins vingt-cinq ans.",
+      "Il ne faut pas le confondre avec la météo, qui ne concerne que quelques jours.",
+      "Il existe cinq grands climats : polaire, continental, tempéré, tropical et sec.",
+      "Le climat tropical et le climat sec ont tous les deux plus de vingt et un degrés en moyenne. Le tropical reçoit plus de mille millimètres de pluie par an, le sec moins de mille.",
+      "Le climat tempéré a entre onze et vingt degrés et plus de cinq cents millimètres de pluie.",
+      "Le climat continental a entre deux et dix degrés et moins de mille millimètres de pluie.",
+      "Le climat polaire a moins de deux degrés en moyenne.",
+      "Pour trouver le climat d'une ville, on additionne les précipitations des douze mois, on calcule la moyenne des températures, puis on compare au tableau."
+    ]
+  },
+  {
+    "titre": "L'énergie solaire et les courants océaniques",
+    "emoji": "☀️",
+    "contenu": [
+      "L'équateur est la zone de la Terre qui reçoit le plus d'énergie solaire.",
+      "Là-bas, les rayons du Soleil arrivent perpendiculairement et se concentrent sur une petite zone, qui chauffe davantage.",
+      "Plus on s'éloigne de l'équateur, plus la zone éclairée s'étale. La surface chauffée est plus grande, donc il fait moins chaud.",
+      "Dans le TP, la même lampe éclairait quatre carreaux à l'équateur et douze carreaux en Europe du Nord.",
+      "Les océans aussi répartissent la chaleur. L'eau chaude est moins dense : elle reste en surface. L'eau froide est plus dense : elle plonge vers le fond.",
+      "Le Gulf Stream est un courant chaud qui se déplace en surface. Il transporte la chaleur des Bahamas jusqu'en Europe.",
+      "C'est pour cela que Lyon a un climat plus doux que Montréal, alors que les deux villes sont à la même latitude."
+    ]
+  },
+  {
+    "titre": "Prévoir la météo",
+    "emoji": "📡",
+    "contenu": [
+      "Pour faire un bulletin météo, on mesure les paramètres avec des capteurs.",
+      "L'anémomètre mesure la vitesse du vent, en kilomètres par heure.",
+      "La girouette indique la direction du vent : nord, sud, est ou ouest.",
+      "Le luxmètre mesure l'ensoleillement, en lux.",
+      "Le thermomètre mesure la température, en degrés Celsius.",
+      "Le pluviomètre mesure les précipitations, en millimètres. Attention, la pluviométrie, c'est la quantité de pluie, pas le capteur.",
+      "Enfin, l'hygromètre mesure l'humidité de l'air, en pourcentage."
+    ]
+  }
+]
