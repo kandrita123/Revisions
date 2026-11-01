@@ -188,6 +188,15 @@ async function loadChapitre(matiere, chapName) {
   const base = `${BASE_URL}/content/${state.annee.id}/${matiere.id}/${chapName}`;
   loadFiche(base);
 
+  // Masquer l'onglet Quiz facile si le chapitre n'en a pas
+  const qfBtn = document.querySelector('.tab-btn[data-tab="quiz-facile"]');
+  if (qfBtn) {
+    qfBtn.style.display = 'none';
+    fetch(`${base}/quiz-facile.json`, { method: 'HEAD' })
+      .then(r => { if (r.ok) qfBtn.style.display = ''; })
+      .catch(() => {});
+  }
+
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.onclick = () => {
       document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
