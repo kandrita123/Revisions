@@ -1,87 +1,254 @@
 [
   {
     "question": "Qu'est-ce que la météo ?",
-    "reponse": "La météo est le temps qu'il fait et ses changements sur quelques jours. Elle prend en compte trois paramètres : les précipitations, la température et la vitesse des vents.",
-    "indice": "💡 Pense à la durée : quelques jours seulement."
+    "reponse": "La météo est le temps qu'il fait et ses changements sur quelques jours. Elle prend en compte les précipitations, la température et la vitesse des vents.",
+    "indice": "💡 Pense à la durée (quelques jours) et aux 3 paramètres.",
+    "partie": 1
   },
   {
     "question": "Qu'est-ce qui contrôle la température ?",
     "reponse": "C'est le Soleil. La température dépend de la quantité d'ensoleillement reçue, qui dépend notamment de la latitude, c'est-à-dire du lieu où l'on se trouve sur la Terre.",
-    "indice": "💡 Pense à ce qui éclaire et chauffe toutes les planètes."
+    "indice": "💡 Pense à ce qui éclaire et chauffe toutes les planètes.",
+    "partie": 1
   },
   {
-    "question": "À quelles trois échelles observe-t-on que le Soleil contrôle la température ?",
-    "reponse": "Dans le système solaire, les planètes les plus éloignées du Soleil sont les plus froides. Sur la Terre, la température est la plus basse vers le lever du Soleil, monte dans la journée, puis baisse. Dans une cour, le sol au soleil est beaucoup plus chaud qu'à l'ombre.",
-    "indice": "💡 Système solaire, Terre, cour du collège."
+    "question": "Que montre le document sur les températures des planètes du système solaire ?",
+    "reponse": "Les planètes les plus éloignées du Soleil sont les plus froides : la Terre a 15 °C, Jupiter –163 °C et Uranus –220 °C. Cela montre que le Soleil contrôle la température à l'échelle du système solaire.",
+    "indice": "💡 Pense à la distance au Soleil.",
+    "partie": 1
+  },
+  {
+    "question": "Comment évolue la température sur Terre au cours d'une journée ?",
+    "reponse": "Elle est la plus basse vers le lever du Soleil, monte pendant la journée, puis baisse jusqu'au coucher du Soleil et pendant la nuit. Cela montre le rôle du Soleil à l'échelle de la Terre.",
+    "indice": "💡 Pense au lever et au coucher du Soleil.",
+    "partie": 1
+  },
+  {
+    "question": "Pourquoi le sol de la cour n'a-t-il pas la même température partout ?",
+    "reponse": "Le sol au soleil est beaucoup plus chaud que le sol à l'ombre de l'arbre. Cela montre le rôle du Soleil à l'échelle d'une cour.",
+    "indice": "💡 Pense à l'ombre de l'arbre.",
+    "partie": 1
   },
   {
     "question": "Dans quel ordre sont les planètes à partir du Soleil ?",
     "reponse": "Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus, Neptune. Astuce : « Ma Vieille Tortue Micha Joue Sur Une Nappe ».",
-    "indice": "💡 Pense à la tortue Micha."
+    "indice": "💡 Pense à la tortue Micha.",
+    "partie": 1
   },
   {
-    "question": "Comment se forme le vent ?",
-    "reponse": "L'air chaud, plus léger, s'élève et crée une basse pression au sol. En altitude, l'air se déplace (vent d'altitude), se refroidit, devient plus lourd et redescend : au sol il est comprimé, c'est la haute pression. Puis l'air se déplace au sol de la haute vers la basse pression : c'est le vent de surface.",
-    "indice": "💡 L'air chaud monte, l'air froid descend."
+    "question": "Comment justifier une réponse à partir d'un document ?",
+    "reponse": "On suit trois étapes : « Je vois que… » (ce que montre le document), « Or je sais que… » (ce que dit le cours), « Donc je conclus que… ». Il faut faire ce raisonnement pour chaque document, pas une seule fois pour tous.",
+    "indice": "💡 Trois étapes : observer, cours, conclure.",
+    "partie": 1
   },
   {
-    "question": "Qu'est-ce qui cause les vents ?",
+    "question": "Pourquoi l'air chaud s'élève-t-il ?",
+    "reponse": "Parce que l'air chaud est plus léger que l'air froid. À l'inverse, quand l'air se refroidit en altitude, il devient plus lourd et redescend.",
+    "indice": "💡 Pense à léger et lourd.",
+    "partie": 1
+  },
+  {
+    "question": "Quelle est la différence entre une basse pression et une haute pression ?",
+    "reponse": "Une basse pression se forme au sol quand l'air chaud s'élève : la pression baisse. Une haute pression se forme quand l'air froid redescend : au sol, l'air est comprimé.",
+    "indice": "💡 Air qui monte ou air qui descend ?",
+    "partie": 1
+  },
+  {
+    "question": "Quelle est la différence entre le vent d'altitude et le vent de surface ?",
+    "reponse": "Le vent d'altitude est l'air qui se déplace en hauteur, après s'être élevé. Le vent de surface est l'air qui se déplace au sol, de la haute pression vers la basse pression.",
+    "indice": "💡 En haut ou au sol ?",
+    "partie": 1
+  },
+  {
+    "question": "Pourquoi y a-t-il du vent ?",
     "reponse": "Les vents sont dus aux différences de pression, elles-mêmes expliquées par les différences de température. Ils sont mis en mouvement par la force de Coriolis, liée à la rotation de la Terre.",
-    "indice": "💡 Pression, température et rotation de la Terre."
+    "indice": "💡 Pression, température et rotation de la Terre.",
+    "partie": 1
   },
   {
     "question": "Quelles sont les 5 étapes de la formation de la pluie ?",
-    "reponse": "1. L'eau liquide s'évapore et devient de la vapeur d'eau. 2. La vapeur d'eau s'élève dans l'atmosphère et se refroidit. 3. Elle s'accroche à des poussières ou des pollens. 4. Les gouttelettes s'assemblent et forment des nuages. 5. Les nuages se refroidissent encore, les gouttelettes se condensent et tombent : c'est la pluie.",
-    "indice": "💡 Évaporation, montée, poussières, nuages, chute."
+    "reponse": "1. L'eau liquide des lacs, océans et fleuves s'évapore et devient de la vapeur d'eau. 2. La vapeur d'eau se mélange à l'air, s'élève dans l'atmosphère et se refroidit. 3. Elle s'accroche à des poussières ou des pollens. 4. Les gouttelettes s'assemblent et forment des nuages. 5. Les nuages se refroidissent encore, les gouttelettes se condensent et tombent : c'est la pluie.",
+    "indice": "💡 Évaporation, montée, poussières, nuages, chute.",
+    "partie": 1
+  },
+  {
+    "question": "Qu'est-ce que l'atmosphère ?",
+    "reponse": "C'est la couche de gaz qui entoure la Terre. La vapeur d'eau s'y élève et s'y refroidit lors de la formation de la pluie.",
+    "indice": "💡 Pense à ce qui entoure la Terre.",
+    "partie": 1
   },
   {
     "question": "Quelle est la différence entre l'évaporation et la condensation ?",
-    "reponse": "L'évaporation est le passage de l'état liquide à l'état gazeux (l'eau devient vapeur). La condensation est le passage inverse, de l'état gazeux à l'état liquide (la vapeur redevient de l'eau).",
-    "indice": "💡 L'une monte vers le gaz, l'autre redescend vers le liquide."
+    "reponse": "L'évaporation est le passage de l'état liquide à l'état gazeux : l'eau devient vapeur d'eau. La condensation est le passage inverse, de l'état gazeux à l'état liquide.",
+    "indice": "💡 L'une va vers le gaz, l'autre revient vers le liquide.",
+    "partie": 1
   },
   {
-    "question": "Qu'est-ce que le climat ?",
-    "reponse": "Le climat correspond au temps qu'il fait en général dans une région. Il est déterminé par des relevés météorologiques sur au moins 25 ans. Les climats influencent la vie de la végétation, des animaux et des populations.",
-    "indice": "💡 Pense à la durée : plusieurs dizaines d'années."
+    "question": "Quelle est la différence entre la fusion et la solidification ?",
+    "reponse": "La fusion est le passage de l'état solide à l'état liquide. La solidification est le passage inverse, de l'état liquide à l'état solide.",
+    "indice": "💡 Pense au triangle des changements d'état.",
+    "partie": 1
   },
   {
-    "question": "Quels sont les 5 grands climats et leurs critères ?",
-    "reponse": "Tropical : plus de 21 °C et plus de 1 000 mm. Sec : plus de 21 °C et moins de 1 000 mm. Tempéré : de 11 à 20 °C et plus de 500 mm. Continental : de 2 à 10 °C et moins de 1 000 mm. Polaire : moins de 2 °C.",
-    "indice": "💡 Tropical et sec ont la même température, seule la pluie change."
+    "question": "Quelle est la différence entre la sublimation et la déposition ?",
+    "reponse": "La sublimation est le passage direct de l'état solide à l'état gazeux. La déposition est le passage inverse, de l'état gazeux à l'état solide, sans passer par le liquide.",
+    "indice": "💡 Ces deux-là sautent l'état liquide.",
+    "partie": 1
   },
   {
-    "question": "Comment trouver le climat d'une ville avec un diagramme ombrothermique ?",
-    "reponse": "On additionne les précipitations des 12 mois (les bâtons, lus sur l'axe de droite en mm), on calcule la moyenne des 12 températures (la courbe, lue sur l'axe de gauche en °C), puis on compare les deux résultats au tableau des 5 climats.",
-    "indice": "💡 Une somme, une moyenne, puis le tableau."
-  },
-  {
-    "question": "Pourquoi l'équateur est-il la zone la plus chaude ?",
-    "reponse": "À l'équateur, les rayons du Soleil arrivent perpendiculairement et se concentrent sur une petite zone, qui chauffe davantage. Plus on s'éloigne de l'équateur, plus la zone éclairée s'étale : la surface chauffée est plus grande, il fait donc moins chaud.",
-    "indice": "💡 Pense au TP : 4 carreaux contre 12 carreaux."
-  },
-  {
-    "question": "Pourquoi l'eau chaude reste-t-elle en surface et l'eau froide plonge-t-elle ?",
-    "reponse": "L'eau chaude est moins dense : elle se déplace à la surface des océans. Quand elle rencontre des zones plus froides, elle se refroidit, devient plus dense et plonge vers le fond, où elle se déplace.",
-    "indice": "💡 Tout est une question de densité."
-  },
-  {
-    "question": "Pourquoi Lyon a-t-elle un climat plus doux que Montréal ?",
-    "reponse": "Les deux villes sont à la même latitude, mais le Gulf Stream, un courant chaud qui se déplace en surface, transporte la chaleur des Bahamas jusqu'en Europe. Les courants océaniques répartissent la chaleur sur le globe.",
-    "indice": "💡 Pense au courant chaud de l'Atlantique."
-  },
-  {
-    "question": "Quels capteurs utilise-t-on pour faire un bulletin météo ?",
-    "reponse": "Anémomètre pour la vitesse du vent (km/h), girouette pour sa direction (N, S, E, O), luxmètre pour l'ensoleillement (lux), thermomètre pour la température (°C), pluviomètre pour les précipitations (mm) et hygromètre pour l'humidité (%).",
-    "indice": "💡 Un capteur par paramètre, chacun avec son unité."
-  },
-  {
-    "question": "Qu'est-ce que la latitude et la longitude ?",
-    "reponse": "La latitude est une coordonnée géographique qui situe un point de la Terre par rapport au nord ou au sud. La longitude repère la position est ou ouest d'un point de la Terre.",
-    "indice": "💡 Latitude : nord-sud. Longitude : est-ouest."
+    "question": "Qu'est-ce qui explique les précipitations ? Sont-elles toujours de la pluie ?",
+    "reponse": "Les précipitations sont expliquées par la condensation des molécules d'eau dans l'atmosphère autour de poussières ou de pollens, qui tombent ensuite sur terre. Selon la température, ce peut être de la pluie, de la neige…",
+    "indice": "💡 Pense au rôle de la température.",
+    "partie": 1
   },
   {
     "question": "Qu'est-ce que la climatologie ?",
     "reponse": "C'est la science qui étudie les conditions atmosphériques moyennes (températures, précipitations, vent, humidité) sur de longues périodes, généralement 30 ans, et à grande échelle géographique.",
-    "indice": "💡 C'est l'étude du climat, pas de la météo du jour."
+    "indice": "💡 C'est la science du climat.",
+    "partie": 2
+  },
+  {
+    "question": "Qu'est-ce qu'un courant océanique ?",
+    "reponse": "C'est un immense fleuve d'eau qui se déplace de façon continue et régulière à l'intérieur des océans.",
+    "indice": "💡 Pense à un fleuve dans l'océan.",
+    "partie": 2
+  },
+  {
+    "question": "Qu'est-ce que l'équateur ?",
+    "reponse": "C'est une ligne imaginaire tracée autour de la Terre, à égale distance des deux pôles.",
+    "indice": "💡 Pense aux deux pôles.",
+    "partie": 2
+  },
+  {
+    "question": "Quelle est la différence entre la latitude et la longitude ?",
+    "reponse": "La latitude est une coordonnée géographique qui situe un point de la Terre par rapport au nord ou au sud. La longitude repère la position est ou ouest d'un point de la Terre.",
+    "indice": "💡 Nord-sud ou est-ouest ?",
+    "partie": 2
+  },
+  {
+    "question": "Qu'est-ce que le climat ?",
+    "reponse": "Le climat correspond au temps qu'il fait en général dans une région. Il est déterminé par des relevés météorologiques sur au moins 25 ans. Les climats influencent la vie de la végétation, des animaux et des populations.",
+    "indice": "💡 Pense à « en général » et à la durée.",
+    "partie": 2
+  },
+  {
+    "question": "Quelle est la différence entre la météo et le climat ?",
+    "reponse": "La météo est le temps qu'il fait sur quelques jours. Le climat est le temps qu'il fait en général dans une région, à partir de relevés sur au moins 25 ans.",
+    "indice": "💡 Quelques jours ou au moins 25 ans ?",
+    "partie": 2
+  },
+  {
+    "question": "Quels sont les 5 grands climats ?",
+    "reponse": "Le climat polaire, le climat continental, le climat tempéré, le climat tropical et le climat sec.",
+    "indice": "💡 Du plus froid au plus chaud.",
+    "partie": 2
+  },
+  {
+    "question": "Quelle est la différence entre le climat tropical et le climat sec ?",
+    "reponse": "Les deux ont une température moyenne de plus de 21 °C. La différence vient des précipitations : plus de 1 000 mm par an pour le climat tropical, moins de 1 000 mm pour le climat sec.",
+    "indice": "💡 Même température, pluie différente.",
+    "partie": 2
+  },
+  {
+    "question": "Quels sont les critères des climats tempéré, continental et polaire ?",
+    "reponse": "Tempéré : de 11 à 20 °C et plus de 500 mm de précipitations. Continental : de 2 à 10 °C et moins de 1 000 mm. Polaire : moins de 2 °C.",
+    "indice": "💡 Regarde surtout la température moyenne.",
+    "partie": 2
+  },
+  {
+    "question": "Comment trouver le climat d'une ville avec un diagramme ombrothermique ?",
+    "reponse": "1. On additionne les précipitations des 12 mois. 2. On calcule la moyenne des températures : somme des 12 valeurs divisée par 12. 3. On compare les deux résultats au tableau des 5 climats.",
+    "indice": "💡 Une somme, une moyenne, puis le tableau.",
+    "partie": 2
+  },
+  {
+    "question": "Sur un diagramme ombrothermique, quelle est la différence entre les bâtons et la courbe ?",
+    "reponse": "Les bâtons représentent les précipitations, en millimètres : ils se lisent sur l'axe de droite. La courbe représente la température, en °C : elle se lit sur l'axe de gauche.",
+    "indice": "💡 Bâtons à droite, courbe à gauche.",
+    "partie": 2
+  },
+  {
+    "question": "Sur la carte des climats du cours, que veulent dire « climat froid » et « climat désertique » ?",
+    "reponse": "Le climat froid correspond au climat polaire, et le climat désertique correspond au climat sec.",
+    "indice": "💡 La carte n'utilise pas les mêmes noms que le tableau.",
+    "partie": 2
+  },
+  {
+    "question": "Qu'a montré le TP avec la lampe et le papier quadrillé ?",
+    "reponse": "La même lampe, qui représente le Soleil, éclaire 4 carreaux à l'équateur et 12 carreaux en Europe du Nord. Chaque carreau reçoit donc 0,75 à l'équateur contre 0,25 en Europe du Nord : l'équateur reçoit trois fois plus d'énergie par carreau.",
+    "indice": "💡 4 carreaux contre 12 carreaux.",
+    "partie": 2
+  },
+  {
+    "question": "Pourquoi l'équateur est-il la zone la plus chaude de la Terre ?",
+    "reponse": "À l'équateur, les rayons du Soleil arrivent perpendiculairement et se concentrent sur une petite zone, qui chauffe davantage. Les climats les plus chauds se trouvent donc à l'équateur.",
+    "indice": "💡 Rayons perpendiculaires, petite zone.",
+    "partie": 2
+  },
+  {
+    "question": "Pourquoi fait-il moins chaud quand on s'éloigne de l'équateur ?",
+    "reponse": "Plus on s'éloigne de l'équateur, plus la zone éclairée s'étale. Pour une même quantité de rayons, la surface chauffée est plus grande, donc il fait moins chaud. Cela explique la répartition des 5 grands climats.",
+    "indice": "💡 Rayons inclinés, grande zone.",
+    "partie": 2
+  },
+  {
+    "question": "Qu'a montré l'expérience avec l'eau froide et l'eau chaude reliées par des tuyaux ?",
+    "reponse": "À la fin, l'eau chaude se retrouve en haut et l'eau froide au fond. On a formé un courant d'eau grâce à une différence de température, car l'eau froide est plus dense que l'eau chaude.",
+    "indice": "💡 Où se retrouve l'eau chaude à la fin ?",
+    "partie": 2
+  },
+  {
+    "question": "Pourquoi l'eau chaude reste-t-elle en surface et l'eau froide plonge-t-elle ?",
+    "reponse": "L'eau chaude est moins dense : elle se déplace à la surface des océans. Quand elle rencontre des zones plus froides, elle se refroidit, devient plus dense et plonge vers le fond, où elle se déplace.",
+    "indice": "💡 Tout est une question de densité.",
+    "partie": 2
+  },
+  {
+    "question": "Qu'est-ce qui contrôle le déplacement des masses d'eau, et quel est le rôle des courants océaniques ?",
+    "reponse": "Le déplacement des masses d'eau est contrôlé par les différences d'ensoleillement. Les courants océaniques transportent de la chaleur et la répartissent différemment sur le globe.",
+    "indice": "💡 Pense au Soleil et à la chaleur transportée.",
+    "partie": 2
+  },
+  {
+    "question": "Qu'est-ce que le Gulf Stream ?",
+    "reponse": "C'est un courant océanique chaud qui se déplace en surface dans l'océan Atlantique. Il transporte la chaleur des Bahamas jusqu'en Europe.",
+    "indice": "💡 Pense à l'océan Atlantique.",
+    "partie": 2
+  },
+  {
+    "question": "Pourquoi Lyon a-t-elle un climat plus doux que Montréal ?",
+    "reponse": "Les deux villes sont à la même latitude, mais le Gulf Stream, un courant chaud de surface, transporte la chaleur jusqu'en Europe.",
+    "indice": "💡 Même latitude, mais un courant chaud d'un seul côté.",
+    "partie": 2
+  },
+  {
+    "question": "Quelle est la différence entre l'anémomètre et la girouette ?",
+    "reponse": "Les deux mesurent le vent. L'anémomètre mesure sa vitesse, en km/h. La girouette indique sa direction : nord, sud, est ou ouest.",
+    "indice": "💡 Vitesse ou direction ?",
+    "partie": 3
+  },
+  {
+    "question": "Avec quel capteur mesure-t-on la température, et dans quelle unité ?",
+    "reponse": "Avec un thermomètre, en degrés Celsius (°C).",
+    "indice": "💡 C'est l'instrument le plus connu de la liste.",
+    "partie": 3
+  },
+  {
+    "question": "Avec quel capteur mesure-t-on l'ensoleillement, et dans quelle unité ?",
+    "reponse": "Avec un luxmètre, en lux.",
+    "indice": "💡 Le nom du capteur ressemble au nom de l’unité.",
+    "partie": 3
+  },
+  {
+    "question": "Quelle est la différence entre le pluviomètre et la pluviométrie ?",
+    "reponse": "Le pluviomètre est le capteur qui mesure les précipitations. La pluviométrie est la quantité de pluie tombée, mesurée en millimètres (mm).",
+    "indice": "💡 L'un est un objet, l'autre une mesure.",
+    "partie": 3
+  },
+  {
+    "question": "Avec quel capteur mesure-t-on l'humidité de l'air, et dans quelle unité ?",
+    "reponse": "Avec un hygromètre, en pourcentage (%).",
+    "indice": "💡 L'unité est un pourcentage.",
+    "partie": 3
   }
 ]
