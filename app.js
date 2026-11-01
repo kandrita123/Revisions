@@ -440,19 +440,46 @@ async function loadFlashcards(base) {
     const data = await res.json();
     state.chapitreData['flashcards'] = true;
     if (!data.length) { el.innerHTML = '<div class="empty-state"><div class="empty-icon">🃏</div>Aucune flashcard disponible</div>'; return; }
-    renderFlashcards(el, data);
+    renderFlashcardsMenu(el, data);
   } catch {
     el.innerHTML = '<div class="empty-state"><div class="empty-icon">🃏</div>Flashcards non disponibles</div>';
   }
 }
 
-function renderFlashcards(el, cards) {
-  let current = 0;
-  let known = 0;
-  let unknown = 0;
+// Menu des parties : affiché seulement si les cartes ont un champ "partie"
+function renderFlashcardsMenu(el, allCards) {
+  const parties = [...new Set(allCards.map(c => c.partie).filter(p => p != null))].sort((a, b) => a - b);
+  if (parties.length < 2) { renderFlashcards(el, allCards); return; }
+
+  el.innerHTML = `
+    <div class="fc-result">
+      <div class="fc-result-icon">🃏</div>
+      <div class="fc-result-title">Choisis ta série</div>
+      <div style="display:flex;flex-direction:column;gap:10px;width:100%;max-width:320px;margin:16px auto 0;">
+        ${parties.map(p => `<button class="fc-restart fc-partie-btn" data-partie="${p}">Partie ${p} (${allCards.filter(c => c.partie === p).length} cartes)</button>`).join('')}
+        <button class="fc-restart fc-partie-btn" data-partie="tout">🔀 Tout le chapitre (${allCards.length} cartes)</button>
+      </div>
+    </div>`;
+
+  el.querySelectorAll('.fc-partie-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const p = btn.dataset.partie;
+      const selection = p === 'tout' ? allCards : allCards.filter(c => String(c.partie) === p);
+      renderFlashcards(el, selection, allCards);
+    });
+  });
+}
+
+function renderFlashcards(el, cards, allCards) {
   let flipped = false;
   const total = cards.length;
+  // Mélange aléatoire à chaque session (Fisher-Yates)
   const remaining = [...cards];
+  for (let i = remaining.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [remaining[i], remaining[j]] = [remaining[j], remaining[i]];
+  }
+  const missed = new Set(); // cartes ratées au moins une fois
 
   function render() {
     if (remaining.length === 0) {
@@ -461,11 +488,18 @@ function renderFlashcards(el, cards) {
           <div class="fc-result-icon">🎉</div>
           <div class="fc-result-title">Terminé !</div>
           <div class="fc-result-score">
-            <span class="fc-known">✅ Sus : ${known}</span>
-            <span class="fc-unknown">❌ À revoir : ${unknown}</span>
+            <span class="fc-known">✅ Sues du premier coup : ${total - missed.size} / ${total}</span>
+            <span class="fc-unknown">❌ Ratées au moins une fois : ${missed.size}</span>
           </div>
-          <button class="fc-restart" onclick="renderFlashcards(document.getElementById('tab-flashcards'), ${JSON.stringify(cards).replace(/"/g, '&quot;')})">🔄 Recommencer</button>
+          ${missed.size ? `<div class="fc-missed">
+            <div class="fc-label">Cartes à retravailler</div>
+            <ul>${[...missed].map(c => `<li>${c.question}</li>`).join('')}</ul>
+          </div>` : ''}
+          <button class="fc-restart" id="fc-restart">🔄 Recommencer</button>
+          ${allCards ? `<button class="fc-restart" id="fc-menu" style="margin-top:10px;">↩ Changer de partie</button>` : ''}
         </div>`;
+      document.getElementById('fc-restart').addEventListener('click', () => renderFlashcards(el, cards, allCards));
+      if (allCards) document.getElementById('fc-menu').addEventListener('click', () => renderFlashcardsMenu(el, allCards));
       return;
     }
 
@@ -517,14 +551,13 @@ function renderFlashcards(el, cards) {
     });
 
     document.getElementById('fc-yes').addEventListener('click', () => {
-      known++;
       remaining.shift();
       render();
     });
 
     document.getElementById('fc-no').addEventListener('click', () => {
-      unknown++;
       const card = remaining.shift();
+      missed.add(card);
       remaining.push(card); // remet à la fin
       render();
     });
